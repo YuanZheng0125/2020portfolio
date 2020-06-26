@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Yuan's Website</title>
+    <script
+      src="https://kit.fontawesome.com/d735fb03d4.js"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/main.css" />
+    <link rel="stylesheet" href="css/onepage-scroll.css" />
+    <script src="js/modernizr.custom.js"></script>
+    <!-- <script src="js/onepagescroll.js"></script> -->
+  </head>
+
+  <body id="work">
+    <!-- Menu bar  -->
+    <div class="nav">
+      <ul class="menu-nav">
+        <li class="nav-item">
+          <span onclick="transitionToPage('index.html')" class="nav-link active"
+            >Work</span
+          >
+        </li>
+        <li class="nav-item">
+          <span onclick="transitionToPage('about.html')" class="nav-link"
+            >About</span
+          >
+        </li>
+        <li class="nav-item">
+          <span onclick="transitionToPage('B-side.html')" class="nav-link"
+            >B-Side</span
+          >
+        </li>
+        <li class="nav-item">
+          <span onclick="transitionToPage('resume.html')" class="nav-link"
+            >Resume</span
+          >
+        </li>
+      </ul>
+    </div>
+
+    <!-- Full page starts -->
+    <div class="main">
+      <section id="firstPage">
+        <div class="intro">
+          <div class="profileImage">
+            <img
+              src="Assets/Yuan_Portfolio.jpg"
+              alt="A Picture of Yuan"
+              class="offsetImage"
+            />
+            <span class="dot"> <a class="forFun">Nothing Here ;)</a></span>
+          </div>
+          <div class="profileText">
+            <h1 class="profileName">
+              Hi, I'm <span class="highLight">Yuan Zheng.</span>
+            </h1>
+            <p>
+              I'm a UX & Product Designer interested in promoting scientific
+              literacy through UI / UX design. I have over 5 years research
+              experience on studying biomedical science . I was a
+              <a href="_" class="phd">
+                Ph.D. candidate
+                <span>
+                  <img
+                    src="Assets/phD.png"
+                    alt="Picture of Yuan as PhD Student."
+                    class="phdImage"
+                /></span>
+              </a>
+              in University of Minnesota where I got six published papers as
+              first / (co-) author. In my free time, I like
+              <a href="_" class="dance">
+                dancing
+                <span>
+                  <img src="Assets/dance.png" alt="" class="danceImage"
+                /></span>
+              </a>
+              and sniffing my
+              <a href="_" class="cat"
+                >cat
+                <span>
+                  <img
+                    src="Assets/cat_outline.png"
+                    alt="Picture of Cat"
+                    class="catImage"
+                  /> </span></a
+              >!
+            </p>
+            <div class="icons">
+              <a href="https://www.behance.net/yuanzdesign" id="logo">
+                <i class="fab fa-behance fa-fw fa-border"></i>
+              </a>
+              <a
+                href="https://www.linkedin.com/in/yuan-zheng-b7b7a814a/"
+                id="logo"
+              >
+                <i class="fab fa-linkedin fa-fw fa-border"></i>
+              </a>
+              <a href="https://github.com/YuanZheng0125/yz_portfolio" id="logo">
+                <i class="fab fa-github fa-fw fa-border"></i>
+              </a>
+              <a
+                href="mailto:yuanz.design@gmail.com?subject=Contact%20Me"
+                id="logo"
+              >
+                <i class="far fa-envelope fa-fw fa-border"></i>
+              </a>
+            </div>
+          </div>
+          <div class="button">
+            <a href="#secondPage" id="btn-seeMore">
+              See My Work
+            </a>
+            <div class="arrow">
+              <span></span>
+              <span></span>
+              <span></span>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="secondPage">
+        <div class="workSectionOne bl-main">
+          <div class="quoteSectionOne project">
+            <div class="quotes">
+              "My passion for ux design lies in bridging the gap between science
+              and our society."
+            </div>
+          </div>
+          <div class="P1 project">
+            <div class="bl-box">
+              <img
+                src="Assets/Democritus.jpg"
+                alt="Editorial Project"
+                class="projectImage"
+              />
+            </div>
+            <iframe src="Democritus.html" class="bl-content"> </iframe>
+            <span class="bl-icon bl-icon-close"> Close</span>
+            <!-- bl-content, close icon, next project icon -->
+          </div>
+          <div class="P2 project">
+            <div class="bl-box">
+              <img
+                src="Assets/Health-Fusion.jpg"
+                alt="FUI Project"
+                class="projectImage"
+              />
+            </div>
+            <div class="bl-content">
+              <!-- Here is project details -->
+              <h2>Here is hidden content</h2>
+              <span class="bl-icon bl-icon-close">Close</span>
+            </div>
+          </div>
+          <div class="P3 project">
+            <div class="bl-box">
+              <img
+                src="Assets/Smart-Lab.jpg"
+                alt="Smart Lab Project"
+                class="projectImage"
+              />
+            </div>
+            <div class="bl-content">
+              <h2>Here is hidden content</h2>
+              <span class="bl-icon bl-icon-close">Close</span>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="thirdPage">
+        <div class="workSectionTwo">
+          <div class="P4">
+            <img
+              src="Assets/Google-Excersie.jpg"
+              alt="FMS Project"
+              class="projectImage"
+            />
+          </div>
+          <div class="quoteSectionTwo">
+            <div class="quotes">
+              "Design is all about communication. I use design to add values to
+              products."
+            </div>
+          </div>
+          <div class="P5">
+            <img
+              src="Assets/Petography.jpg"
+              alt="Photo Editing Project"
+              class="projectImage"
+            />
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <!-- Back to top arrow -->
+    <!-- <a href="#firstPage" id="backtotop">
+        <i class="fa fa-arrow-up fa-2x" aria-hidden="true"></i>
+    </a> -->
+    <!-- <footer id="main-footer">
+      Copyright &copy; Yuan Zheng 2020
+    </footer> -->
+    <!-- <script src="node_modules/jquery/dist/jquery.min.js"></script> -->
+
+    <script src="node_modules/jquery/dist/jquery.min.js"></script>
+    <!-- <script src="js/boxlayout.js"></script> -->
+    <script src="js/main.js"></script>
+  </body>
+</html>
