@@ -89,6 +89,14 @@ function onePageScroll(element, options) {
 
   this.init = function () {
     /*-------------------------------------------*/
+    /*  Customer features                    */
+    /*-------------------------------------------*/
+    //  When button is clicked, add pagination.
+    $("#btn-seeMore").click(function () {
+      moveTo(el, 2);
+    });
+
+    /*-------------------------------------------*/
     /*  Prepare Everything                       */
     /*-------------------------------------------*/
 
@@ -738,7 +746,6 @@ var Boxlayout = (function () {
             // hide the menu, pagination and stop body scrolling
             $menu.addClass("noDisplay");
             $page.addClass("noDisplay");
-            // $scroll.addClass("scrollable");
           }
         })
 
@@ -752,7 +759,6 @@ var Boxlayout = (function () {
               // show the menu, pagination and enable body scrolling
               $menu.removeClass("noDisplay");
               $page.removeClass("noDisplay");
-              // $scroll.removeClass("scrollable");
 
               if (!$(event.target).is(".project")) return false;
               $(this).off(transEndEventName).removeClass("bl-expand-top");

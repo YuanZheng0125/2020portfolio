@@ -1,5 +1,4 @@
 * {
-  /* font-family: "Poppins", sans-serif; */
   font-family: "Space Mono", mono space;
   color: #050505;
   font-weight: 400;
@@ -10,6 +9,12 @@
 
 body {
   background-color: #fcfcfc;
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+}
+
+body::-webkit-scrollbar {
+  display: none;
 }
 
 .noDisplay {
@@ -291,7 +296,10 @@ section {
   text-align: center;
 }
 
-#btn-seeMore {
+#btn-seeMore,
+#btn-seeMore:focus,
+#btn-seeMore:visited {
+  outline: none;
   display: block;
   border: 2px solid #050505;
   background-color: #fcfcfc;
@@ -311,7 +319,6 @@ section {
   color: #050505;
   transform: translate(1px, 1px);
   box-shadow: 1px 1px #050505;
-  border-color: #050505;
   font-weight: 700;
 }
 
@@ -473,32 +480,6 @@ section {
 .bl-content {
   -ms-overflow-style: none;
   scrollbar-width: none;
-}
-
-/* Format Hidden Content */
-
-.bl-content h2 {
-  font-size: 3vw;
-  font-weight: 700;
-  margin: 2vw 0;
-}
-
-.bl-content .projectOverview {
-  font-size: 0.8vw;
-  line-height: 1.8;
-}
-
-.boldText {
-  font-size: 1vw;
-  font-weight: 700;
-}
-
-.bodyText {
-  margin: 4vw 0;
-}
-
-.bodyImage {
-  width: 100%;
 }
 
 .bl-main > .project.bl-expand-top {

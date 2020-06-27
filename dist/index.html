@@ -16,9 +16,9 @@
       href="https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="css/main.css" />
-    <link rel="stylesheet" href="css/onepage-scroll.css" />
-    <script src="js/modernizr.custom.js"></script>
+    <link rel="stylesheet" href="./css/main.css" />
+    <link rel="stylesheet" href="./css/onepage-scroll.css" />
+    <script src="./js/modernizr.custom.js"></script>
     <!-- <script src="js/onepagescroll.js"></script> -->
   </head>
 
@@ -73,7 +73,7 @@
                 Ph.D. candidate
                 <span>
                   <img
-                    src="Assets/phD.png"
+                    src="./Assets/phD.png"
                     alt="Picture of Yuan as PhD Student."
                     class="phdImage"
                 /></span>
@@ -83,7 +83,7 @@
               <a href="_" class="dance">
                 dancing
                 <span>
-                  <img src="Assets/dance.png" alt="" class="danceImage"
+                  <img src="./Assets/dance.png" alt="" class="danceImage"
                 /></span>
               </a>
               and sniffing my
@@ -91,7 +91,7 @@
                 >cat
                 <span>
                   <img
-                    src="Assets/cat_outline.png"
+                    src="./Assets/cat_outline.png"
                     alt="Picture of Cat"
                     class="catImage"
                   /> </span></a
@@ -119,9 +119,9 @@
             </div>
           </div>
           <div class="button">
-            <a href="#secondPage" id="btn-seeMore">
+            <button id="btn-seeMore">
               See My Work
-            </a>
+            </button>
             <div class="arrow">
               <span></span>
               <span></span>
@@ -141,19 +141,20 @@
           <div class="P1 project">
             <div class="bl-box">
               <img
-                src="Assets/Democritus.jpg"
+                src="./Assets/Democritus.jpg"
                 alt="Editorial Project"
                 class="projectImage"
               />
             </div>
-            <iframe src="Democritus.html" class="bl-content"> </iframe>
+            <iframe src="Democritus.html" id="myiFrame" class="bl-content">
+            </iframe>
             <span class="bl-icon bl-icon-close"> Close</span>
             <!-- bl-content, close icon, next project icon -->
           </div>
           <div class="P2 project">
             <div class="bl-box">
               <img
-                src="Assets/Health-Fusion.jpg"
+                src="./Assets/Health-Fusion.jpg"
                 alt="FUI Project"
                 class="projectImage"
               />
@@ -167,7 +168,7 @@
           <div class="P3 project">
             <div class="bl-box">
               <img
-                src="Assets/Smart-Lab.jpg"
+                src="./Assets/Smart-Lab.jpg"
                 alt="Smart Lab Project"
                 class="projectImage"
               />
@@ -183,7 +184,7 @@
         <div class="workSectionTwo">
           <div class="P4">
             <img
-              src="Assets/Google-Excersie.jpg"
+              src="./Assets/Google-Excersie.jpg"
               alt="FMS Project"
               class="projectImage"
             />
@@ -196,7 +197,7 @@
           </div>
           <div class="P5">
             <img
-              src="Assets/Petography.jpg"
+              src="./Assets/Petography.jpg"
               alt="Photo Editing Project"
               class="projectImage"
             />
@@ -214,8 +215,8 @@
     </footer> -->
     <!-- <script src="node_modules/jquery/dist/jquery.min.js"></script> -->
 
-    <script src="node_modules/jquery/dist/jquery.min.js"></script>
+    <script src="../node_modules/jquery/dist/jquery.min.js"></script>
     <!-- <script src="js/boxlayout.js"></script> -->
-    <script src="js/main.js"></script>
+    <script src="./js/main.js"></script>
   </body>
 </html>

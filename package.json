@@ -1,0 +1,28 @@
+{
+  "name": "2020portfolio_yuan",
+  "version": "1.0.0",
+  "description": "personal website",
+  "main": "index.js",
+  "dependencies": {
+    "jquery": "^3.5.1",
+    "fullpage.js": "^3.0.8"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/YuanZheng0125/2020portfolio.git"
+  },
+  "keywords": [
+    "portfolio",
+    "2020"
+  ],
+  "author": "Yuan Zheng",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/YuanZheng0125/2020portfolio/issues"
+  },
+  "homepage": "https://YuanZheng0125.github.io/2020portfolio"
+}

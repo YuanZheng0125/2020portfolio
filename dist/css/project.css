@@ -1,0 +1,27 @@
+#projectBody {
+  padding: 6vw;
+}
+
+#projectBody h2 {
+  font-size: 3vw;
+  font-weight: 700;
+  margin: 2vw 0;
+}
+
+.projectOverview {
+  font-size: 0.8vw;
+  line-height: 1.8;
+}
+
+.boldText {
+  font-size: 1vw;
+  font-weight: 700;
+}
+
+.bodyText {
+  margin: 4vw 0;
+}
+
+.bodyImage {
+  width: 100%;
+}
