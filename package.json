@@ -5,24 +5,19 @@
   "main": "index.js",
   "homepage": "https://YuanZheng0125.github.io/2020portfolio",
   "dependencies": {
-    "jquery": "^3.5.1",
-    "fullpage.js": "^3.0.8"
+    "fullpage.js": "^3.0.8",
+    "gh-pages": "^3.1.0",
+    "jquery": "^3.5.1"
   },
   "devDependencies": {},
   "scripts": {
-    "test": "test"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/YuanZheng0125/2020portfolio.git"
+    "test": "test",
+    "deploy": "gh-pages -d dist"
   },
   "keywords": [
     "portfolio",
     "2020"
   ],
   "author": "Yuan Zheng",
-  "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/YuanZheng0125/2020portfolio/issues"
-  }
+  "license": "MIT"
 }
