@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "description": "personal website",
   "main": "index.js",
+  "homepage": "https://YuanZheng0125.github.io/2020portfolio",
   "dependencies": {
     "jquery": "^3.5.1",
     "fullpage.js": "^3.0.8"
@@ -23,6 +24,5 @@
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/YuanZheng0125/2020portfolio/issues"
-  },
-  "homepage": "https://YuanZheng0125.github.io/2020portfolio"
+  }
 }
