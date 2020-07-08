@@ -28,22 +28,22 @@
       <ul class="menu-nav">
         <li class="nav-item">
           <span onclick="transitionToPage('index.html')" class="nav-link active"
-            >Work</span
+            >- Work</span
           >
         </li>
         <li class="nav-item">
           <span onclick="transitionToPage('about.html')" class="nav-link"
-            >About</span
+            >- About</span
           >
         </li>
         <li class="nav-item">
           <span onclick="transitionToPage('B-side.html')" class="nav-link"
-            >B-Side</span
+            >- B-Side</span
           >
         </li>
         <li class="nav-item">
           <span onclick="transitionToPage('resume.html')" class="nav-link"
-            >Resume</span
+            >- Resume</span
           >
         </li>
       </ul>
@@ -51,15 +51,15 @@
 
     <!-- Full page starts -->
     <div class="main">
-      <section id="firstPage">
+      <section id="firstPage" class="loading">
         <div class="intro">
           <div class="profileImage">
             <img
-              src="Assets/Yuan_Portfolio.jpg"
+              src="Assets/Yuan_Portfolio_Colorized.jpg"
               alt="A Picture of Yuan"
               class="offsetImage"
             />
-            <span class="dot"> <a class="forFun">Nothing Here ;)</a></span>
+            <!-- <span class="dot"> <a class="forFun">Nothing Here ;)</a></span> -->
           </div>
           <div class="profileText">
             <h1 class="profileName">
@@ -67,8 +67,8 @@
             </h1>
             <p>
               I'm a UX & Product Designer interested in promoting scientific
-              literacy through UI / UX design. I have over 5 years research
-              experience on studying biomedical science . I was a
+              literacy through design. I have over 5 years research experience
+              on studying biomedical science. I was a
               <a href="_" class="phd">
                 Ph.D. candidate
                 <span>
@@ -132,23 +132,121 @@
       </section>
       <section id="secondPage">
         <div class="workSectionOne bl-main">
+          <div class="P6 project">
+            <div class="bl-box">
+              <img
+                src="./Assets/Google-Excersie.jpg"
+                alt="FMS Project"
+                class="projectImage"
+              />
+              <div class="overlay">
+                <div class="line">
+                  <div class="circle"></div>
+                  <div class="circle"></div>
+                  <div class="circle"></div>
+                </div>
+                <div class="text">
+                  Zoo Keeper
+                  <p>Facility Maintenance App Design</p>
+                </div>
+                <div class="readMore">
+                  # Google Excersie
+                </div>
+              </div>
+            </div>
+            <iframe src="FMS.html" class="bl-content"> </iframe>
+            <span class="bl-icon bl-icon-close closeOne">Close</span>
+          </div>
+          <div class="quoteSectionTwo project">
+            <div class="quotes">
+              "Design is all about communication. I use design to
+              <span class="highLight">add values</span> to products."
+            </div>
+          </div>
+          <div class="P5 project">
+            <div class="bl-box">
+              <img
+                src="./Assets/Petography-New.jpg"
+                alt="Photo Editing Project"
+                class="projectImage"
+              />
+              <div class="overlay">
+                <div class="line">
+                  <div class="circle"></div>
+                  <div class="circle"></div>
+                  <div class="circle"></div>
+                </div>
+                <div class="text">
+                  Petography
+                  <p>Photo Editing App Design</p>
+                </div>
+                <div class="readMore">
+                  # Interaction Design
+                </div>
+              </div>
+            </div>
+            <iframe src="Petography.html" class="bl-content"> </iframe>
+            <span class="bl-icon bl-icon-close closeOne">Close</span>
+          </div>
+          <div class="P4 project">
+            <div class="bl-box">
+              <img
+                src="./Assets/Unbuilt-Labs.jpg"
+                alt="Unbuilt Labs Project"
+                class="projectImage"
+              />
+              <div class="overlay">
+                <div class="line">
+                  <div class="circle"></div>
+                  <div class="circle"></div>
+                  <div class="circle"></div>
+                </div>
+                <div class="text">
+                  Unbuilt Labs Web Design
+                </div>
+                <div class="readMore">
+                  # Web & Mobile Design
+                </div>
+              </div>
+            </div>
+            <iframe src="UnbuiltLab.html" class="bl-content"> </iframe>
+            <span class="bl-icon bl-icon-close closeOne">Close</span>
+          </div>
+        </div>
+      </section>
+      <section id="thirdPage">
+        <div class="workSectionTwo bl-main">
           <div class="quoteSectionOne project">
             <div class="quotes">
-              "My passion for ux design lies in bridging the gap between science
+              "My passion for UX design lies in
+              <span class="highLight">bridging the gap</span> between science
               and our society."
             </div>
           </div>
           <div class="P1 project">
             <div class="bl-box">
               <img
-                src="./Assets/Democritus.jpg"
+                src="./Assets/Democritus_1.jpg"
                 alt="Editorial Project"
                 class="projectImage"
               />
+              <div class="overlay">
+                <div class="line">
+                  <div class="circle"></div>
+                  <div class="circle"></div>
+                  <div class="circle"></div>
+                </div>
+                <div class="text">
+                  Democritus
+                  <p>Editorial Design</p>
+                </div>
+                <div class="readMore">
+                  # Web & Mobile Design
+                </div>
+              </div>
             </div>
-            <iframe src="Democritus.html" id="myiFrame" class="bl-content">
-            </iframe>
-            <span class="bl-icon bl-icon-close"> Close</span>
+            <iframe src="Democritus.html" class="bl-content"> </iframe>
+            <span class="bl-icon bl-icon-close closeTwo">Close</span>
             <!-- bl-content, close icon, next project icon -->
           </div>
           <div class="P2 project">
@@ -158,12 +256,23 @@
                 alt="FUI Project"
                 class="projectImage"
               />
+              <div class="overlay">
+                <div class="line">
+                  <div class="circle"></div>
+                  <div class="circle"></div>
+                  <div class="circle"></div>
+                </div>
+                <div class="text">
+                  Health Fusion
+                  <p>Health Data Visualization</p>
+                </div>
+                <div class="readMore">
+                  # FUI # Motion Design
+                </div>
+              </div>
             </div>
-            <div class="bl-content">
-              <!-- Here is project details -->
-              <h2>Here is hidden content</h2>
-              <span class="bl-icon bl-icon-close">Close</span>
-            </div>
+            <iframe src="HealthFusion.html" class="bl-content"> </iframe>
+            <span class="bl-icon bl-icon-close closeTwo">Close</span>
           </div>
           <div class="P3 project">
             <div class="bl-box">
@@ -172,35 +281,23 @@
                 alt="Smart Lab Project"
                 class="projectImage"
               />
+              <div class="overlay">
+                <div class="line">
+                  <div class="circle"></div>
+                  <div class="circle"></div>
+                  <div class="circle"></div>
+                </div>
+                <div class="text">
+                  Smart Lab
+                  <p>LAB Booking App Design</p>
+                </div>
+                <div class="readMore">
+                  # App Design
+                </div>
+              </div>
             </div>
-            <div class="bl-content">
-              <h2>Here is hidden content</h2>
-              <span class="bl-icon bl-icon-close">Close</span>
-            </div>
-          </div>
-        </div>
-      </section>
-      <section id="thirdPage">
-        <div class="workSectionTwo">
-          <div class="P4">
-            <img
-              src="./Assets/Google-Excersie.jpg"
-              alt="FMS Project"
-              class="projectImage"
-            />
-          </div>
-          <div class="quoteSectionTwo">
-            <div class="quotes">
-              "Design is all about communication. I use design to add values to
-              products."
-            </div>
-          </div>
-          <div class="P5">
-            <img
-              src="./Assets/Petography.jpg"
-              alt="Photo Editing Project"
-              class="projectImage"
-            />
+            <iframe src="SmartLab.html" class="bl-content"> </iframe>
+            <span class="bl-icon bl-icon-close closeTwo">Close</span>
           </div>
         </div>
       </section>
