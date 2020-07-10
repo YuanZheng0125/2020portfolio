@@ -20,34 +20,142 @@
     <link rel="stylesheet" href="./css/project.css" />
   </head>
   <body id="projectBody">
-    <div class="contentTable">
-      Here is the table of content
-    </div>
-    <h2>Democritus</h2>
-    <div class="projectOverview">
-      <span class="boldText">Brief:</span> Design a better reading experience
-      for science editorial website to encourage & facilitate more people to
-      learn science and enjoy reading science articles. <br />
-      <span class="boldText">Deliverables:</span> Prototypes on both desktop and
-      mobile platforms & Interaction Demos; <br />
-    </div>
-    <div class="bodyText">
+    <section class="herobox">
       <img
-        src="./Assets/Democritus_1.jpg"
-        alt="Project Image"
-        class="bodyImage"
+        src="./Assets/Democritus.jpg"
+        alt="Editorial design"
+        class="heroImage"
       />
-      <p>Here is body text.</p>
-      <p>Here is body text.</p>
-      <p>Here is body text.</p>
-      <p>Here is body text.</p>
-      <p>Here is body text.</p>
-      <p>Here is body text.</p>
-      <p>Here is body text.</p>
-      <p>Here is body text.</p>
-      <p>Here is body text.</p>
-      <p>Here is body text.</p>
-    </div>
-    -->
+    </section>
+    <section>
+      <div class="brief">
+        <div class="projectOverview">
+          <h2>
+            <span class="highLight"> Democritus</span> is a science editorial
+            website aimed at engaging more people in learning basic science and
+            having a better online reading experience.
+          </h2>
+        </div>
+        <h6 class="projectType">
+          <span class="boldText">Type</span> <br />Individual course project
+        </h6>
+        <h6 class="projectResult">
+          <span class="boldText">Deliverables</span> <br />
+          Prototypes (Desktop & mobile); <br />
+          Interaction Demos;
+        </h6>
+        <h6 class="projectTimeline">
+          <span class="boldText">Timeline</span> <br />
+          2019-10-07 - 2019-10-20
+        </h6>
+      </div>
+    </section>
+    <div class="gap"></div>
+    <section>
+      <div class="gridOne fadethisdiv">
+        <h3 class="subheadingOne">
+          People don't reading science content online.
+        </h3>
+        <p class="bodyCopyOne">
+          Science becomes boring when you have to read a long paper discussing
+          some unfamiliar knowledgement word by word.
+          <br />
+          <br />
+          The problem I identified for current science editorial websites is a
+          lack of <span class="highLight"> attraction</span> and
+          <span class="highLight"> motivation</span> for people to engage in
+          reading science content as well as keep revisiting the sites.
+        </p>
+      </div>
+    </section>
+    <section>
+      <div class="gridTwo fadethisdiv">
+        <div class="subheadingTwo">
+          User groups
+        </div>
+        <img
+          src="./Assets/College Student.jpg"
+          alt="college student"
+          class="collegestudent thumbnail"
+        />
+        <h6 class="bodyCopyTwo gridTwo-itemOne">
+          <span class="quotes">"</span>
+          As a college student, I want to quickly document and organize the
+          information that is useful for me, so that I can take away for my
+          future references.
+        </h6>
+        <img
+          src="./Assets/High School Student.jpg"
+          alt="high school student"
+          class="highschoolstudent thumbnail"
+        />
+        <h6 class="bodyCopyTwo gridTwo-itemTwo">
+          <span class="quotes">"</span>
+          As a high school student, I want to find out what a scientist's work
+          looks like, so that I can think about whether I'd like to choose it as
+          my career.
+        </h6>
+        <img
+          src="./Assets/Teacher.jpg"
+          alt="teacher"
+          class="teacher thumbnail"
+        />
+        <h6 class="bodyCopyTwo gridTwo-itemThree">
+          <span class="quotes">"</span>
+          As a high school teacher, I want to browse interesting science-related
+          materials, so that I can use them as my teaching resources.
+        </h6>
+      </div>
+    </section>
+    <section>
+      <div class="slideshow fadethisdiv">
+        <div class="slideshow-container">
+          <div class="mySlides fade">
+            <img src="./Assets/Competitive Analysis.jpg" class="slideImage" />
+            <div class="text">
+              #1 Competitive website: Aggregate
+            </div>
+          </div>
+          <div class="mySlides fade">
+            <img src="./Assets/Competitive Analysis-1.jpg" class="slideImage" />
+            <div class="text">
+              #2 Competitive website: Supercluster
+            </div>
+          </div>
+          <div class="mySlides fade">
+            <img src="./Assets/Competitive Analysis-2.jpg" class="slideImage" />
+            <div class="text">
+              #3 Competitive website: Aggregate
+            </div>
+          </div>
+          <div class="mySlides fade">
+            <img src="./Assets/Competitive Analysis-3.jpg" class="slideImage" />
+            <div class="text">
+              #4 Competitive website: SmashingMagzine
+            </div>
+          </div>
+          <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+          <a class="next" onclick="plusSlides(1)">&#10095;</a>
+        </div>
+        <br />
+        <div class="dots">
+          <span class="dot" onclick="currentSlide(1)"></span>
+          <span class="dot" onclick="currentSlide(2)"></span>
+          <span class="dot" onclick="currentSlide(3)"></span>
+          <span class="dot" onclick="currentSlide(4)"></span>
+        </div>
+      </div>
+    </section>
+    <section></section>
+    <!-- Back to top arrow -->
+    <a href="#firstPage" id="backtotop" onclick="topFunction()">
+      <i class="fa fa-arrow-up" aria-hidden="true"></i>
+    </a>
+    <footer id="main-footer">
+      Copyright &copy; Yuan Zheng 2020
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="./js/main.js"></script>
+    <script src="./js/project.js"></script>
   </body>
 </html>
