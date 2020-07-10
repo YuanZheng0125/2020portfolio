@@ -24,7 +24,7 @@ body::-webkit-scrollbar {
 #firstPage,
 #secondPage,
 #thirdPage {
-  background-size: 8vh 8vh;
+  background-size: 10vh 10vh;
   background-image: linear-gradient(
       to right,
       rgba(0, 0, 255, 0.1) 1px,
@@ -221,26 +221,16 @@ section {
 }
 
 /* social media icons */
-.fa-border {
-  border: 1px solid rgba(0, 0, 255, 0.5);
-  padding: 0.4vw 0.2vw;
-  background-color: #fcfcfc;
-  /* box-shadow: 1.2px 1.2px #050505; */
-}
 
 .icons {
   display: block;
   margin-top: 4em;
 }
 
-.fa-fw {
-  width: 3.6vw;
-}
-
 .fab,
 .far {
   margin-right: 2vw;
-  color: rgba(0, 0, 255, 0.5);
+  color: rgba(0, 0, 255, 0.25);
 }
 
 .fab:hover,
@@ -254,8 +244,6 @@ section {
 .fa-border:active {
   color: #00f;
   transform: translate(2px, 2px);
-  box-shadow: 1px 1px #00f;
-  border: 1px solid rgba(0, 0, 255, 0.5);
 }
 
 .button {
@@ -270,8 +258,8 @@ section {
 #btn-seeMore:visited {
   outline: none;
   display: block;
-  border: 1px solid rgba(0, 0, 255);
-  background-color: rgba(0, 0, 255);
+  border: none;
+  background-color: #ff6a21;
   color: #fcfcfc;
   font-size: 1.2vw;
   border-radius: 4px;
@@ -279,16 +267,16 @@ section {
 }
 
 #btn-seeMore:hover {
-  background-color: rgba(0, 0, 255, 0.5);
+  background-color: #fd8c57;
   border: none;
 }
 
 #btn-seeMore:active {
-  background-color: #fcfcfc;
-  color: #00f;
-  border: 1px solid rgba(0, 0, 255);
+  background-color: #ff6a21;
+  color: #fcfcfc;
+  border: none;
   transform: translate(2px, 2px);
-  box-shadow: 1px 1px #00f;
+  box-shadow: 1px 1px #fd8c57;
 }
 
 .arrow {
@@ -301,8 +289,8 @@ section {
   display: block;
   width: 1em;
   height: 1em;
-  border-bottom: 0.2em solid #00f;
-  border-right: 0.2em solid #00f;
+  border-bottom: 0.2em solid #ff6a21;
+  border-right: 0.2em solid #ff6a21;
   transform: rotate(45deg);
   margin-bottom: -0.8em;
   animation: animate 2s infinite;
@@ -649,7 +637,6 @@ section {
 
 .bl-icon-close:hover {
   color: rgba(0, 0, 255, 0.5);
-  font-weight: 700;
 }
 
 .bl-icon-close:active {
@@ -659,28 +646,16 @@ section {
 
 /* End */
 
-/* Back to Top  */
-/* #backtotop {
-  display: none;
-  position: fixed;
-  bottom: 40px;
-  right: 40px;
-  z-index: 99;
-  outline: none;
-  cursor: pointer;
-  padding: 4px 0;
-}
-
 .fa-arrow-up {
-  color: #050505;
+  color: #00f;
 }
 
 .fa-arrow-up:hover {
-  color: #b0b0b0;
+  color: rgba(0, 0, 255, 0.5);
 }
 
 .fa-arrow-up:active {
-  color: #050505;
+  color: #00f;
   transform: translateX(1px);
   transform: translateY(1px);
-} */
+}

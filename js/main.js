@@ -35,21 +35,6 @@ for (var i = 0; i < itemLinks.length; i++) {
   });
 }
 
-// Add Back to Top Button
-// backbtn = document.getElementById("backtotop");
-
-// window.onscroll = function () {
-//   scrollFunction();
-// };
-
-// function scrollFunction() {
-//   if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-//     backbtn.style.display = "block";
-//   } else {
-//     backbtn.style.display = "none";
-//   }
-// }
-
 // One Page Scroll
 //  Copyright 2014 Pete Rojwongsuriya.
 //  http://www.thepetedesign.com
@@ -57,10 +42,6 @@ for (var i = 0; i < itemLinks.length; i++) {
 
 //  Credit: Eike Send for the awesome swipe event
 //  https://github.com/peachananr/purejs-onepage-scroll
-//
-//  License: GPL v3
-//
-//  ==========================================================
 
 function onePageScroll(element, options) {
   var defaults = {
