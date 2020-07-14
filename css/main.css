@@ -91,6 +91,16 @@ a:active {
   font-size: 0.8vw;
 }
 
+/* Footer */
+#main-footer {
+  font-size: 1vw;
+  text-align: center;
+  width: 100%;
+  padding: 20px 0;
+  color: #fcfcfc;
+  background-color: #00f;
+}
+
 /* Home page */
 section {
   height: 100vh;
@@ -352,6 +362,7 @@ section {
   display: block;
   object-fit: cover;
   border-radius: 10px;
+  padding: 0 1px 0 0;
 }
 
 .overlay {
