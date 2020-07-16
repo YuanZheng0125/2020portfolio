@@ -17,41 +17,31 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="./css/main.css" />
-    <link rel="stylesheet" href="./css/onepage-scroll.css" />
     <script src="./js/modernizr.custom.js"></script>
-    <!-- <script src="js/onepagescroll.js"></script> -->
   </head>
 
-  <body id="work">
+  <body>
     <!-- Menu bar  -->
     <div class="nav">
       <ul class="menu-nav">
-        <li class="nav-item">
-          <span onclick="transitionToPage('index.html')" class="nav-link active"
-            >- Work</span
-          >
+        <li class="nav-item active">
+          <a href="#firstPage" class="nav-link">About </a>
         </li>
         <li class="nav-item">
-          <span onclick="transitionToPage('about.html')" class="nav-link"
-            >- About</span
-          >
+          <a href="#secondPage" class="nav-link">UI/UX</a>
         </li>
         <li class="nav-item">
-          <span onclick="transitionToPage('B-side.html')" class="nav-link"
-            >- B-Side</span
-          >
+          <a href="#fourthPage" class="nav-link">B-Side </a>
         </li>
         <li class="nav-item">
-          <span onclick="transitionToPage('resume.html')" class="nav-link"
-            >- Resume</span
-          >
+          <a href="#sixthPage" class="nav-link">Resume </a>
         </li>
       </ul>
     </div>
 
     <!-- Full page starts -->
     <div class="main">
-      <section id="firstPage" class="loading">
+      <section id="firstPage">
         <div class="intro">
           <div class="profileImage">
             <img
@@ -59,14 +49,13 @@
               alt="A Picture of Yuan"
               class="offsetImage"
             />
-            <!-- <span class="dot"> <a class="forFun">Nothing Here ;)</a></span> -->
           </div>
           <div class="profileText">
             <h1 class="profileName">
-              Hi, I'm <span class="highLight">Yuan Zheng.</span>
+              Hey! I'm <span class="highLight">Yuan Zheng.</span>
             </h1>
             <p>
-              I'm a UX & Product Designer interested in promoting scientific
+              A UX & Product Designer interested in promoting scientific
               literacy through design. I have over 5 years research experience
               on studying biomedical science. I was a
               <a href="_" class="phd">
@@ -119,9 +108,9 @@
             </div>
           </div>
           <div class="button">
-            <button id="btn-seeMore">
+            <a href="#secondPage" id="btn-seeMore">
               See My Work
-            </button>
+            </a>
             <div class="arrow">
               <span></span>
               <span></span>
@@ -130,7 +119,7 @@
           </div>
         </div>
       </section>
-      <section id="secondPage">
+      <section id="secondPage" class="fadethisdiv">
         <div class="workSectionOne bl-main">
           <div class="P6 project">
             <div class="bl-box">
@@ -155,7 +144,7 @@
               </div>
             </div>
             <iframe src="FMS.html" class="bl-content"> </iframe>
-            <span class="bl-icon bl-icon-close closeOne">Close</span>
+            <span class="bl-icon bl-icon-close">Close</span>
           </div>
           <div class="quoteSectionTwo project">
             <div class="quotes">
@@ -184,7 +173,7 @@
               </div>
             </div>
             <iframe src="Petography.html" class="bl-content"> </iframe>
-            <span class="bl-icon bl-icon-close closeOne">Close</span>
+            <span class="bl-icon bl-icon-close">Close</span>
           </div>
           <div class="P4 project">
             <div class="bl-box">
@@ -208,11 +197,11 @@
               </div>
             </div>
             <iframe src="UnbuiltLab.html" class="bl-content"> </iframe>
-            <span class="bl-icon bl-icon-close closeOne">Close</span>
+            <span class="bl-icon bl-icon-close">Close</span>
           </div>
         </div>
       </section>
-      <section id="thirdPage">
+      <section id="thirdPage" class="fadethisdiv">
         <div class="workSectionTwo bl-main">
           <div class="quoteSectionOne project">
             <div class="quotes">
@@ -242,7 +231,7 @@
               </div>
             </div>
             <iframe src="Democritus.html" class="bl-content"> </iframe>
-            <span class="bl-icon bl-icon-close closeTwo">Close</span>
+            <span class="bl-icon bl-icon-close">Close</span>
             <!-- bl-content, close icon, next project icon -->
           </div>
           <div class="P2 project">
@@ -266,7 +255,7 @@
               </div>
             </div>
             <iframe src="HealthFusion.html" class="bl-content"> </iframe>
-            <span class="bl-icon bl-icon-close closeTwo">Close</span>
+            <span class="bl-icon bl-icon-close">Close</span>
           </div>
           <div class="P3 project">
             <div class="bl-box">
@@ -291,10 +280,110 @@
               </div>
             </div>
             <iframe src="SmartLab.html" class="bl-content"> </iframe>
-            <span class="bl-icon bl-icon-close closeTwo">Close</span>
+            <span class="bl-icon bl-icon-close">Close</span>
           </div>
         </div>
       </section>
+      <section id="fourthPage" class="fadethisdiv">
+        <div class="bside">
+          <div class="bsideText">
+            <h1 class="bside-title">
+             More about <span class="highLight">Me</span>
+             <i class="fa fa-smile-o" aria-hidden="true"></i>
+            </h1>
+            <p>
+              I like motion design. Anything with motion, I'm groove with it!
+              When I'm not working, I enjoy absorbing new idea through
+               reading, experimenting with creative coding, swimming and playing with my cat!  
+            </p>
+          </div>
+          <div class="bsidemenu-container">
+            <ul class="bsidemenu">
+              <li class="bsidemenu-items">
+                <a href="_" class="abstract">
+                "Cycle"_An abstract style animation;
+                  <span>
+                  <video autoplay loop muted class="bsideImage">
+                    <source src="./Assets/Petography.mp4" type="video/mp4" />
+                  </video>
+                 </span>
+                </a>
+              </li>
+              <li class="bsidemenu-items">
+                <a href="_" class="angel">
+                "Angel"_A title sequence motion design work;
+                  <span>
+                  <video autoplay loop muted class="bsideImage">
+                    <source src="./Assets/Petography.mp4" type="video/mp4" />
+                  </video>
+                 </span>
+                </a>
+              </li>
+              <li class="bsidemenu-items">
+                <a href="_" class="music">
+                OD2_A music brand promotional motion piece;
+                  <span>
+                  <video autoplay loop muted class="bsideImage">
+                    <source src="./Assets/Petography.mp4" type="video/mp4" />
+                  </video>
+                 </span>
+                </a>
+              </li>
+              <li class="bsidemenu-items">
+                <a href="_" class="ski">
+                Ski Resort_A sketch style 3D visual design; 
+                  <span>
+                  <video autoplay loop muted class="bsideImage">
+                    <source src="./Assets/Petography.mp4" type="video/mp4" />
+                  </video>
+                 </span>
+                </a>
+              </li>
+              <li class="bsidemenu-items">
+                <a href="_" class="summer">
+                "Midsummer Night"_A paper cut style motion design;
+                  <span>
+                  <video autoplay loop muted class="bsideImage">
+                    <source src="./Assets/Petography.mp4" type="video/mp4" />
+                  </video>
+                 </span>
+                </a>
+              </li>
+              <li class="bsidemenu-items">
+                <a href="_" class="dreamy">
+                "Dreamy"_A realistic photographic style visual design;
+                  <span>
+                  <video autoplay loop muted class="bsideImage">
+                    <source src="./Assets/Petography.mp4" type="video/mp4" />
+                  </video>
+                 </span>
+                </a>
+              </li>
+              <li class="bsidemenu-items">
+                <a href="_" class="threejs">
+                 Design immersive experience through creative coding.
+                  <span>
+                  <video autoplay loop muted class="bsideImage">
+                    <source src="./Assets/Petography.mp4" type="video/mp4" />
+                  </video>
+                 </span>
+                </a>
+              </li>
+          </div>
+          <div class="buttonTwo">
+            <a href="#fifthPage" id="btn-gallery">
+              Gallery View
+            </a>
+            <div class="arrow">
+              <span></span>
+              <span></span>
+              <span></span>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="fifthPage" class="fadethisdiv"></section>
+      <section id="sixthPage" class="fadethisdiv"></section>
     </div>
     <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
     <script src="./js/main.js"></script>
