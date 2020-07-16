@@ -18,8 +18,10 @@
     />
     <link rel="stylesheet" href="./css/main.css" />
     <link rel="stylesheet" href="./css/project.css" />
+    <script src="./js/modernizr.custom.js"></script>
   </head>
   <body id="projectBody">
+   
     <section class="herobox">
       <img
         src="./Assets/Democritus.jpg"
@@ -27,7 +29,7 @@
         class="heroImage"
       />
     </section>
-    <section>
+    <section id="overview">
       <div class="brief">
         <div class="projectOverview">
           <h2>
@@ -366,8 +368,7 @@
     <section id="demos">
       <div class="gridEleven fadethisdiv">
         <h3 class="subheadingEleven">
-          Introduce to <br />
-          Note-taking Mode.
+          Meet Note-taking Mode.
         </h3>
         <div class="bodyCopyEleven">
           <div class="notetaking">
@@ -435,23 +436,26 @@
         </div>
       </div>
     </section>
-    <!-- Back to top arrow -->
-    <button class="btn-index hide" id="index">
-      <i class="fa fa-list" aria-hidden="true"></i>
-    </button>
-    <ul id="index-content">
-      <li><a href="#problemstatement" class="index-items">The Problem</a></li>
-      <li> <a href="#usergroup" class="index-items"> The User</a></li>
-      <li> <a href="#competitive" class="index-items"> Competitive Anaysis</a> </li>
-      <li> <a href="#approach" class="index-items"> Approaches </a></li>
-      <li> <a href="#information" class="index-items"> Information Architecture</a></li>
-      <li> <a href="#sketchtowireflow" class="index-items"> Sketch & Wireflow</a></li>
-      <li> <a href="#prototype" class="index-items"> Prototypes (desktop & mobile) </a> </li>
-      <li> <a href="#demos" class="index-items"> Walkthrough Demo </a></li>
-    </ul>
-    <a href="#firstPage" id="backtotop" onclick="topFunction()">
-      <i class="fa fa-arrow-up" aria-hidden="true"></i>
-    </a>
+  
+    <!-- Index-->
+    <div class="sidebar">
+      <div class="index-container">
+        <ul class="index-menu">
+          <li><a href="#overview" class="index-items">Overview </a></li>
+          <li><a href="#problemstatement" class="index-items">The Problem</a></li>
+          <li> <a href="#usergroup" class="index-items"> The User</a></li>
+          <li> <a href="#competitive" class="index-items"> Competitive Anaysis</a> </li>
+          <li> <a href="#approach" class="index-items"> Approaches </a></li>
+          <li> <a href="#information" class="index-items"> Information Architecture</a></li>
+          <li> <a href="#sketchtowireflow" class="index-items"> Sketch & Wireflow</a></li>
+          <li> <a href="#prototype" class="index-items"> Prototypes (desktop & mobile) </a> </li>
+          <li> <a href="#demos" class="index-items"> Walkthrough Demo </a></li>
+        </ul>
+      </div> 
+      <div class="index-indicator">
+        <i class="fa fa-angle-right" aria-hidden="true"></i>
+      </div>
+    </div>
     <footer id="main-footer">
       Copyright &copy; Yuan Zheng 2020
     </footer>
