@@ -268,3 +268,25 @@ var videoclose = document.getElementsByClassName("close-video")[0];
 videoclose.onclick = function () {
   modalvideocontainer.style.display = "none";
 };
+
+// Pop up bside function
+// var bsidePreview = document.querySelectorAll(".bsideImage");
+// console.log(bsidePreview);
+// bsidePreview.map(function () {
+//   $(this).onclick(function () {
+//     console.log("test");
+//     $(this).nextElementSibling.classList.toggle("show");
+//   });
+// });
+
+$(".bsideImage").map(function () {
+  $(this).click(function () {
+    $(this).next("#popup-content").toggleClass("show");
+  });
+});
+
+$(".btn-popup-close").map(function () {
+  $(this).click(function () {
+    $(this).parent("#popup-content").toggleClass("show");
+  });
+});

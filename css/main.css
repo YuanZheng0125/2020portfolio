@@ -151,7 +151,7 @@ section {
 /* Resume Link */
 
 .highLight {
-  color: #ff6a21;
+  color: #f26a2e;
   font-weight: 700;
 }
 
@@ -167,13 +167,13 @@ section {
 .dance,
 .cat {
   font-style: italic;
-  color: rgba(0, 0, 255, 0.8);
+  color: rgba(0, 0, 255, 0.5);
 }
 
 .phd:hover,
 .dance:hover,
 .cat:hover {
-  color: rgba(0, 0, 255, 0.5);
+  color: rgba(0, 0, 255);
 }
 
 .cat span,
@@ -261,11 +261,11 @@ section {
   outline: none;
   display: block;
   border: none;
-  background-color: #ff6a21;
+  background-color: #f26a2e;
   color: #fcfcfc;
   font-size: 1.2vw;
   border-radius: 4px;
-  padding: 0.4em 0.6em;
+  padding: 0.4em 0.8em;
 }
 
 #btn-seeMore:hover {
@@ -274,7 +274,7 @@ section {
 }
 
 #btn-seeMore:active {
-  background-color: #ff6a21;
+  background-color: #f26a2e;
   color: #fcfcfc;
   border: none;
   transform: translate(2px, 2px);
@@ -291,8 +291,8 @@ section {
   display: block;
   width: 1em;
   height: 1em;
-  border-bottom: 0.2em solid #ff6a21;
-  border-right: 0.2em solid #ff6a21;
+  border-bottom: 0.2em solid #f26a2e;
+  border-right: 0.2em solid #f26a2e;
   transform: rotate(45deg);
   margin-bottom: -0.8em;
   animation: animate 2s infinite;
@@ -663,7 +663,7 @@ section {
 }
 
 .fa-smile-o {
-  color: #ff6a21;
+  color: #f26a2e;
 }
 
 /* Button Gallery */
@@ -681,11 +681,11 @@ section {
   outline: none;
   display: block;
   border: none;
-  background-color: #ff6a21;
+  background-color: #f26a2e;
   color: #fcfcfc;
   font-size: 1.2vw;
   border-radius: 4px;
-  padding: 0.4em 0.6em;
+  padding: 0.4em 0.8em;
 }
 
 #btn-gallery:hover {
@@ -694,7 +694,7 @@ section {
 }
 
 #btn-gallery:active {
-  background-color: #ff6a21;
+  background-color: #f26a2e;
   color: #fcfcfc;
   border: none;
   transform: translate(2px, 2px);
@@ -905,13 +905,8 @@ section {
 
 .holder:hover {
   transform: translate(6.2vw, 2px);
-  box-shadow: 8px 8px rgba(0, 0, 255, 0.8);
+  box-shadow: 6px 6px rgba(0, 0, 255);
 }
-
-/* .galleryImage:hover,
-.galleryVideo:hover {
-  opacity: 0.9;
-} */
 
 /* Modal image */
 .modal,
@@ -965,15 +960,22 @@ section {
 }
 
 /* The Close Button */
+.close:before,
+.close-video:before {
+  display: block;
+}
+
 .close,
 .close-video {
+  cursor: pointer;
+  -webkit-font-smoothing: antialiased;
   position: absolute;
-  top: 0px;
+  top: 20px;
   right: 20px;
-  color: #00f;
-  font-size: 2.4vw;
-  font-weight: 700;
-  transition: 0.3s;
+  font-size: 0.8vw;
+  padding: 2px 8px;
+  background-color: #fcfcfc;
+  border: 1px solid #00f;
 }
 
 .close:hover,
@@ -982,7 +984,12 @@ section {
 .close:focus {
   color: rgba(0, 0, 255, 0.5);
   text-decoration: none;
-  cursor: pointer;
+}
+
+.close:active,
+.close-video:active {
+  transform: translate(2px, 2px);
+  box-shadow: 1px 1px #00f;
 }
 
 /* 100% Image Width on Smaller Screens */
@@ -1011,21 +1018,24 @@ section {
 }
 
 /* Bside overlay */
+.bsideImage {
+  cursor: pointer;
+}
 
 .bside-content {
   position: fixed;
-  width: 640px;
-  height: 360px;
+  width: 960px;
+  height: 540px;
   top: 50%;
   left: 50%;
-  transform: translate(-320px, -180px);
+  transform: translate(-480px, -270px);
   display: inline-block;
 }
 
 .popup-bkgr {
-  background: rgba(0, 0, 0, 0.4);
+  background: rgba(225, 225, 255, 0.95);
   cursor: pointer;
-  display: none;
+  visibility: hidden;
   height: 100%;
   position: fixed;
   text-align: center;
@@ -1035,17 +1045,53 @@ section {
   z-index: 1000;
 }
 
-.popup-bkgr .helper {
-  display: inline-block;
-  height: 100%;
-  vertical-align: middle;
+.bsideslide .show {
+  visibility: visible;
+  -webkit-animation: fadeIn 1s;
+  animation: fadeIn 1s;
 }
 
-.popup-trigger {
+/* Add animation (fade in the popup) */
+@-webkit-keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.btn-popup-close {
+  display: block;
+}
+
+.btn-popup-close {
   cursor: pointer;
-  display: inline-block;
+  -webkit-font-smoothing: antialiased;
   position: absolute;
-  left: 10%;
-  width: 80%;
-  height: 100%;
+  top: 20px;
+  right: 20px;
+  font-size: 0.8vw;
+  padding: 2px 8px;
+  background-color: #fcfcfc;
+  border: 1px solid #00f;
+}
+
+.btn-popup-close:hover {
+  color: rgba(0, 0, 255, 0.5);
+  text-decoration: none;
+}
+
+.btn-popup-close:active {
+  transform: translate(2px, 2px);
+  box-shadow: 1px 1px #00f;
 }
