@@ -1,7 +1,12 @@
+// fade in onload
+$(document).ready(function () {
+  document.body.style.opacity = "1";
+});
+
 // fade in when scroll into viewport
 $(function () {
   // $(document).ready shorthand
-  $("#firstPage").fadeIn("slow");
+  $("body").fadeIn("slow");
 });
 
 $(document).ready(function () {
@@ -270,14 +275,6 @@ videoclose.onclick = function () {
 };
 
 // Pop up bside function
-// var bsidePreview = document.querySelectorAll(".bsideImage");
-// console.log(bsidePreview);
-// bsidePreview.map(function () {
-//   $(this).onclick(function () {
-//     console.log("test");
-//     $(this).nextElementSibling.classList.toggle("show");
-//   });
-// });
 
 $(".bsideImage").map(function () {
   $(this).click(function () {
