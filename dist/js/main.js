@@ -170,3 +170,101 @@ var Boxlayout = (function () {
 $(function () {
   Boxlayout.init();
 });
+
+// Bside slide show
+var bsideslideIndex = 1;
+showbsideSlides(bsideslideIndex);
+
+function plusbsideSlides(n) {
+  showbsideSlides((bsideslideIndex += n));
+}
+
+function currentbsideSlide(n) {
+  showbsideSlides((bsideslideIndex = n));
+}
+
+function showbsideSlides(n) {
+  var i;
+  var bsideslides = document.getElementsByClassName("bsideslide");
+  var bsidedots = document.getElementsByClassName("bside-dot");
+
+  if (n > bsideslides.length) {
+    bsideslideIndex = 1;
+  }
+  if (n < 1) {
+    bsideslideIndex = bsideslides.length;
+  }
+  for (i = 0; i < bsideslides.length; i++) {
+    bsideslides[i].style.display = "none";
+  }
+  for (i = 0; i < bsidedots.length; i++) {
+    bsidedots[i].className = bsidedots[i].className.replace(" dot-active", "");
+  }
+  bsideslides[bsideslideIndex - 1].style.display = "block";
+  bsidedots[bsideslideIndex - 1].className += " dot-active";
+}
+
+// mousewheel horizontal scrolling
+(function () {
+  function scrollHorizontally(e) {
+    e = window.event || e;
+    var delta = Math.max(-1, Math.min(1, e.wheelDelta || -e.detail));
+    document.getElementById("horizontal-scroll-wrapper").scrollLeft -=
+      delta * 40; // Multiplied by 40
+    e.preventDefault();
+  }
+  if (document.getElementById("horizontal-scroll-wrapper").addEventListener) {
+    // IE9, Chrome, Safari, Opera
+    document
+      .getElementById("horizontal-scroll-wrapper")
+      .addEventListener("mousewheel", scrollHorizontally, false);
+    // Firefox
+    document
+      .getElementById("horizontal-scroll-wrapper")
+      .addEventListener("DOMMouseScroll", scrollHorizontally, false);
+  } else {
+    // IE 6/7/8
+    document
+      .getElementById("horizontal-scroll-wrapper")
+      .attachEvent("onmousewheel", scrollHorizontally);
+  }
+})();
+
+// Model Popup
+// Get the modal
+var modal = document.getElementById("myModal");
+
+// Get the image and insert it inside the modal
+var images = document.querySelectorAll(".galleryImage");
+var modalImg = document.getElementById("modalImage");
+for (let i = 0; i < images.length; i++) {
+  images[i].onclick = function () {
+    modal.style.display = "block";
+    modalImg.src = this.src;
+  };
+}
+
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("close")[0];
+
+// When the user clicks on <span> (x), close the modal
+span.onclick = function () {
+  modal.style.display = "none";
+};
+
+// Modal Video
+var modalvideocontainer = document.getElementById("myModal-video");
+// Show model when click video
+var videos = document.getElementById("video01");
+var modalvideo = document.getElementById("modalVideo");
+videos.onclick = function () {
+  modalvideocontainer.style.display = "block";
+};
+
+// Get the <span> element that closes the modalvideo
+var videoclose = document.getElementsByClassName("close-video")[0];
+
+// When the user clicks on <span> (x), close the modalvideo
+videoclose.onclick = function () {
+  modalvideocontainer.style.display = "none";
+};
