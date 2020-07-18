@@ -18,6 +18,8 @@ body {
       transparent 1px
     ),
     linear-gradient(to bottom, rgba(0, 0, 255, 0.1) 1px, transparent 1px);
+  opacity: 0;
+  transition: opacity 3s ease-in;
 }
 
 body::-webkit-scrollbar {
