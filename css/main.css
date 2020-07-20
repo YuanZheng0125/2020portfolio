@@ -491,6 +491,7 @@ section {
   top: 0;
   overflow: hidden;
   overflow-y: auto;
+  overscroll-behavior: none;
   border: 1px solid #00f;
   background-color: #fcfcfc;
   padding: 0;
