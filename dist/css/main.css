@@ -130,7 +130,6 @@ section {
   border: 1px solid #00f;
   box-shadow: 8px 8px rgba(0, 0, 255, 0.8);
   margin-left: 2vw;
-  overflow: hidden;
   text-align: center;
   background-color: #fff;
 }
@@ -140,8 +139,13 @@ section {
   height: 18.4w;
   padding: 0.5vw 0.6vw;
   object-fit: cover;
-  /* border-bottom: 1px solid #00f; */
   opacity: 0.95;
+}
+
+.profileName {
+  font-size: 2.4vw;
+  font-weight: 700;
+  margin-bottom: 2vw;
 }
 
 .profileText {
@@ -151,17 +155,11 @@ section {
   width: 80%;
 }
 
-/* Resume Link */
+/* Highlights */
 
 .highLight {
   color: #f26a2e;
   font-weight: 700;
-}
-
-.profileName {
-  font-size: 2.4vw;
-  font-weight: 700;
-  margin-bottom: 2vw;
 }
 
 /* Image Link */
