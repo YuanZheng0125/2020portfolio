@@ -723,14 +723,14 @@ section {
 
 /* Video B-side */
 .bsideImage {
-  position: relative;
-  width: 50%;
+  width: 100%;
+  vertical-align: middle;
+  border-radius: 10px 10px 0 0;
+  border-bottom: 1px solid #00f;
   height: 50%;
   object-fit: cover;
   padding: 0;
   overflow: hidden;
-  border-radius: 20px;
-  border-bottom: 1px solid #00f;
 }
 
 /* Bside slide show */
@@ -759,13 +759,6 @@ section {
   text-align: center;
   position: relative;
   margin: auto;
-}
-
-.bsideImage {
-  width: 100%;
-  vertical-align: middle;
-  border-radius: 10px 10px 0 0;
-  border-bottom: 1px solid #00f;
 }
 
 /* Next & previous buttons */
