@@ -4,11 +4,6 @@ $(document).ready(function () {
 });
 
 // fade in when scroll into viewport
-$(function () {
-  // $(document).ready shorthand
-  $("body").fadeIn("slow");
-});
-
 $(document).ready(function () {
   /* Every time the window is scrolled ... */
   $(window).scroll(function () {
@@ -107,6 +102,7 @@ $(window).scroll(function () {
 var Boxlayout = (function () {
   var $el = $(".bl-main"),
     $menu = $(".menu-nav"),
+    $quotes = $(".quote"),
     $page = $(".onepage-pagination");
   // $scroll = $(".bl-content");
   ($sections = $el.children(".project")),
@@ -135,8 +131,9 @@ var Boxlayout = (function () {
           if (!$section.data("open")) {
             $section.data("open", true).addClass("bl-expand bl-expand-top");
             $el.addClass("bl-expand-item");
-            // hide the menu, pagination and stop body scrolling
+            // hide the menu, pagination and quotes
             $menu.addClass("noDisplay");
+            $quotes.addClass("bl-expand-item");
             $page.addClass("noDisplay");
           }
         })
@@ -148,8 +145,9 @@ var Boxlayout = (function () {
             .data("open", false)
             .removeClass("bl-expand")
             .on(transEndEventName, function (event) {
-              // show the menu, pagination and enable body scrolling
+              // show the menu, pagination and quotes
               $menu.removeClass("noDisplay");
+              $quotes.removeClass("bl-expand");
               $page.removeClass("noDisplay");
 
               if (!$(event.target).is(".project")) return false;
