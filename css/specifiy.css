@@ -1,0 +1,19 @@
+.organized {
+  grid-area: 2/1/3/2;
+}
+
+.creative {
+  grid-area: 2/2/3/3;
+}
+
+.occupied {
+  grid-area: 2/3/3/4;
+}
+
+.organized,
+.creative,
+.occupied {
+  justify-self: center;
+  align-self: center;
+  border: 12px solid #fff;
+}

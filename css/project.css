@@ -161,7 +161,6 @@ h6 {
   border-radius: 50%;
   width: 150px;
   height: 150px;
-  border: 1px solid #00f;
 }
 
 .subheadingTwo {
@@ -176,6 +175,7 @@ h6 {
 
 .collegestudent {
   grid-area: 2/1/3/2;
+  border: 1px solid #00f;
 }
 
 .gridTwo-itemOne {
@@ -184,6 +184,7 @@ h6 {
 
 .highschoolstudent {
   grid-area: 2/2/3/3;
+  border: 1px solid #00f;
 }
 
 .gridTwo-itemTwo {
@@ -192,6 +193,7 @@ h6 {
 
 .teacher {
   grid-area: 2/3/3/4;
+  border: 1px solid #00f;
 }
 
 .gridTwo-itemThree {
