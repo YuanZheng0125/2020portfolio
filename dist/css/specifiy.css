@@ -17,3 +17,18 @@
   align-self: center;
   border: 12px solid #fff;
 }
+
+.wireframe {
+  position: relative;
+  width: 100%;
+  top: 24%;
+  border-radius: 20px;
+  border: 1px solid #00f;
+  background-color: #fcfcfc;
+}
+
+.wireframeImage {
+  width: 100%;
+  object-fit: cover;
+  border-radius: 20px;
+}

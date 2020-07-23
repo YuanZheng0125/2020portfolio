@@ -49,7 +49,7 @@
       </div>
     </section>
     <div class="gap"></div>
-    <section>
+    <section id="problemstatement">
       <div class="gridOne fadethisdiv">
         <h3 class="subheadingOne">
           Pet owners have problem with reducing their pet photos.
@@ -104,6 +104,175 @@
         </h6>
       </div>
     </section>
+    <section id="competitive">
+      <div class="slideshow fadethisdiv">
+        <div class="slideshow-container">
+          <div class="mySlides fade">
+            <img src="./Assets/Petography_CA01.jpg" class="slideImage" />
+            <div class="text">
+              #1 Competitive app: Google Photos
+            </div>
+          </div>
+          <div class="mySlides fade">
+            <img src="./Assets/Petography_CA02.jpg" class="slideImage" />
+            <div class="text">
+              #2 Competitive app: Slidebox
+            </div>
+          </div>
+          <div class="mySlides fade">
+            <img src="./Assets/Petography_CA03.jpg" class="slideImage" />
+            <div class="text">
+              #3 Competitive app: Hash Photos
+            </div>
+          </div>
+          <div class="mySlides fade">
+            <img src="./Assets/Petography_CA04.jpg" class="slideImage" />
+            <div class="text">
+              #4 Competitive app: Lifecake
+            </div>
+          </div>
+          <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+          <a class="next" onclick="plusSlides(1)">&#10095;</a>
+        </div>
+        <br />
+        <div class="dots">
+          <span class="dot" onclick="currentSlide(1)"></span>
+          <span class="dot" onclick="currentSlide(2)"></span>
+          <span class="dot" onclick="currentSlide(3)"></span>
+          <span class="dot" onclick="currentSlide(4)"></span>
+        </div>
+      </div>
+    </section>
+    <section id="approach">
+      <div class="gridFour fadethisdiv">
+        <h3 class="subheadingFour">
+          How can I facilitate to speed up photo clean-up process
+        </h3>
+        <div class="bodyCopyFour">
+          <ul class="approaches">
+            <li>
+              <span class="highLight">Built-in camera</span>: save photo
+              uploading or transferring time.
+            </li>
+            <li>
+              <span class="highLight">Streamline workflow</span>: encourage
+              users to clean-up photos right after snapping;
+            </li>
+            <li>
+              <span class="highLight">Smart evaluation</span>: assess image
+              quality to provide users a clean-up recommendation;
+            </li>
+            <li>
+              <span class="highLight">Add checkpoints</span>: an in-app reminder
+              to inform users of new detected pet photos on their devices.
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+    <section id="solution">
+      <div class="gridFive fadethisdiv">
+        <div class="subheadingFive">
+          Solution Mapping
+        </div>
+        <img
+          src="./Assets/Solution Mapping.jpg"
+          alt="solution mapping"
+          class="IA"
+        />
+      </div>
+    </section>
+    <section id="sketch">
+      <div class="sketches fadethisdiv">
+        <img
+          src="./Assets/Sktech_Petography.jpg"
+          alt="Sketches"
+          class="sketchImage"
+        />
+        <div class="iteration">Exploring a possible app workflow</div>
+      </div>
+    </section>
+    <section id="iteration">
+      <div class="gridSeven fadethisdiv">
+        <h3 class="subheadingSeven">
+          Iterations on screen structure & app workflow
+        </h3>
+        <div class="bodyCopySeven">
+          <ul class="approaches">
+            <li>
+              <span class="highLight">Add playfulness</span>: show "date taken"
+              which is responsive to current swiped photo on gallery screen.
+            </li>
+            <li>
+              <span class="highLight"> Simplify user's action</span>: use toggle
+              to let users switch between "show all photos" and "show favorite".
+            </li>
+            <li>
+              <span class="highLight">Maximize screen space</span>: use floating
+              action button instead of bottom navigation bar.
+            </li>
+            <li>
+              <span class="highLight"> Immersive photo viewing experience</span
+              >: design a theatre mode for full-screen view.
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+    <section id="information">
+      <div class="gridFive fadethisdiv">
+        <div class="subheadingFive">
+          Information Architecture
+        </div>
+        <img
+          src="./Assets/IA_petography.jpg"
+          alt="solution mapping"
+          class="IA"
+        />
+      </div>
+    </section>
+    <section id="wireframe">
+      <div class="gridEight fadethisdiv">
+        <div class="wireframe">
+          <img
+            src="./Assets/Wireframe_Petography.jpg"
+            alt="wireframe"
+            class="wireframeImage"
+          />
+        </div>
+      </div>
+    </section>
+    <section id="moodboard">
+      <div class="gridFourteen fadethisdiv">
+        <div class="subheadingFourteen">
+          Visual Directions
+        </div>
+        <div class="styleOne">
+          <h4>Neo-classic</h4>
+          <br />
+          <p>
+            Elegant <br />
+            Restrainded <br />
+            Neutral <br />
+            Timeless
+          </p>
+        </div>
+        <div class="compare">
+          <p><span class="highLight"> v.s.</span></p>
+        </div>
+        <div class="styleTwo">
+          <h4>Modern-retro</h4>
+          <br />
+          <p>
+            Nostalgic <br />
+            Hand-crafted <br />
+            Bold <br />
+            Creative
+          </p>
+        </div>
+      </div>
+    </section>
+
     <!-- Index-->
     <div class="sidebar">
       <div class="index-container">
@@ -118,14 +287,15 @@
           </li>
           <li><a href="#approach" class="index-items"> Approaches </a></li>
           <li>
+            <a href="#sketch" class="index-items"> Sketch & Iterations </a>
+          </li>
+          <li>
             <a href="#information" class="index-items">
               Information Architecture</a
             >
           </li>
           <li>
-            <a href="#sketchtowireflow" class="index-items">
-              Sketch & Wireflow</a
-            >
+            <a href="#wireframe" class="index-items"> Wireframes</a>
           </li>
           <li>
             <a href="#prototype" class="index-items">
