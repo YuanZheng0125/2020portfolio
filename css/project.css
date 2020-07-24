@@ -527,7 +527,7 @@ h4 {
   background-color: #00f;
   color: #fcfcfc;
   font-size: 1.2vw;
-  padding: 2px 12px;
+  padding: 0.15vw 0.7vw;
 }
 
 .btn-anno:hover {
@@ -746,6 +746,43 @@ h4 {
   justify-self: center;
   align-self: center;
   text-align: center;
+}
+
+/* Mobile Demo */
+.gridFifteen {
+  position: relative;
+  width: 70%;
+  left: 15%;
+  height: 100%;
+  display: grid;
+  grid-template-rows: 0.2fr 1fr;
+  grid-template-columns: repeat(3 1fr);
+}
+
+.sidevideo-mobile {
+  grid-area: 2/2/3/4;
+  align-self: center;
+  width: 32vw;
+  overflow: hidden;
+}
+
+.mobileVideo {
+  height: 70vh;
+  object-fit: cover;
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+  box-shadow: 0 0 0 1px #00f, 8px 12px #00f;
+}
+
+.sidenotes-mobile {
+  grid-area: 2/1/3/2;
+  align-self: center;
+  justify-self: center;
+  width: 80%;
+  font-size: 1vw;
+  line-height: 2;
+  transform: translate(10%, -20%);
 }
 
 /* Index */

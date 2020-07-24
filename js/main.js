@@ -104,7 +104,6 @@ var Boxlayout = (function () {
     $menu = $(".menu-nav"),
     $quotes = $(".quote"),
     $page = $(".onepage-pagination");
-  // $scroll = $(".bl-content");
   ($sections = $el.children(".project")),
     (transEndEventNames = {
       WebkitTransition: "webkitTransitionEnd",
