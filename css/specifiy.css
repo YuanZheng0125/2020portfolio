@@ -70,3 +70,19 @@
   top: 268%;
   left: 20%;
 }
+
+.tvImage {
+  width: 70vw;
+  height: 60vh;
+  vertical-align: middle;
+  border-bottom: 1px solid #00f;
+  object-fit: contain;
+}
+
+.tvVideo {
+  height: 45vh;
+  object-fit: cover;
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+}
