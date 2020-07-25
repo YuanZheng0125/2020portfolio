@@ -192,7 +192,7 @@
   height: 100%;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: 0.5fr 300px 1fr;
+  grid-template-rows: 0.5fr 0.5fr 1fr;
 }
 
 .subheadingEighteen {
@@ -210,7 +210,7 @@
 
 .gridEighteen-titleOne {
   grid-area: 2/1/3/2;
-  align-self: center;
+  align-self: end;
 }
 
 .gridEighteen-itemOne {
@@ -219,7 +219,7 @@
 
 .gridEighteen-titleTwo {
   grid-area: 2/2/3/3;
-  align-self: center;
+  align-self: end;
 }
 
 .gridEighteen-itemTwo {
@@ -228,7 +228,7 @@
 
 .gridEighteen-titleThree {
   grid-area: 2/3/3/4;
-  align-self: center;
+  align-self: end;
 }
 
 .gridEighteen-itemThree {
@@ -244,6 +244,12 @@
   justify-self: center;
   text-align: center;
   width: 80%;
+}
+
+.gridEighteen-itemOne,
+.gridEighteen-itemTwo,
+.gridEighteen-itemThree {
+  margin-top: 2vw;
 }
 
 .cmv,
