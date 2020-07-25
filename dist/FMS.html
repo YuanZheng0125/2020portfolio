@@ -18,6 +18,7 @@
     />
     <link rel="stylesheet" href="./css/main.css" />
     <link rel="stylesheet" href="./css/project.css" />
+    <link rel="stylesheet" href="./css/specifiy.css" />
     <script src="./js/modernizr.custom.js"></script>
   </head>
   <body id="projectBody">
@@ -32,9 +33,9 @@
       <div class="brief">
         <div class="projectOverview">
           <h2>
-            <span class="highLight"> TigerKeeper</span> is a mobile maintenance
-            app for RIT students to report facility issues aimed at improving
-            upkeep of school facilities.
+            <span class="highLight"> TigerKeeper</span> is a maintenance app for
+            RIT students to report facility issues aimed at improving upkeep of
+            school facilities.
           </h2>
         </div>
         <h6 class="projectType">
@@ -52,14 +53,139 @@
       </div>
     </section>
     <div class="gap"></div>
-    <section></section>
+    <section id="discover">
+      <div class="gridOne fadethisdiv">
+        <h3 class="subheadingOne">
+          Researches on <br />
+          current system
+        </h3>
+        <div class="bodyCopyOne">
+          <p class="sideText">
+            Three major problems I found based on interviewing 5 RIT students
+            about current school's facility reporting system:
+          </p>
+          <br />
+          <ul class="approaches sideText">
+            <li>
+              <span class="highLight">Familiarity</span>: student don't know
+              where to report facility issues.
+            </li>
+            <li>
+              <span class="highLight">Complexity</span>: current online
+              reporting form is time-consuming and not user-friendly;
+            </li>
+            <li>
+              <span class="highLight">Reliability</span>: students prefer to
+              contact with people instead of submitting online forms.
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+    <section>
+      <div class="ideation fadethisdiv">
+        <img
+          src="./Assets/TiggerKeeper_ideation.jpg"
+          alt="ideation"
+          class="ideationImage"
+        />
+        <div class="iteration">
+          Brainstorm possible strategies to solve defined problems
+        </div>
+      </div>
+    </section>
+    <section>
+      <div class="gridSeventeen fadethisdiv">
+        <div class="subheadingSeventeen">
+          Design Decision - Platform
+        </div>
+        <div class="gridSeventeen-titleOne">
+          <h5>Mobile</h5>
+        </div>
+        <span class="highLight labelText">Picked</span>
+        <div class="gridSeventeen-itemOne">
+          <h6>
+            <span class="strong">Pro</span> <br />
+            Cost-effective; <br />
+            Instant on-/offline access; <br />Complimentary device features;
+            <br />Instant notifications. <br /><br />
+            <span class="strong">Cons </span> <br />
+            Small screen size.
+          </h6>
+        </div>
+        <div class="gridSeventeen-titleTwo"><h5>Website</h5></div>
+        <div class="gridSeventeen-itemTwo">
+          <h6>
+            <span class="strong">Pro </span><br />
+            Large screen size; <br />
+            More detailed info.;
+            <br /><br />
+            <span class="strong">Cons </span> <br />
+            Internet required; <br />Asynchronous update.
+          </h6>
+        </div>
+        <div class="gridSeventeen-titleThree">
+          <h5>Digital Board</h5>
+        </div>
+        <div class="gridSeventeen-itemThree">
+          <h6>
+            <span class="strong">Pro</span> <br />
+            Easy to find; <br />
+            Large screen;
+            <br /><br />
+            <span class="strong">Cons </span> <br />
+            Limited access; <br />High cost.
+          </h6>
+        </div>
+      </div>
+    </section>
+    <section>
+      <div class="gridEighteen fadethisdiv">
+        <div class="subheadingEighteen">
+          Design Decision - Function
+        </div>
+        <div class="gridEighteen-titleOne">
+          <img src="./Assets/cmv.png" alt="cmv" class="cmv thumbnail" />
+        </div>
+        <div class="gridEighteen-itemOne">
+          <p class="strong">Computerized maintenance management (CMV)</p>
+          <br />
+          <h6>
+            Allow requesters to submit work order requests and system to assign
+            tasks to managers.
+          </h6>
+        </div>
+        <div class="gridEighteen-titleTwo">
+          <img src="./Assets/cv.png" alt="cv" class="cv thumbnail" />
+        </div>
+        <div class="gridEighteen-itemTwo">
+          <p class="strong">Computer vision <br />(CV)</p>
+          <br />
+          <h6>
+            Students can submit requests with photos and CV system can help to
+            identify problems.
+          </h6>
+        </div>
+        <div class="gridEighteen-titleThree">
+          <img src="./Assets/nlp.png" alt="nlp" class="nlp thumbnail" />
+        </div>
+        <div class="gridEighteen-itemThree">
+          <p class="strong">Natural language processing (NLP)</p>
+          <br />
+          <h6>
+            Students can manually describe problems and system can format
+            descriptions into classified job types.
+          </h6>
+        </div>
+      </div>
+    </section>
     <!-- Index-->
     <div class="sidebar">
       <div class="index-container">
         <ul class="index-menu">
           <li><a href="#overview" class="index-items">Overview </a></li>
           <li>
-            <a href="#problemstatement" class="index-items">The Problem</a>
+            <a href="#discover" class="index-items">Discovery</a>
           </li>
           <li><a href="#usergroup" class="index-items"> The User</a></li>
           <li>
