@@ -282,3 +282,20 @@
   top: 19vh;
   text-align: end;
 }
+
+.comps_styleThree {
+  position: relative;
+  width: 100%;
+  top: 2vh;
+  overflow: hidden;
+}
+
+.explanation_styleThree {
+  position: relative;
+  font-size: 1vw;
+  font-style: italic;
+  width: 30%;
+  left: 70%;
+  top: 1vh;
+  text-align: end;
+}
