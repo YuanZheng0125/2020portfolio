@@ -258,3 +258,27 @@
   width: 6vw;
   object-fit: contain;
 }
+
+.comps_styleTwo {
+  position: relative;
+  width: 100%;
+  top: 20vh;
+  overflow: hidden;
+}
+
+.compImage {
+  width: 70vw;
+  object-fit: contain;
+  border: 1px solid #00f;
+  border-radius: 20px;
+}
+
+.explanation_styleTwo {
+  position: relative;
+  font-size: 1vw;
+  font-style: italic;
+  width: 30%;
+  left: 70%;
+  top: 19vh;
+  text-align: end;
+}
