@@ -299,3 +299,33 @@
   top: 1vh;
   text-align: end;
 }
+
+.a-anno {
+  font-weight: 700;
+  color: rgba(0, 0, 255);
+  text-decoration: underline;
+}
+
+.a-anno:focus,
+.a-anno:active,
+.a-anno:hover {
+  color: rgba(0, 0, 255, 0.5);
+}
+
+.a-anno .a-annotation {
+  position: absolute;
+  transform: translate(-1vw, -4vh);
+  width: 24vw;
+  font-size: 1.2vw;
+  line-height: 2;
+  padding: 10px 20px;
+  background-color: #fcfcfc;
+  border: 1px solid #00f;
+  box-shadow: 8px 8px #00f;
+  visibility: hidden;
+  text-align: start;
+}
+
+.a-anno:hover .a-annotation {
+  visibility: visible;
+}

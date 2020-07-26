@@ -1,6 +1,14 @@
 steps:
-- name: gcr.io/cloud-builders/git
-  args: ['clone', 'https://github.com/YuanZheng0125/2020portfolio.git']
-- name: 'gcr.io/cloud-builders/gsutil'
-  args: ['-m', 'cp', '-r', '2020portfolio/dist/*', 'gs://www.yzcanvas.com/']
-
+  - name: gcr.io/cloud-builders/git
+    args: ["clone", "https://github.com/YuanZheng0125/2020portfolio.git"]
+  - name: "gcr.io/cloud-builders/gsutil"
+    args:
+      [
+        "-h",
+        '"Cache-Control:no-cache,max-age=0"',
+        "-m",
+        "cp",
+        "-r",
+        "2020portfolio/dist/*",
+        "gs://www.yzcanvas.com/",
+      ]
