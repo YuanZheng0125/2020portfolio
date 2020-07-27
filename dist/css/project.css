@@ -62,6 +62,29 @@ h5 {
   background-color: #00f;
 }
 
+.recommendation {
+  grid-area: 3/1/4/4;
+  justify-self: center;
+  align-self: center;
+}
+
+.preProject {
+  position: absolute;
+  left: 0;
+  text-align: center;
+}
+
+.nexProject {
+  position: absolute;
+  right: 0;
+  text-align: center;
+}
+
+.preProject:hover,
+.nexProject:hover {
+  opacity: 75%;
+}
+
 /* Global project first screen format */
 .projectOverview {
   grid-area: 1/1/2/4;
