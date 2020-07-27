@@ -123,6 +123,11 @@ h5 {
   opacity: 0;
 }
 
+a.highLight:hover,
+a.highLight:active {
+  color: #fd8c57;
+}
+
 /* Problem - 2nd screen */
 .gridOne,
 .gridFour,
