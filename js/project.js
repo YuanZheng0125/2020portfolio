@@ -1,3 +1,19 @@
+$(document).ready(function () {
+  // fade in when first load
+  document.body.style.opacity = "1";
+
+  var navActivator = navActivatorBuilder("index-menu", "menuActive");
+
+  /* Every time the window is scrolled ... */
+  $(window).scroll(function () {
+    fadeInLoad();
+    navActivator();
+  });
+  smoothScroll();
+
+  $(".index-menu").children("li").eq(0).addClass("menuActive");
+});
+
 // slide show
 var slideIndex = 1;
 showSlides(slideIndex);
@@ -63,25 +79,3 @@ function showSlidesTwo(n) {
   slidestwo[slideTwoIndex - 1].style.display = "block";
   dotstwo[slideTwoIndex - 1].className += " active";
 }
-
-// fade in when scroll into viewport
-$(function () {
-  // $(document).ready shorthand
-  $(".brief").fadeIn("slow");
-});
-
-$(document).ready(function () {
-  /* Every time the window is scrolled ... */
-  $(window).scroll(function () {
-    /* Check the location of each desired element */
-    $(".fadethisdiv").each(function (i) {
-      var top_of_object = $(this).position().top;
-      var bottom_of_window = $(window).scrollTop() + $(window).height();
-
-      /* If the object is completely visible in the window, fade it it */
-      if (bottom_of_window > top_of_object) {
-        $(this).animate({ opacity: "1" }, 2000);
-      }
-    });
-  });
-});

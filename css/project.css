@@ -888,3 +888,27 @@ h5 {
   color: rgba(0, 0, 255);
   font-weight: 700;
 }
+
+.index-items:hover {
+  font-size: 1vw;
+  font-style: normal;
+  color: rgba(0, 0, 255);
+  font-weight: 700;
+}
+
+.index-items:active,
+.index-menu li.menuActive a {
+  font-weight: 700;
+  color: #00f;
+}
+
+.landscapeVideo {
+  width: 75%;
+  height: auto;
+  object-fit: cover;
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+  border: 1px solid #00f;
+  box-shadow: 8px 8px #00f;
+}
