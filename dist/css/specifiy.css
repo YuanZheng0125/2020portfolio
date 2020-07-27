@@ -300,6 +300,8 @@
   text-align: end;
 }
 
+/* HealthFusion */
+
 .a-anno {
   font-weight: 700;
   color: rgba(0, 0, 255);
@@ -328,4 +330,33 @@
 
 .a-anno:hover .a-annotation {
   visibility: visible;
+}
+
+.sketches-moveup {
+  position: relative;
+  width: 70%;
+  left: 16%;
+  height: 39vw;
+  top: 0;
+  border-radius: 20px;
+  border: 1px solid #00f;
+  background-color: #fcfcfc;
+}
+
+.herovideo {
+  position: relative;
+  margin-top: 4vw;
+  transform: translateX(-500px);
+  left: 35vw;
+  border: 1px solid #00f;
+}
+
+.gridFive-movedown {
+  position: relative;
+  width: 70%;
+  left: 15%;
+  height: 100%;
+  display: grid;
+  grid-template-columns: repeat(3 1fr);
+  grid-template-rows: 1fr 1fr 1fr;
 }
