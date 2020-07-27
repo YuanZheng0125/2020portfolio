@@ -10,7 +10,7 @@ $(document).ready(function () {
     navActivator();
   });
 
-  smoothScroll();
+  // smoothScroll();
   // Get all links with class="nav-link" inside the container
   var navItems = document.getElementsByClassName("nav-item");
   var itemLinks = document.getElementsByClassName("nav-link");

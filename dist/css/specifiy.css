@@ -360,3 +360,34 @@
   grid-template-columns: repeat(3 1fr);
   grid-template-rows: 1fr 1fr 1fr;
 }
+
+/* Smart Lab */
+.userResearch {
+  position: relative;
+  width: 70%;
+  left: 16%;
+  height: 39vw;
+  top: 10vw;
+  border-radius: 20px;
+  background-color: #fcfcfc;
+}
+
+.researchImage {
+  width: 100%;
+  vertical-align: middle;
+  border-radius: 20px;
+  border: 1px solid #00f;
+}
+
+.takeaway_userResearch {
+  position: absolute;
+  font-size: 1.2vw;
+  bottom: 12vh;
+  left: 40%;
+  width: 36%;
+  height: auto;
+  padding: 10px;
+  border: 1px solid #00f;
+  background-color: #fcfcfc;
+  box-shadow: 8px 8px #00f;
+}
