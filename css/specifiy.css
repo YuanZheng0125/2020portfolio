@@ -390,3 +390,275 @@
   background-color: #fcfcfc;
   box-shadow: 8px 8px #00f;
 }
+
+@media only screen and (max-width: 960px) {
+  .hideonMobile {
+    display: none;
+  }
+
+  #projectBody h2 {
+    font-size: 2em;
+  }
+
+  h6,
+  .boldText {
+    font-size: 1em;
+  }
+
+  .text {
+    font-size: 1em;
+    width: 50%;
+    left: 40vw;
+  }
+
+  h3 {
+    font-size: 1.5em;
+  }
+
+  h4 {
+    font-size: 1.2em;
+  }
+
+  /* project bodycopy */
+  p,
+  .bodyCopySeven,
+  .bodyCopyTen,
+  .responsive,
+  .bodyCopyEleven,
+  .approaches,
+  .notetaking {
+    font-size: 1em;
+  }
+
+  .gridOne,
+  .gridTwo,
+  .gridFour,
+  .gridFive,
+  .gridFive-movedown,
+  .gridSeven,
+  .gridTen,
+  .gridEleven,
+  .gridTwelve,
+  .gridThirteen,
+  .gridFifteen,
+  .gridSixteen {
+    display: flex;
+    flex-direction: column;
+    width: 75vw;
+    align-items: center;
+  }
+
+  .gridFive-movedown {
+    padding-top: 12em;
+  }
+
+  .subheadingFour,
+  .subheadingSeven,
+  .subheadingTen,
+  .subheadingEleven,
+  .subheadingThirteen {
+    margin: 2em 0;
+    text-align: center;
+  }
+
+  .subheadingOne {
+    margin: 6em 0 2em 0;
+    text-align: center;
+  }
+
+  .subheadingTwo {
+    margin-top: -6em;
+  }
+
+  .subheadingTwo,
+  .subheadingFive,
+  .subheadingTwelve,
+  .subheadingFourteen,
+  .subheadingSixteen,
+  .subheadingSeventeen,
+  .subheadingEighteen {
+    font-size: 1.5em;
+    width: 50%;
+  }
+
+  .thumbnail {
+    width: 100px;
+    height: 100px;
+    margin-top: 2em;
+  }
+
+  .text {
+    font-size: 0.8em;
+    width: 100%;
+    left: 15vw;
+  }
+
+  .slideshow,
+  .slideshowTwo,
+  .userResearch {
+    width: 90vw;
+    left: 5vw;
+    height: 60vw;
+    top: 50%;
+    transform: translateY(-30vw);
+  }
+
+  .prev,
+  .next {
+    font-size: 8px;
+  }
+
+  .IA {
+    margin-top: 2em;
+    width: 100vw;
+    left: 0;
+  }
+
+  .sketches,
+  .ideation,
+  .visuals,
+  .sketches-moveup {
+    width: 95vw;
+    height: 56vw;
+    left: 2vw;
+  }
+
+  .gridEight,
+  .gridNine,
+  .gridSeventeen,
+  .gridEighteen,
+  .compImage {
+    width: 95vw;
+    left: 2vw;
+  }
+
+  .explanation {
+    font-size: 0.8em;
+    width: 100%;
+    left: 0;
+    padding-right: 1em;
+  }
+
+  .comps {
+    height: 50vh;
+    width: 95vw;
+    left: 2vw;
+  }
+
+  .sidevideo-mobile {
+    width: 100vw;
+    overflow: visible;
+  }
+
+  .sidenotes-mobile {
+    font-size: 1em;
+    margin-top: 6.5em;
+  }
+
+  .sidevideo {
+    width: 100%;
+  }
+
+  .demoVideo {
+    width: 150%;
+    padding: 2em 0;
+  }
+
+  .sidenotes {
+    font-size: 1em;
+  }
+
+  .recommendation {
+    padding-top: 4em;
+  }
+
+  .tvImage {
+    width: 100%;
+    height: 44vw;
+  }
+
+  .tvVideo {
+    height: 100%;
+    width: auto;
+    margin-top: 4em;
+  }
+
+  .landscapeVideo {
+    width: 50%;
+  }
+
+  .herovideo {
+    width: 71vw;
+    height: 40vw;
+    left: 50%;
+    transform: translateX(-35vw);
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  .sidebar {
+    width: 50vw;
+    left: -48vw;
+  }
+
+  .sidebar:hover {
+    transform: translateX(48vw);
+  }
+
+  .index-items {
+    font-size: 0.8em;
+  }
+
+  h5 {
+    font-size: 1em;
+  }
+
+  h6,
+  .boldText {
+    font-size: 0.8em;
+  }
+
+  .short {
+    height: 50vh;
+  }
+
+  .gap {
+    height: 0;
+  }
+
+  .subheadingTwo,
+  .subheadingFive,
+  .subheadingTwelve,
+  .subheadingFourteen,
+  .subheadingSixteen {
+    font-size: 1.5em;
+    width: 100%;
+  }
+
+  .subheadingSeventeen,
+  .subheadingEighteen {
+    width: 80%;
+  }
+
+  .takeaway_userResearch {
+    display: none;
+  }
+
+  .mobileVideo {
+    width: 50vw;
+    height: auto;
+  }
+
+  .tvVideo {
+    height: auto;
+    width: 100%;
+  }
+
+  .landscapeVideo {
+    width: 75%;
+  }
+
+  .labelText {
+    transform: translate(6vw, -4vw);
+  }
+}
