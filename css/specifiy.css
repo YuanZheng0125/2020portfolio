@@ -525,6 +525,7 @@
 
   .gridEight,
   .gridNine,
+  .gridFifteen,
   .gridSeventeen,
   .gridEighteen,
   .compImage {
@@ -555,6 +556,10 @@
     margin-top: 6.5em;
   }
 
+  .sidenotes {
+    font-size: 1em;
+  }
+
   .sidevideo {
     width: 100%;
   }
@@ -562,10 +567,6 @@
   .demoVideo {
     width: 150%;
     padding: 2em 0;
-  }
-
-  .sidenotes {
-    font-size: 1em;
   }
 
   .recommendation {
@@ -595,7 +596,7 @@
   }
 }
 
-@media only screen and (max-width: 400px) {
+@media only screen and (max-width: 500px) {
   .sidebar {
     width: 50vw;
     left: -48vw;
@@ -603,6 +604,10 @@
 
   .sidebar:hover {
     transform: translateX(48vw);
+  }
+
+  .index-indicator {
+    height: 95%;
   }
 
   .index-items {
@@ -640,6 +645,10 @@
     width: 80%;
   }
 
+  .sidenotes-mobile {
+    line-height: 1.8;
+  }
+
   .takeaway_userResearch {
     display: none;
   }
@@ -660,5 +669,75 @@
 
   .labelText {
     transform: translate(6vw, -4vw);
+  }
+}
+
+@media only screen and (max-width: 365px) {
+  .gridFifteen {
+    width: 95vw;
+    left: 2vw;
+  }
+
+  /* .short {
+    height: 100vh;
+  } */
+
+  #projectBody h2 {
+    font-size: 1.6em;
+  }
+
+  h3 {
+    font-size: 1.2em;
+  }
+
+  h4 {
+    font-size: 1em;
+  }
+
+  .subheadingTwo,
+  .subheadingFive,
+  .subheadingTwelve,
+  .subheadingFourteen,
+  .subheadingSixteen {
+    font-size: 1em;
+    width: 100%;
+  }
+
+  .subheadingTwo,
+  .subheadingFive,
+  .subheadingTwelve,
+  .subheadingFourteen,
+  .subheadingSixteen,
+  .subheadingSeventeen,
+  .subheadingEighteen {
+    font-size: 1em;
+    width: 80%;
+  }
+
+  h6,
+  .boldText {
+    font-size: 0.5em;
+  }
+
+  /* project bodycopy */
+  h5,
+  p,
+  .bodyCopySeven,
+  .bodyCopyTen,
+  .responsive,
+  .bodyCopyEleven,
+  .approaches,
+  .notetaking {
+    font-size: 0.8em;
+  }
+
+  .sidenotes-mobile {
+    font-size: 0.8em;
+    line-height: 1.5;
+    margin: 4em;
+  }
+
+  .sidenotes {
+    font-size: 0.8em;
   }
 }
