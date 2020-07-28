@@ -10,7 +10,7 @@ $(document).ready(function () {
     navActivator();
   });
 
-  // smoothScroll();
+  smoothScroll();
   // Get all links with class="nav-link" inside the container
   var navItems = document.getElementsByClassName("nav-item");
   var itemLinks = document.getElementsByClassName("nav-link");
@@ -183,6 +183,15 @@ $(document).ready(function () {
   videoclose.onclick = function () {
     modalvideocontainer.style.display = "none";
   };
+
+  // ---------------------Hide scrollbar when open children frames---------------------
+  $(".openFrame").map(function () {
+    $(this).click(() => $("body").addClass("noScrollbar"));
+  });
+
+  $(".closeFrame").map(function () {
+    $(this).click(() => $("body").removeClass("noScrollbar"));
+  });
 });
 
 //---------------------helper functions for slide show------------------------

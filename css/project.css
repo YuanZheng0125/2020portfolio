@@ -1,3 +1,7 @@
+body::-webkit-scrollbar {
+  display: none;
+}
+
 section {
   background-color: #fcfcfc;
   background-size: 10vh 10vh;
@@ -497,25 +501,23 @@ a.highLight:active {
   line-height: 2;
 }
 
+/* Track */
 ::-webkit-scrollbar {
   width: 10px;
 }
 
-/* Track */
 ::-webkit-scrollbar-track {
-  border-radius: 20px;
   color: #fcfcfc;
 }
 
 /* Handle */
 ::-webkit-scrollbar-thumb {
   background: #00f;
-  border-radius: 20px;
 }
 
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
-  background: #00f;
+  background: rgba(0, 0, 255, 0.5);
 }
 
 /* Ninth screen - Final Comps */
