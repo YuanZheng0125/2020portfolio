@@ -18,13 +18,37 @@ body {
     linear-gradient(to bottom, rgba(0, 0, 255, 0.1) 1px, transparent 1px);
   opacity: 0;
   transition: opacity 2s ease-in;
+  overflow-y: overlay;
+  overflow-x: hidden;
   -ms-overflow-style: none; /* IE and Edge */
   scrollbar-width: none; /* Firefox */
 }
 
-/* -webkit- (Chrome, Safari, newer versions of Opera) */
-body::-webkit-scrollbar {
-  display: none;
+/* Scrollbar */
+::-webkit-scrollbar {
+  width: 15px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #fcfcfc;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #00f;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(0, 0, 255, 0.5);
+  transition: all 1s ease-in;
+}
+
+/* This is no scrolling status */
+.noScrollbar::-webkit-scrollbar {
+  width: 0px;
+  background: transparent;
 }
 
 .noDisplay {
@@ -848,27 +872,8 @@ section {
 }
 
 /* Gallery */
-::-webkit-scrollbar {
-  width: 10px;
-}
 
-/* Track */
-::-webkit-scrollbar-track {
-  border-radius: 20px;
-  color: #fcfcfc;
-}
-
-/* Handle */
-::-webkit-scrollbar-thumb {
-  background: #00f;
-  border-radius: 20px;
-}
-
-/* Handle on hover */
-::-webkit-scrollbar-thumb:hover {
-  background: #00f;
-}
-
+/* End */
 .gallery-container {
   display: flex;
   height: 100vh;
