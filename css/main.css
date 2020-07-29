@@ -51,11 +51,6 @@ body {
   background: transparent;
 }
 
-.noDisplay,
-.showonMobile {
-  display: none;
-}
-
 .fadethisdiv {
   opacity: 0;
 }
@@ -524,8 +519,8 @@ section {
   pointer-events: none;
   position: fixed;
   z-index: -1;
-  width: 100%;
-  height: 100%;
+  width: 0;
+  height: 0;
   top: 0;
   overflow: hidden;
   overscroll-behavior: none;
@@ -542,10 +537,6 @@ section {
 .bl-content {
   -ms-overflow-style: none;
   scrollbar-width: none;
-}
-
-.bl-main > .project.bl-expand-top {
-  z-index: 100;
 }
 
 /* For Transition */
@@ -1113,6 +1104,12 @@ section {
   padding: 20vh;
 }
 
+/* Hide items */
+.noDisplay,
+.showonMobile {
+  display: none;
+}
+
 @media only screen and (max-width: 960px) and (min-height: 540px) {
   .menu-nav {
     position: fixed;
@@ -1407,6 +1404,7 @@ section {
     transform: translate(-160px, -240px);
   }
 
+  .bl-icon-close,
   .btn-popup-close {
     font-size: 0.8em;
   }
@@ -1428,5 +1426,25 @@ section {
 
   .holder {
     height: 36vh;
+  }
+
+  #main-footer {
+    font-size: 1em;
+  }
+}
+
+@media only screen and (max-width: 365px) {
+  h1,
+  .profileName,
+  .bside-title {
+    font-size: 1.2em;
+  }
+
+  .quotes {
+    font-size: 0.8em;
+  }
+
+  #main-footer {
+    font-size: 0.5em;
   }
 }

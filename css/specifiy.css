@@ -391,7 +391,7 @@
   box-shadow: 8px 8px #00f;
 }
 
-@media only screen and (max-width: 960px) {
+@media only screen and (max-width: 960px) and (min-height: 540px) {
   .hideonMobile {
     display: none;
   }
@@ -482,8 +482,8 @@
   }
 
   .thumbnail {
-    width: 100px;
-    height: 100px;
+    width: 60px;
+    height: 60px;
     margin-top: 2em;
   }
 
@@ -614,13 +614,18 @@
     font-size: 0.8em;
   }
 
+  .index-items:hover,
+  .index-items:active {
+    font-size: 0.8em;
+  }
+
   h5 {
     font-size: 1em;
   }
 
   h6,
   .boldText {
-    font-size: 0.8em;
+    font-size: 0.9em;
   }
 
   .short {
@@ -646,7 +651,7 @@
   }
 
   .sidenotes-mobile {
-    line-height: 1.8;
+    line-height: 1.6;
   }
 
   .takeaway_userResearch {
