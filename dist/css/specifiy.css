@@ -391,6 +391,47 @@
   box-shadow: 8px 8px #00f;
 }
 
+/* Unbuilt Labs */
+.guide-container {
+  display: flex;
+  height: 80vh;
+  align-items: flex-end;
+}
+
+.guideImage-container {
+  display: flex;
+  overflow-x: auto;
+  height: 80vh;
+  align-items: center;
+  background-color: #fcfcfc;
+}
+
+.guideImage {
+  height: 60vh;
+  object-fit: cover;
+  border: 1px solid #00f;
+  border-radius: 20px;
+  width: auto;
+  display: block;
+  position: relative;
+  margin-left: 10vw;
+  transform: translateX(6vw);
+}
+
+.guideHeader {
+  position: relative;
+  margin-bottom: 6vw;
+  text-align: center;
+  font-size: 1.8vw;
+  width: 30%;
+  left: 35%;
+  padding: 20px;
+  background-color: #fcfcfc;
+  border: 1px solid #00f;
+  box-shadow: 8px 8px #00f;
+}
+
+/* Responsive */
 @media only screen and (max-width: 960px) and (min-height: 540px) {
   .hideonMobile {
     display: none;

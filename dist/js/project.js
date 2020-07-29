@@ -12,6 +12,8 @@ $(document).ready(function () {
   smoothScroll();
 
   $(".index-menu").children("li").eq(0).addClass("menuActive");
+
+  horizontalScroll();
 });
 
 // slide show
