@@ -57,6 +57,11 @@ $(document).ready(function () {
         $section
           .on("click", function () {
             curIframeIndex = index;
+            // setTimeout(function () {
+            //   $section.children().last().removeClass("noDisplay");
+            // }, 200);
+            $section.find(".bl-content").css({ width: "100%", height: "100%" });
+
             $section.addClass("bl-expand bl-expand-top");
             $el.addClass("bl-expand-item");
             // hide the menu, pagination and quotes
@@ -68,6 +73,7 @@ $(document).ready(function () {
           .find("span.bl-icon-close")
           .on("click", function () {
             // close the expanded section and scale up the others
+
             $section
               .removeClass("bl-expand")
               .on(transEndEventName, function (event) {
@@ -75,6 +81,7 @@ $(document).ready(function () {
                 $menu.removeClass("noDisplay");
                 $quotes.removeClass("bl-expand");
                 $page.removeClass("noDisplay");
+                $section.find(".bl-content").css({ width: "0", height: "0" });
 
                 if (!$(event.target).is(".project")) return false;
                 $(this).off(transEndEventName).removeClass("bl-expand-top");
