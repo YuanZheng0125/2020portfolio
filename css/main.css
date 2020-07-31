@@ -202,16 +202,14 @@ section {
 
 .cat span,
 .dance span,
-.phd span,
-.resume span {
+.phd span {
   position: fixed;
   display: none;
 }
 
 .cat:hover span,
 .dance:hover span,
-.phd:hover span,
-.resume:hover span {
+.phd:hover span {
   display: block;
 }
 
@@ -242,14 +240,6 @@ section {
   transform: rotate(-4deg);
 }
 
-.resumeLink {
-  border: 1px solid #00f;
-  box-shadow: 4px 4px #00f;
-  padding: 0 1vw;
-  font-style: normal;
-  background-color: #fcfcfc;
-  transform: translate(4vw, 1vw);
-}
 /* social media icons */
 
 .icons {
