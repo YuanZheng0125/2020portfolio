@@ -947,13 +947,14 @@ section {
 .gallery-container {
   display: flex;
   height: 100vh;
-  align-items: flex-end;
+  align-items: center;
 }
 
 .galleryImage-container {
   display: flex;
   overflow-x: auto;
-  height: 80vh;
+  height: 60vh;
+  border-bottom: 1px solid #00f;
   align-items: flex-start;
 }
 
@@ -1096,6 +1097,54 @@ section {
 .noDisplay,
 .showonMobile {
   display: none;
+}
+
+/* Sixth page resume */
+.resume-container {
+  display: grid;
+  position: absolute;
+  grid-template-columns: 3fr 1fr;
+  width: 72vw;
+  left: 16vw;
+}
+
+.resume-left {
+  grid-area: 1/1/2/2;
+}
+
+.education,
+.experience,
+.publications,
+.skills {
+  margin: 4vw 2vh 0 0;
+}
+
+.resume-header {
+  font-size: 1.4vw;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+.resume-subheader {
+  font-size: 1.2vw;
+  font-weight: 700;
+  line-height: 1.5;
+  color: #f26a2e;
+  margin: 1vw 0 0.5vw 0;
+}
+
+.resume-content {
+  font-size: 1vw;
+  line-height: 2;
+}
+
+.resume-note {
+  font-size: 0.8vw;
+  color: rgba(0, 0, 255, 0.5);
+}
+
+.gap {
+  height: 60vh;
 }
 
 @media only screen and (max-width: 960px) and (min-height: 540px) {
