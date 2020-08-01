@@ -1114,8 +1114,7 @@ section {
 
 .education,
 .experience,
-.publications,
-.skills {
+.publications {
   margin: 4vw 2vh 0 0;
 }
 
@@ -1140,11 +1139,52 @@ section {
 
 .resume-note {
   font-size: 0.8vw;
+  color: rgba(0, 0, 255);
+}
+
+.resume-time {
+  font-size: 0.8vw;
   color: rgba(0, 0, 255, 0.5);
+  padding: 0 0 0 2vw;
 }
 
 .gap {
   height: 60vh;
+}
+
+.resume-right {
+  grid-area: 1/2/2/3;
+}
+
+.buttonThree {
+  text-align: center;
+  margin-top: 4.5vw;
+}
+
+#btn-resume,
+#btn-resume:focus,
+#btn-resume:visited {
+  outline: none;
+  display: block;
+  border: none;
+  background-color: #f26a2e;
+  color: #fcfcfc;
+  font-size: 1.2vw;
+  border-radius: 4px;
+  padding: 0.4em 0.8em;
+}
+
+#btn-resume:hover {
+  background-color: #fd8c57;
+  border: none;
+}
+
+#btn-resume:active {
+  background-color: #f26a2e;
+  color: #fcfcfc;
+  border: none;
+  transform: translate(2px, 2px);
+  box-shadow: 1px 1px #fd8c57;
 }
 
 @media only screen and (max-width: 960px) and (min-height: 540px) {
