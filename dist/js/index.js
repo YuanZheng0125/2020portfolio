@@ -11,6 +11,7 @@ var projectLinks = [
 
 // fade in when scroll into viewport
 $(document).ready(function () {
+  fadeInLoad();
   document.body.style.opacity = "1";
   var navActivator = navActivatorBuilder("menu-nav", "active");
   $(window).scroll(function () {
