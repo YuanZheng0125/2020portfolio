@@ -88,6 +88,7 @@ $(document).ready(function () {
                 $quotes.removeClass("bl-expand");
                 $page.removeClass("noDisplay");
                 $section.find(".bl-content").css({ width: "0", height: "0" });
+                $section.find("iframe").attr("src", "");
 
                 if (!$(event.target).is(".project")) return false;
                 $(this).off(transEndEventName).removeClass("bl-expand-top");
