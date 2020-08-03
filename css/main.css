@@ -947,14 +947,13 @@ section {
 .gallery-container {
   display: flex;
   height: 100vh;
-  align-items: center;
+  align-items: flex-end;
 }
 
 .galleryImage-container {
   display: flex;
-  overflow-x: auto;
-  height: 60vh;
-  border-bottom: 1px solid #00f;
+  overflow-x: scroll;
+  height: 80vh;
   align-items: flex-start;
 }
 
@@ -1097,94 +1096,6 @@ section {
 .noDisplay,
 .showonMobile {
   display: none;
-}
-
-/* Sixth page resume */
-.resume-container {
-  display: grid;
-  position: absolute;
-  grid-template-columns: 3fr 1fr;
-  width: 72vw;
-  left: 16vw;
-}
-
-.resume-left {
-  grid-area: 1/1/2/2;
-}
-
-.education,
-.experience,
-.publications {
-  margin: 4vw 2vh 0 0;
-}
-
-.resume-header {
-  font-size: 1.4vw;
-  text-transform: uppercase;
-  font-weight: 700;
-}
-
-.resume-subheader {
-  font-size: 1.2vw;
-  font-weight: 700;
-  line-height: 1.5;
-  color: #f26a2e;
-  margin: 1vw 0 0.5vw 0;
-}
-
-.resume-content {
-  font-size: 1vw;
-  line-height: 2;
-}
-
-.resume-note {
-  font-size: 0.8vw;
-  color: rgba(0, 0, 255);
-}
-
-.resume-time {
-  font-size: 0.8vw;
-  color: rgba(0, 0, 255, 0.5);
-  padding: 0 0 0 2vw;
-}
-
-.gap {
-  height: 60vh;
-}
-
-.resume-right {
-  grid-area: 1/2/2/3;
-}
-
-.buttonThree {
-  text-align: center;
-  margin-top: 4.5vw;
-}
-
-#btn-resume,
-#btn-resume:focus,
-#btn-resume:visited {
-  outline: none;
-  display: block;
-  border: none;
-  background-color: #f26a2e;
-  color: #fcfcfc;
-  font-size: 1.2vw;
-  border-radius: 4px;
-  padding: 0.4em 0.8em;
-}
-
-#btn-resume:hover {
-  background-color: #fd8c57;
-  border: none;
-}
-
-#btn-resume:active {
-  background-color: #f26a2e;
-  color: #fcfcfc;
-  border: none;
-  transform: translate(2px, 2px);
-  box-shadow: 1px 1px #fd8c57;
 }
 
 @media only screen and (max-width: 960px) and (min-height: 540px) {
