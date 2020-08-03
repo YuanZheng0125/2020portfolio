@@ -1,4 +1,5 @@
 $(document).ready(function () {
+  fadeInLoad();
   // fade in when first load
   document.body.style.opacity = "1";
 
