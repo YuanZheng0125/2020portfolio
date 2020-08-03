@@ -1,5 +1,13 @@
 var curIframeIndex = 0;
 var bsideslideIndex = 1;
+var projectLinks = [
+  "FMS.html",
+  "Petography.html",
+  "UnbuiltLabs.html",
+  "Democritus.html",
+  "HealthFusion.html",
+  "SmartLab.html",
+];
 
 // fade in when scroll into viewport
 $(document).ready(function () {
@@ -57,9 +65,7 @@ $(document).ready(function () {
         $section
           .on("click", function () {
             curIframeIndex = index;
-            // setTimeout(function () {
-            //   $section.children().last().removeClass("noDisplay");
-            // }, 200);
+            $section.find("iframe").attr("src", projectLinks[curIframeIndex]);
             $section.find(".bl-content").css({ width: "100%", height: "100%" });
 
             $section.addClass("bl-expand bl-expand-top");
@@ -92,7 +98,7 @@ $(document).ready(function () {
             }
 
             $el.removeClass("bl-expand-item");
-            document.querySelectorAll("iframe")[curIframeIndex].src += "";
+
             return false;
           });
       });
