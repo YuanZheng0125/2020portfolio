@@ -1,12 +1,10 @@
 var curIframeIndex = 0;
 var bsideslideIndex = 1;
 var projectLinks = [
-  "FMS.html",
-  "Petography.html",
   "UnbuiltLabs.html",
-  "Democritus.html",
+  "FMS.html",
   "HealthFusion.html",
-  "SmartLab.html",
+  "Petography.html",
 ];
 
 // fade in when scroll into viewport
