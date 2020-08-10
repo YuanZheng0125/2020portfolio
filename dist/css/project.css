@@ -466,16 +466,17 @@ a.highLight:active {
 /* Track */
 ::-webkit-scrollbar {
   width: 20px;
+  height: 20px;
 }
 
 ::-webkit-scrollbar-track {
   color: #050505;
+  border-left: 2px solid #fff;
 }
 
 /* Handle */
 ::-webkit-scrollbar-thumb {
   background: #ff6a21;
-  border-radius: 20px;
 }
 
 /* Handle on hover */

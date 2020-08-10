@@ -102,6 +102,7 @@ p {
 /* Scrollbar */
 ::-webkit-scrollbar {
   width: 20px;
+  height: 20px;
 }
 
 /* Track */
@@ -112,7 +113,6 @@ p {
 /* Handle */
 ::-webkit-scrollbar-thumb {
   background: #ff6a21;
-  border-radius: 20px;
 }
 
 /* Handle on hover */
@@ -405,9 +405,9 @@ section {
 }
 
 .bl-box:hover {
-  transform: translate(4px, 4px);
+  transform: translate(2px, 2px);
   transition: all 0.2s ease-out;
-  box-shadow: 4px 4px #050505;
+  box-shadow: 6px 6px #050505;
 }
 
 .project-link {
@@ -488,6 +488,12 @@ section {
   border: 2px solid #050505;
   box-shadow: 8px 8px #050505;
   background-color: #fff;
+  transition: all 0.2s ease-out;
+}
+
+.bsidemenu-container:hover {
+  transform: translate(2px, 2px);
+  box-shadow: 6px 6px #050505;
 }
 
 .bsideslides {
@@ -722,6 +728,7 @@ section {
   margin-left: 10vw;
   transform: translateX(6vw);
   cursor: pointer;
+  transition: all 0.2s ease-out;
 }
 
 .galleryImage,
