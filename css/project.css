@@ -2,17 +2,6 @@ body::-webkit-scrollbar {
   display: none;
 }
 
-section {
-  background-color: #fcfcfc;
-  background-size: 10vh 10vh;
-  background-image: linear-gradient(
-      to right,
-      rgba(0, 0, 255, 0.1) 1px,
-      transparent 1px
-    ),
-    linear-gradient(to bottom, rgba(0, 0, 255, 0.1) 1px, transparent 1px);
-}
-
 .brief {
   position: absolute;
   top: 10vh;
@@ -24,18 +13,45 @@ section {
   grid-template-rows: repeat(3 1fr);
 }
 
-#projectBody h2 {
-  font-size: 2.4vw;
+/* Close button */
+.bl-close {
+  display: block;
+}
+
+.bl-close {
+  cursor: pointer;
+  -webkit-font-smoothing: antialiased;
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  font-size: 1vw;
+  padding: 2px 8px;
+  background-color: #fcfcfc;
+  border: 2px solid #050505;
+}
+
+.btn-project-close {
   font-weight: 700;
 }
 
+.bl-close:hover {
+  background-color: #348bfd;
+  text-decoration: none;
+}
+
+.bl-close:active {
+  background-color: #fcfcfc;
+  transform: translate(1px, 1px);
+}
+
 h3 {
-  font-size: 2.2vw;
+  font-size: 2vw;
   font-weight: 700;
   line-height: 1.4;
 }
 
 h6 {
+  font-family: "Work Sans", sans-serif;
   font-size: 1vw;
   line-height: 2;
 }
@@ -55,15 +71,10 @@ h5 {
 
 .quotes {
   display: block;
-  color: #ff6a21;
   line-height: 1vw;
   font-size: 4vw;
   padding: 0;
   margin: 0;
-}
-
-#divider {
-  background-color: #00f;
 }
 
 .recommendation {
@@ -118,7 +129,6 @@ h5 {
   margin-top: 40px;
   justify-self: center;
   width: 80%;
-  font-style: italic;
 }
 
 .boldText {
@@ -143,7 +153,7 @@ h5 {
 }
 
 .gap {
-  height: 60vh;
+  height: 80vh;
 }
 
 .fadethisdiv {
@@ -159,8 +169,6 @@ a.highLight:active {
 .gridOne,
 .gridFour,
 .gridSeven,
-.gridTen,
-.gridEleven,
 .gridThirteen {
   position: relative;
   width: 70%;
@@ -171,11 +179,19 @@ a.highLight:active {
   grid-template-rows: 1.2fr 1.5fr 1fr;
 }
 
+.gridOne-movedown {
+  position: relative;
+  width: 70%;
+  left: 15%;
+  height: 100%;
+  display: grid;
+  grid-template-columns: repeat(4 1fr);
+  grid-template-rows: 2fr 1.5fr 1fr;
+}
+
 .subheadingOne,
 .subheadingFour,
 .subheadingSeven,
-.subheadingTen,
-.subheadingEleven,
 .subheadingThirteen {
   grid-area: 2/1/3/3;
 }
@@ -183,8 +199,6 @@ a.highLight:active {
 .bodyCopyOne,
 .bodyCopyFour,
 .bodyCopySeven,
-.bodyCopyTen,
-.bodyCopyEleven,
 .bodyCopyThirteen {
   grid-area: 2/3/3/5;
   width: 95%;
@@ -215,31 +229,16 @@ a.highLight:active {
   font-size: 1.8vw;
   padding: 20px;
   background-color: #fcfcfc;
-  border: 1px solid #00f;
-  box-shadow: 8px 8px #00f;
-}
-
-.collegestudent {
-  grid-area: 2/1/3/2;
-  border: 1px solid #00f;
+  border: 2px solid #050505;
+  box-shadow: 8px 8px #050505;
 }
 
 .gridTwo-itemOne {
   grid-area: 3/1/4/2;
 }
 
-.highschoolstudent {
-  grid-area: 2/2/3/3;
-  border: 1px solid #00f;
-}
-
 .gridTwo-itemTwo {
   grid-area: 3/2/4/3;
-}
-
-.teacher {
-  grid-area: 2/3/3/4;
-  border: 1px solid #00f;
 }
 
 .gridTwo-itemThree {
@@ -247,9 +246,7 @@ a.highLight:active {
 }
 
 .subheadingTwo,
-.collegestudent,
 .highschoolstudent,
-.teacher,
 .gridTwo-itemOne,
 .gridTwo-itemTwo,
 .gridTwo-itemThree {
@@ -268,11 +265,12 @@ a.highLight:active {
   position: relative;
   width: 70%;
   left: 16%;
-  height: 39vw;
+  height: 40vw;
   top: 10vw;
-  border-radius: 20px;
-  border: 1px solid #00f;
-  background-color: #fcfcfc;
+  border: 2px solid #050505;
+  background-color: #fff;
+  box-shadow: 8px 8px #050505;
+  padding: 1.5vw 2vw 2vw 2vw;
 }
 
 .mySlides {
@@ -288,36 +286,29 @@ a.highLight:active {
 .slideImage {
   width: 100%;
   vertical-align: middle;
-  border-radius: 20px 20px 0 0;
-  border-bottom: 1px solid #00f;
 }
 
 /* Text */
 .text {
   position: absolute;
-  width: 36%;
-  left: 74%;
-  top: -3vh;
-  font-size: 1vw;
-  font-weight: 400;
-  font-style: italic;
-  line-height: 2;
-  color: #00f;
+  right: 0;
+  text-align: end;
+  top: -1vw;
   text-align: center;
 }
 
 /* Takeaways */
 .takeaway {
   position: absolute;
+  font-family: "Work Sans", sans-serif;
   font-size: 1.2vw;
-  top: 6vh;
-  left: 40%;
-  width: 36%;
+  line-height: 2;
+  top: 2vh;
+  left: 2%;
+  width: 48%;
   height: auto;
-  padding: 10px;
-  border: 1px solid #00f;
-  background-color: #fcfcfc;
-  box-shadow: 8px 8px #00f;
+  padding: 20px;
+  text-align: start;
 }
 
 /* Next & previous buttons */
@@ -332,7 +323,7 @@ a.highLight:active {
   font-size: 20px;
   transition: 0.6s ease;
   user-select: none;
-  background-color: #00f;
+  background-color: #050505;
 }
 
 .prev {
@@ -346,39 +337,42 @@ a.highLight:active {
 /* On hover, add a black background color with a little bit see-through */
 .prev:hover,
 .next:hover {
-  color: #fcfcfc;
-  background-color: rgba(0, 0, 255, 0.5);
+  color: #050505;
+  background-color: #348bfd;
 }
 
 /* The dots/bullets/indicators */
 .dots {
   text-align: center;
+  margin-top: 2vw;
 }
 
 .dot {
   cursor: pointer;
-  height: 10px;
-  width: 10px;
-  margin: 0 2px;
-  background-color: #fcfcfc;
-  border: 1px solid #00f;
+  height: 16px;
+  width: 16px;
+  margin: 0 8px;
+  border: 2px solid #050505;
   border-radius: 50%;
   display: inline-block;
   transition: background-color 0.6s ease;
 }
 
-.active,
+.dot.active {
+  background-color: #050505;
+}
+
 .dot:hover {
-  background-color: #00f;
-  border: 2px solid #00f;
+  background-color: #348bfd;
+  border: 2px solid #050505;
 }
 
 /* Fading animation */
 .fade {
   -webkit-animation-name: fade;
-  -webkit-animation-duration: 1.5s;
+  -webkit-animation-duration: 1s;
   animation-name: fade;
-  animation-duration: 1.5s;
+  animation-duration: 1s;
 }
 
 @-webkit-keyframes fade {
@@ -400,9 +394,10 @@ a.highLight:active {
 }
 
 /* Fourth screen - Approaches */
-.approaches {
-  font-size: 1.2vw;
+.approaches li {
+  font-size: 1.4vw;
   line-height: 2;
+  font-family: "Work Sans", sans-serif;
 }
 
 /* Five screen - information architecture */
@@ -413,7 +408,7 @@ a.highLight:active {
   height: 100%;
   display: grid;
   grid-template-columns: repeat(3 1fr);
-  grid-template-rows: 0.4fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
 }
 
 .IA {
@@ -432,8 +427,8 @@ a.highLight:active {
   font-size: 1.8vw;
   padding: 20px;
   background-color: #fcfcfc;
-  border: 1px solid #00f;
-  box-shadow: 8px 8px #00f;
+  border: 2px solid #050505;
+  box-shadow: 8px 8px #050505;
 }
 
 /* Sixth screen - skectches */
@@ -442,26 +437,27 @@ a.highLight:active {
   width: 70%;
   left: 16%;
   height: 39vw;
-  top: 10vw;
-  border-radius: 20px;
-  border: 1px solid #00f;
-  background-color: #fcfcfc;
+  top: 8vw;
+  border: 2px solid #050505;
+  box-shadow: 8px 8px #050505;
+  background-color: #fff;
+  padding: 1vw 2vw 2vw 2vw;
 }
 
 .sketchImage {
   width: 100%;
   height: 90%;
   vertical-align: middle;
-  border-radius: 20px 20px 0 0;
-  border-bottom: 1px solid #00f;
+  background-color: #fff;
+  overflow: hidden;
+  object-fit: contain;
 }
 
 .iteration {
-  font-size: 1.2vw;
   position: absolute;
   width: 100%;
   text-align: center;
-  margin: 1vw;
+  bottom: 20px;
 }
 
 /* Seventh screen - wireflow */
@@ -478,32 +474,9 @@ a.highLight:active {
   height: 80%;
 }
 
-.wireflow {
-  width: 100%;
-  overflow: scroll;
-  overflow-x: hidden;
-  height: 75vh;
-  border: 1px solid #00f;
-  border-radius: 20px;
-}
-
-.wireflowImage {
-  width: 100%;
-}
-
-.scrolltosee {
-  position: relative;
-  font-size: 1vw;
-  font-style: italic;
-  width: 30%;
-  left: 70%;
-  text-align: end;
-  line-height: 2;
-}
-
 /* Track */
 ::-webkit-scrollbar {
-  width: 10px;
+  width: 20px;
 }
 
 ::-webkit-scrollbar-track {
@@ -512,12 +485,12 @@ a.highLight:active {
 
 /* Handle */
 ::-webkit-scrollbar-thumb {
-  background: #00f;
+  background: #050505;
 }
 
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
-  background: rgba(0, 0, 255, 0.5);
+  background: #348bfd;
 }
 
 /* Ninth screen - Final Comps */
@@ -535,117 +508,15 @@ a.highLight:active {
   top: 10vh;
   overflow-y: scroll;
   overflow-x: hidden;
-  border: 1px solid #00f;
-  border-radius: 20px;
-}
-
-.homepage,
-.discussion,
-.post {
-  width: 100%;
 }
 
 /* toggle between hidden items */
 .explanation {
   position: relative;
-  font-size: 1vw;
-  font-style: italic;
   width: 30%;
   left: 70%;
   top: 9vh;
   text-align: end;
-}
-
-.btn-anno,
-.btn-anno:focus,
-.btn-anno:visited {
-  position: absolute;
-  outline: none;
-  border: none;
-  background-color: #00f;
-  color: #fcfcfc;
-  font-size: 1.2vw;
-  padding: 0.15vw 0.7vw;
-}
-
-.btn-anno:hover {
-  background-color: rgba(0, 0, 255, 0.8);
-  color: #fcfcfccc;
-  border: none;
-}
-
-.btn-anno:active {
-  background-color: #00f;
-  color: #fcfcfc;
-  border: none;
-  transform: translate(1px, 1px);
-  box-shadow: 1px 1px rgba(0, 0, 255, 0.8);
-}
-
-.btn-anno .annotation {
-  position: absolute;
-  top: 3vw;
-  left: 0;
-  width: 24vw;
-  font-size: 1.2vw;
-  line-height: 2;
-  padding: 10px 20px;
-  background-color: #fcfcfc;
-  border: 1px solid #00f;
-  box-shadow: 8px 8px #00f;
-  visibility: hidden;
-  text-align: start;
-}
-
-.btn-anno:hover .annotation {
-  visibility: visible;
-}
-
-#btn-annoOne {
-  position: absolute;
-  top: 68%;
-  left: 60%;
-}
-
-#btn-annoTwo {
-  position: absolute;
-  top: 158%;
-  left: 40%;
-}
-
-#btn-annoThree {
-  position: absolute;
-  top: 344%;
-  left: 48%;
-}
-
-#btn-annoFour {
-  position: absolute;
-  top: 12%;
-  left: 22%;
-}
-#btn-annoFive {
-  position: absolute;
-  top: 76%;
-  left: 94%;
-}
-
-#btn-annoSix {
-  position: absolute;
-  top: 520%;
-  left: 22%;
-}
-
-#btn-annoFive .annotation {
-  position: absolute;
-  top: 3vw;
-  left: -20vw;
-}
-
-/* Tenth screen - responsive design */
-.responsive {
-  font-size: 1.2vw;
-  line-height: 2;
 }
 
 .mySlidesTwo {
@@ -654,87 +525,43 @@ a.highLight:active {
 
 .dotTwo {
   cursor: pointer;
-  height: 10px;
-  width: 10px;
-  margin: 0 2px;
-  background-color: #fcfcfc;
-  border: 1px solid #00f;
+  height: 16px;
+  width: 16px;
+  margin: 0 8px;
+  border: 2px solid #050505;
   border-radius: 50%;
   display: inline-block;
   transition: background-color 0.6s ease;
 }
 
-.active,
+.dotTwo.active {
+  background-color: #050505;
+}
+
 .dotTwo:hover {
-  background-color: #00f;
-  border: 2px solid #00f;
+  background-color: #348bfd;
+  border: 2px solid #050505;
 }
 
 .slideshowTwo {
   position: relative;
   width: 70%;
   left: 16%;
-  height: 37vw;
+  height: 40vw;
   top: 10vw;
-  border-radius: 20px;
-  border: 1px solid #00f;
-  background-color: #fcfcfc;
+  border: 2px solid #050505;
+  background-color: #fff;
+  box-shadow: 8px 8px #050505;
+  padding: 1.8vw 2vw 2vw 2vw;
 }
 
-/* Eleventh screen note-taking explanation */
-.notetaking {
-  font-size: 1.2vw;
-  line-height: 2;
-  margin-left: 4vw;
-}
-
-/* Twelveth screen demo */
-.gridTwelve {
-  position: relative;
-  width: 70%;
-  left: 15%;
-  height: 100%;
-  display: grid;
-  grid-template-rows: 0.2fr 1fr;
-  grid-template-columns: repeat(3 1fr);
-}
-
-.subheadingTwelve {
-  grid-area: 1/1/2/4;
-  text-align: center;
-  position: relative;
-  justify-self: center;
-  align-self: center;
-  width: 60%;
-  font-size: 1.8vw;
-  padding: 20px;
-  background-color: #fcfcfc;
-  border: 1px solid #00f;
-  box-shadow: 8px 8px #00f;
-}
-
+/* Petography Final Demo */
 .sidevideo {
-  grid-area: 2/1/3/3;
+  grid-area: 2/1/3/2;
   align-self: center;
-  width: 42vw;
+  width: 100%;
   overflow: hidden;
-}
-
-.demoVideo {
-  width: 60vw;
-  object-fit: cover;
-  position: relative;
-  left: 50%;
-  transform: translateX(-50%);
-}
-
-.sidenotes {
-  grid-area: 2/3/3/4;
-  align-self: center;
-  justify-self: end;
-  width: 85%;
-  font-size: 1vw;
-  line-height: 2;
+  text-align: center;
 }
 
 /* Thirteenth screen - conclusion */
@@ -761,8 +588,8 @@ a.highLight:active {
   font-size: 1.8vw;
   padding: 20px;
   background-color: #fcfcfc;
-  border: 1px solid #00f;
-  box-shadow: 8px 8px #00f;
+  border: 2px solid #050505;
+  box-shadow: 8px 8px #050505;
   justify-self: center;
   align-self: center;
 }
@@ -812,15 +639,16 @@ a.highLight:active {
   position: relative;
   left: 50%;
   transform: translateX(-50%);
-  box-shadow: 0 0 0 1px #00f, 8px 12px #00f;
+  box-shadow: 0 0 0 1px #050505, 8px 12px #050505;
 }
 
 .sidenotes-mobile {
   grid-area: 2/1/3/2;
   align-self: center;
   justify-self: center;
-  width: 80%;
-  font-size: 1vw;
+  width: 75%;
+  font-size: 1.2vw;
+  font-family: "Work Sans", sans-serif;
   line-height: 2;
   transform: translate(10%, -20%);
 }
@@ -833,11 +661,10 @@ a.highLight:active {
   height: 100%;
   display: grid;
   grid-template-rows: 0.4fr 1fr;
-  grid-template-columns: repeat(3 1fr);
 }
 
 .subheadingSixteen {
-  grid-area: 1/1/2/4;
+  grid-area: 1/1/2/2;
   text-align: center;
   position: relative;
   justify-self: center;
@@ -846,8 +673,8 @@ a.highLight:active {
   font-size: 1.8vw;
   padding: 20px;
   background-color: #fcfcfc;
-  border: 1px solid #00f;
-  box-shadow: 8px 8px #00f;
+  border: 2px solid #050505;
+  box-shadow: 8px 8px #050505;
 }
 
 /* Index */
@@ -860,9 +687,9 @@ a.highLight:active {
   z-index: 99;
   width: 22vw;
   height: 36vh;
-  background-color: #fcfcfc;
+  background-color: #fff;
   border-radius: 0 20px 20px 0;
-  border: 1px solid #00f;
+  border: 4px solid #050505;
   cursor: pointer;
   transition: all 0.5s ease-in-out;
 }
@@ -875,13 +702,12 @@ a.highLight:active {
   width: 100%;
   height: 100%;
   border-radius: 0 20px 20px 0;
-  background-color: rgba(0, 0, 255, 0.8);
 }
 
 .fa-angle-right {
-  color: #fcfcfc;
+  color: #050505;
   position: relative;
-  font-size: 1.6vw;
+  font-size: 2vw;
   top: 46%;
   left: 24%;
   transition: all 0.2s ease-in-out;
@@ -907,29 +733,23 @@ a.highLight:active {
 }
 
 .index-items {
+  font-family: "Work Sans", sans-serif;
   font-size: 1vw;
-  font-style: italic;
-  color: rgba(0, 0, 255, 0.8);
+  line-height: 2;
+  color: #050505;
 }
 
 .index-items:hover {
   font-size: 1vw;
   font-style: normal;
-  color: rgba(0, 0, 255);
-  font-weight: 700;
-}
-
-.index-items:hover {
-  font-size: 1vw;
-  font-style: normal;
-  color: rgba(0, 0, 255);
+  color: #348bfd;
   font-weight: 700;
 }
 
 .index-items:active,
 .index-menu li.menuActive a {
   font-weight: 700;
-  color: #00f;
+  color: #050505;
 }
 
 .landscapeVideo {
@@ -939,6 +759,6 @@ a.highLight:active {
   position: relative;
   left: 50%;
   transform: translateX(-50%);
-  border: 1px solid #00f;
-  box-shadow: 8px 8px #00f;
+  border: 2px solid #050505;
+  box-shadow: 8px 8px #050505;
 }

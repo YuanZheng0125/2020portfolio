@@ -20,21 +20,6 @@
   border: 12px solid #fff;
 }
 
-.wireframe {
-  position: relative;
-  width: 100%;
-  top: 24%;
-  border-radius: 20px;
-  border: 1px solid #00f;
-  background-color: #fcfcfc;
-}
-
-.wireframeImage {
-  width: 100%;
-  object-fit: cover;
-  border-radius: 20px;
-}
-
 .visuals {
   position: relative;
   width: 70vw;
@@ -47,8 +32,8 @@
   width: 100%;
   object-fit: cover;
   vertical-align: middle;
-  border-radius: 20px;
-  border: 1px solid #00f;
+  border: 2px solid #050505;
+  box-shadow: 8px 8px #050505;
 }
 
 .sideText {
@@ -59,54 +44,21 @@
   width: 100%;
 }
 
-#btn-disOne {
-  position: absolute;
-  top: 5%;
-  right: 30%;
-}
-
-#btn-disTwo {
-  position: absolute;
-  top: 268%;
-  left: 20%;
-}
-
 .tvImage {
-  width: 70vw;
+  width: 100%;
   height: 32vw;
   vertical-align: middle;
-  border-bottom: 1px solid #00f;
-  object-fit: contain;
+  object-fit: cover;
 }
 
 .tvVideo {
   height: 45vh;
   object-fit: cover;
   position: relative;
-  left: 50%;
-  transform: translateX(-50%);
+  background-color: none;
 }
 
 /* TiggerKeeper */
-.ideation {
-  position: relative;
-  width: 70%;
-  left: 16%;
-  height: 39vw;
-  top: 0;
-  border-radius: 20px;
-  border: 1px solid #00f;
-  background-color: #fcfcfc;
-}
-
-.ideationImage {
-  width: 100%;
-  height: 90%;
-  vertical-align: middle;
-  border-radius: 20px 20px 0 0;
-  border-bottom: 1px solid #00f;
-}
-
 .gridSeventeen {
   position: relative;
   width: 70%;
@@ -124,8 +76,8 @@
   font-size: 1.8vw;
   padding: 20px;
   background-color: #fcfcfc;
-  border: 1px solid #00f;
-  box-shadow: 8px 8px #00f;
+  border: 2px solid #050505;
+  box-shadow: 8px 8px #050505;
   justify-self: center;
   align-self: center;
 }
@@ -133,16 +85,14 @@
 .gridSeventeen-titleOne {
   grid-area: 2/1/3/2;
   align-self: center;
-  border: 1px solid #00f;
+  border: 2px solid #050505;
   padding: 0 2vw;
 }
 
 .labelText {
   grid-area: 2/1/3/2;
   font-size: 0.8vw;
-  background-color: #f26a2e;
   color: #fcfcfc;
-  text-transform: uppercase;
   padding: 0.5vw 1vw;
   align-self: center;
   justify-self: center;
@@ -181,10 +131,6 @@
   text-align: center;
 }
 
-.strong {
-  font-weight: 700;
-}
-
 .gridEighteen {
   position: relative;
   width: 70%;
@@ -202,8 +148,8 @@
   font-size: 1.8vw;
   padding: 20px;
   background-color: #fcfcfc;
-  border: 1px solid #00f;
-  box-shadow: 8px 8px #00f;
+  border: 2px solid #050505;
+  box-shadow: 8px 8px #050505;
   justify-self: center;
   align-self: center;
 }
@@ -269,14 +215,10 @@
 .compImage {
   width: 70vw;
   object-fit: contain;
-  border: 1px solid #00f;
-  border-radius: 20px;
 }
 
 .explanation_styleTwo {
   position: relative;
-  font-size: 1vw;
-  font-style: italic;
   width: 30%;
   left: 70%;
   top: 19vh;
@@ -292,8 +234,6 @@
 
 .explanation_styleThree {
   position: relative;
-  font-size: 1vw;
-  font-style: italic;
   width: 30%;
   left: 70%;
   top: 1vh;
@@ -304,26 +244,26 @@
 
 .a-anno {
   font-weight: 700;
-  color: rgba(0, 0, 255);
+  color: #050505;
   text-decoration: underline;
 }
 
 .a-anno:focus,
 .a-anno:active,
 .a-anno:hover {
-  color: rgba(0, 0, 255, 0.5);
+  color: #348bfd;
 }
 
 .a-anno .a-annotation {
   position: absolute;
-  transform: translate(-1vw, -4vh);
-  width: 24vw;
+  transform: translate(-4vw, -6vh);
+  width: 25vw;
   font-size: 1.2vw;
   line-height: 2;
   padding: 10px 20px;
-  background-color: #fcfcfc;
-  border: 1px solid #00f;
-  box-shadow: 8px 8px #00f;
+  background-color: #fff;
+  border: 2px solid #050505;
+  box-shadow: 8px 8px #050505;
   visibility: hidden;
   text-align: start;
 }
@@ -338,9 +278,9 @@
   left: 16%;
   height: 39vw;
   top: 0;
-  border-radius: 20px;
-  border: 1px solid #00f;
-  background-color: #fcfcfc;
+  border: 2px solid #050505;
+  background-color: #fff;
+  box-shadow: 8px 8px #050505;
 }
 
 .herovideo {
@@ -348,7 +288,6 @@
   margin-top: 4vw;
   transform: translateX(-500px);
   left: 35vw;
-  border: 1px solid #00f;
 }
 
 .gridFive-movedown {
@@ -361,74 +300,20 @@
   grid-template-rows: 1fr 1fr 1fr;
 }
 
-/* Smart Lab */
-.userResearch {
-  position: relative;
-  width: 70%;
-  left: 16%;
-  height: 39vw;
-  top: 10vw;
-  border-radius: 20px;
-}
-
-.researchImage {
-  width: 100%;
-  vertical-align: middle;
-  border-radius: 20px;
-  border: 1px solid #00f;
-}
-
-.takeaway_userResearch {
-  position: absolute;
-  font-size: 1.2vw;
-  bottom: 12vh;
-  left: 40%;
-  width: 36%;
-  height: auto;
-  padding: 10px;
-  border: 1px solid #00f;
-  background-color: #fcfcfc;
-  box-shadow: 8px 8px #00f;
-}
-
 /* Unbuilt Labs */
 .guide-container {
-  display: flex;
-  height: 80vh;
-  align-items: flex-end;
-}
-
-.guideImage-container {
-  display: flex;
-  overflow-x: auto;
-  height: 80vh;
-  align-items: center;
-  background-color: #fcfcfc;
-}
-
-.guideImage {
-  height: 60vh;
-  object-fit: cover;
-  border: 1px solid #00f;
-  border-radius: 20px;
-  width: auto;
-  display: block;
-  position: relative;
-  margin-left: 10vw;
-  transform: translateX(6vw);
-}
-
-.guideHeader {
-  position: relative;
-  margin-bottom: 6vw;
+  justify-self: center;
   text-align: center;
-  font-size: 1.8vw;
-  width: 30%;
-  left: 35%;
-  padding: 20px;
-  background-color: #fcfcfc;
-  border: 1px solid #00f;
-  box-shadow: 8px 8px #00f;
+  width: 100%;
+  grid-area: 1/1/3/4;
+}
+
+.guide-link {
+  position: absolute;
+  width: 800px;
+  height: 720px;
+  top: 0;
+  left: 0;
 }
 
 /* Responsive */
@@ -463,9 +348,7 @@
   /* project bodycopy */
   p,
   .bodyCopySeven,
-  .bodyCopyTen,
   .responsive,
-  .bodyCopyEleven,
   .approaches,
   .notetaking {
     font-size: 1em;
@@ -477,8 +360,6 @@
   .gridFive,
   .gridFive-movedown,
   .gridSeven,
-  .gridTen,
-  .gridEleven,
   .gridTwelve,
   .gridThirteen,
   .gridFifteen,
@@ -495,8 +376,6 @@
 
   .subheadingFour,
   .subheadingSeven,
-  .subheadingTen,
-  .subheadingEleven,
   .subheadingThirteen {
     margin: 2em 0;
     text-align: center;
@@ -597,10 +476,6 @@
     margin-top: 6.5em;
   }
 
-  .sidenotes {
-    font-size: 1em;
-  }
-
   .sidevideo {
     width: 100%;
   }
@@ -695,10 +570,6 @@
     line-height: 1.6;
   }
 
-  .takeaway_userResearch {
-    display: none;
-  }
-
   .mobileVideo {
     width: 50vw;
     height: auto;
@@ -769,9 +640,7 @@
   h5,
   p,
   .bodyCopySeven,
-  .bodyCopyTen,
   .responsive,
-  .bodyCopyEleven,
   .approaches,
   .notetaking {
     font-size: 0.8em;
@@ -781,9 +650,5 @@
     font-size: 0.8em;
     line-height: 1.5;
     margin: 4em;
-  }
-
-  .sidenotes {
-    font-size: 0.8em;
   }
 }
