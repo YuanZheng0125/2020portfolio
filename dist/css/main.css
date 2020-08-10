@@ -1024,13 +1024,6 @@ section {
     height: 70vw;
   }
 
-  /* .projectImage {
-    width: 300px;
-    height: 24vh;
-    justify-self: center;
-    align-self: center;
-  } */
-
   .text {
     font-size: 1rem;
   }
@@ -1107,18 +1100,18 @@ section {
   h1,
   .profileName,
   .bside-title {
-    font-size: 2rem;
+    font-size: 1.4rem;
   }
 
   p,
   .readMore {
-    font-size: 1rem;
+    font-size: 0.8rem;
   }
 
   #btn-seeMore,
   #btn-seeMore:focus,
   #btn-seeMore:visited {
-    font-size: 1rem;
+    font-size: 0.8rem;
   }
 
   .workSection {
@@ -1132,5 +1125,14 @@ section {
 
   #main-footer {
     font-size: 0.5em;
+  }
+
+  .bside-dot {
+    width: 10px;
+    height: 10px;
+  }
+
+  .hashtag {
+    font-size: 0.5rem;
   }
 }

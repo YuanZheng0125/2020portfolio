@@ -372,7 +372,6 @@
   }
 
   .subheadingTwo,
-  .subheadingTwelve,
   .subheadingFourteen,
   .subheadingSeventeen,
   .subheadingEighteen {
@@ -563,7 +562,6 @@
 
   .subheadingTwo,
   .subheadingFive,
-  .subheadingTwelve,
   .subheadingFourteen,
   .subheadingSixteen {
     font-size: 1.5em;
@@ -598,10 +596,35 @@
   }
 }
 
-@media only screen and (max-width: 365px) {
+@media only screen and (max-width: 420px) {
+  .fa-angle-right {
+    font-size: 1rem;
+    margin: 0;
+    left: 0;
+  }
+
+  .index-items,
+  .explanation {
+    font-size: 0.5rem;
+  }
+
+  .index-items:hover,
+  .index-items:active {
+    font-size: 0.5rem;
+  }
+
+  .iteration {
+    font-size: 0.5rem;
+    bottom: 0.2rem;
+  }
+
   .gridFifteen {
     width: 95vw;
     left: 2vw;
+  }
+
+  .btn-project-close {
+    font-size: 0.8rem;
   }
 
   #projectBody h2 {
@@ -616,9 +639,7 @@
     font-size: 1em;
   }
 
-  .subheadingTwo,
   .subheadingFive,
-  .subheadingTwelve,
   .subheadingFourteen,
   .subheadingSixteen {
     font-size: 1em;
@@ -626,9 +647,6 @@
   }
 
   .subheadingTwo,
-  .subheadingFive,
-  .subheadingTwelve,
-  .subheadingFourteen,
   .subheadingSixteen,
   .subheadingSeventeen,
   .subheadingEighteen {
@@ -638,7 +656,7 @@
 
   h6,
   .boldText {
-    font-size: 0.5em;
+    font-size: 0.4em;
   }
 
   /* project bodycopy */
@@ -648,6 +666,20 @@
   .responsive,
   .approaches li {
     font-size: 0.8em;
+  }
+
+  .text {
+    top: -0.5rem;
+  }
+
+  .dots {
+    margin-top: 0;
+  }
+
+  .dot,
+  .dotTwo {
+    width: 10px;
+    height: 10px;
   }
 
   .sidenotes-mobile {
