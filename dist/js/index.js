@@ -31,83 +31,6 @@ $(document).ready(function () {
     });
   }
 
-  //-------------------------------configuration for projects and iframe-------------------------------------------
-
-  // Boxlayout Starts for iframe and project previews
-  var Boxlayout = (function () {
-    var $el = $(".bl-main"),
-      $menu = $(".menu-nav"),
-      $quotes = $(".quote"),
-      $page = $(".onepage-pagination");
-    ($sections = $el.children(".project")),
-      (transEndEventNames = {
-        WebkitTransition: "webkitTransitionEnd",
-        MozTransition: "transitionend",
-        OTransition: "oTransitionEnd",
-        msTransition: "MSTransitionEnd",
-        transition: "transitionend",
-      }),
-      // transition end event name
-      (transEndEventName =
-        transEndEventNames[Modernizr.prefixed("transition")]),
-      // support css transitions
-      (supportTransitions = Modernizr.csstransitions);
-
-    function init() {
-      initEvents();
-    }
-
-    function initEvents() {
-      $sections.each(function (index) {
-        var $section = $(this);
-        // expand the clicked section and scale down the others
-        $section
-          .on("click", function () {
-            curIframeIndex = index;
-            $section.find("iframe").attr("src", projectLinks[curIframeIndex]);
-            $section.find(".bl-content").css({ width: "100%", height: "100%" });
-
-            $section.addClass("bl-expand bl-expand-top");
-            $el.addClass("bl-expand-item");
-            // hide the menu, pagination and quotes
-            $menu.addClass("noDisplay");
-            $quotes.addClass("bl-expand-item");
-            $page.addClass("noDisplay");
-          })
-
-          .find("span.bl-icon-close")
-          .on("click", function () {
-            // close the expanded section and scale up the others
-
-            $section
-              .removeClass("bl-expand")
-              .on(transEndEventName, function (event) {
-                // show the menu, pagination and quotes
-                $menu.removeClass("noDisplay");
-                $quotes.removeClass("bl-expand");
-                $page.removeClass("noDisplay");
-                $section.find(".bl-content").css({ width: "0", height: "0" });
-                $section.find("iframe").attr("src", "");
-
-                if (!$(event.target).is(".project")) return false;
-                $(this).off(transEndEventName).removeClass("bl-expand-top");
-              });
-
-            if (!supportTransitions) {
-              $section.removeClass("bl-expand-top");
-            }
-
-            $el.removeClass("bl-expand-item");
-
-            return false;
-          });
-      });
-    }
-
-    return { init: init };
-  })();
-  Boxlayout.init();
-
   // --------------Configuration of Motion-------------------------------------------
   // Pop up bside function
 
@@ -180,7 +103,9 @@ $(document).ready(function () {
   });
 
   $(".closeFrame").map(function () {
-    $(this).click(() => $("body").removeClass("noScrollbar"));
+    $(this).click(() => {
+      $("body").removeClass("noScrollbar");
+    });
   });
 });
 
