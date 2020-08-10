@@ -389,13 +389,13 @@ section {
   display: block;
   object-fit: cover;
   overflow: hidden;
-  width: 36vw;
-  height: 48vh;
+  width: 100%;
+  height: 90%;
 }
 
 .bl-box {
   width: 40vw;
-  height: 64vh;
+  height: 36vw;
   cursor: pointer;
   position: relative;
   border: 2px solid #050505;
@@ -412,7 +412,7 @@ section {
 
 .project-link {
   width: 40vw;
-  height: 64vh;
+  height: 36vw;
   position: absolute;
   top: 0;
   left: 0;
@@ -667,7 +667,6 @@ section {
   align-self: center;
   justify-self: center;
   text-align: center;
-  position: absolute;
   margin-top: 2vw;
 }
 
@@ -866,11 +865,11 @@ section {
   }
 
   p {
-    font-size: 1em;
+    font-size: 1.6rem;
   }
 
   h1 {
-    font-size: 3em;
+    font-size: 3rem;
   }
 
   .showonMobile {
@@ -902,11 +901,11 @@ section {
   }
 
   .profileName {
-    font-size: 3em;
+    font-size: 3rem;
   }
 
   .icons {
-    font-size: 1.2em;
+    font-size: 1.4rem;
     text-align: start;
   }
 
@@ -920,7 +919,7 @@ section {
   #btn-seeMore,
   #btn-seeMore:focus,
   #btn-seeMore:visited {
-    font-size: 1em;
+    font-size: 1.4rem;
   }
 
   .bsideText {
@@ -928,30 +927,40 @@ section {
     padding: 0 6vw;
   }
 
-  .buttonTwo {
-    grid-area: 4/1/5/6;
-    font-size: 1em;
+  .workSection,
+  .bside {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
 
-  #btn-gallery,
-  #btn-gallery:focus,
-  #btn-gallery:visited {
-    font-size: 1em;
+  .bl-box,
+  .project-link {
+    width: 60vw;
+    height: 56vw;
+  }
+
+  .quote {
+    margin: 6vw 0;
+  }
+
+  .bsideText {
+    margin-top: 6vw;
   }
 
   .bsidemenu-container {
-    grid-area: 3/1/4/6;
     width: 60vw;
     height: 40vw;
+    margin: 2vw 6vw;
   }
 
   .socialicons {
-    font-size: 1em;
+    font-size: 1.4rem;
   }
 
   .hashtag {
-    font-size: 1em;
-    top: -20px;
+    font-size: 1rem;
+    top: -1rem;
   }
 
   .bside-content {
@@ -963,7 +972,7 @@ section {
   }
 
   .btn-popup-close {
-    font-size: 1em;
+    font-size: 1rem;
   }
 
   .galleryend {
@@ -972,17 +981,21 @@ section {
 
   .close,
   .close-video {
-    font-size: 1em;
+    font-size: 1rem;
   }
 }
 
 @media only screen and (max-width: 500px) {
-  p {
-    font-size: 0.8em;
+  h1 {
+    font-size: 2.4rem;
   }
 
-  h1 {
-    font-size: 1.5em;
+  h2 {
+    font-size: 2rem;
+  }
+
+  .readMore {
+    font-size: 1.4rem;
   }
 
   .intro {
@@ -991,17 +1004,8 @@ section {
   }
 
   .profileName {
-    font-size: 1.5em;
+    font-size: 2.4rem;
     margin-bottom: 1em;
-  }
-
-  .profileImage {
-    grid-area: 3/1/4/4;
-    align-self: end;
-  }
-
-  .icons {
-    font-size: 1em;
   }
 
   .button {
@@ -1011,35 +1015,24 @@ section {
     text-align: center;
   }
 
-  #btn-seeMore,
-  #btn-seeMore:focus,
-  #btn-seeMore:visited {
-    font-size: 0.8em;
+  .quote {
+    width: 75vw;
   }
 
-  .quotes {
-    font-size: 1em;
+  .bl-box {
+    width: 75vw;
+    height: 70vw;
   }
 
-  .projectImage {
+  /* .projectImage {
     width: 300px;
     height: 24vh;
     justify-self: center;
     align-self: center;
-  }
-
-  .overlay {
-    width: 300px;
-    height: 24vh;
-  }
-
-  .quoteSectionOne,
-  .quoteSectionTwo {
-    max-width: 300px;
-  }
+  } */
 
   .text {
-    font-size: 1em;
+    font-size: 1rem;
   }
 
   .bside {
@@ -1048,20 +1041,18 @@ section {
   }
 
   .bsidemenu-container {
-    width: 81vw;
-    height: 54vw;
-  }
-
-  .bside-title {
-    font-size: 1.5em;
+    width: 80vw;
+    height: 56vw;
+    padding-top: 1rem;
   }
 
   .hashtag {
-    font-size: 0.8em;
+    font-size: 0.8rem;
   }
 
   .bsideText {
-    margin-left: 2em;
+    margin-left: 2rem;
+    margin-top: 0;
   }
 
   .bside-content {
@@ -1112,11 +1103,27 @@ section {
   }
 }
 
-@media only screen and (max-width: 365px) {
+@media only screen and (max-width: 420px) {
   h1,
   .profileName,
   .bside-title {
-    font-size: 1.2em;
+    font-size: 2rem;
+  }
+
+  p,
+  .readMore {
+    font-size: 1rem;
+  }
+
+  #btn-seeMore,
+  #btn-seeMore:focus,
+  #btn-seeMore:visited {
+    font-size: 1rem;
+  }
+
+  .workSection {
+    height: 80vh;
+    margin: 10vh 0;
   }
 
   .quotes {
@@ -1126,17 +1133,4 @@ section {
   #main-footer {
     font-size: 0.5em;
   }
-}
-
-.test {
-  height: 400vh;
-  width: 66vw;
-}
-
-.testImage {
-  width: 100%;
-  margin: 8vh;
-  display: inline-block;
-  position: relative;
-  left: 14vw;
 }

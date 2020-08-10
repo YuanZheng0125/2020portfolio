@@ -236,7 +236,6 @@ a.highLight:active {
 }
 
 .subheadingTwo,
-.highschoolstudent,
 .gridTwo-itemOne,
 .gridTwo-itemTwo,
 .gridTwo-itemThree {
@@ -704,6 +703,7 @@ a.highLight:active {
   width: 100%;
   height: 100%;
   border-radius: 0 20px 20px 0;
+  margin: 0 0.4vw;
 }
 
 .fa-angle-right {
