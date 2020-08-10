@@ -179,16 +179,6 @@ a.highLight:active {
   grid-template-rows: 1.2fr 1.5fr 1fr;
 }
 
-.gridOne-movedown {
-  position: relative;
-  width: 70%;
-  left: 15%;
-  height: 100%;
-  display: grid;
-  grid-template-columns: repeat(4 1fr);
-  grid-template-rows: 2fr 1.5fr 1fr;
-}
-
 .subheadingOne,
 .subheadingFour,
 .subheadingSeven,
@@ -480,12 +470,13 @@ a.highLight:active {
 }
 
 ::-webkit-scrollbar-track {
-  color: #fcfcfc;
+  color: #050505;
 }
 
 /* Handle */
 ::-webkit-scrollbar-thumb {
-  background: #050505;
+  background: #ff6a21;
+  border-radius: 20px;
 }
 
 /* Handle on hover */
@@ -567,6 +558,17 @@ a.highLight:active {
 /* Thirteenth screen - conclusion */
 .conclusion {
   margin-left: 3vw;
+}
+
+.conclusion_styleTwo {
+  height: 40vh;
+}
+
+.recommendation_styleTwo {
+  position: relative;
+  width: 70vw;
+  left: 15vw;
+  top: 16vh;
 }
 
 /* Fourthteen screen - visual compare */

@@ -106,12 +106,13 @@ p {
 
 /* Track */
 ::-webkit-scrollbar-track {
-  background: #ff6a21;
+  background: #050505;
 }
 
 /* Handle */
 ::-webkit-scrollbar-thumb {
-  background: #050505;
+  background: #ff6a21;
+  border-radius: 20px;
 }
 
 /* Handle on hover */
@@ -839,7 +840,7 @@ section {
 }
 
 .galleryend {
-  color: #fcfcfc;
+  color: #050505;
   width: 100vw;
   font-size: 4vw;
   font-weight: 700;
