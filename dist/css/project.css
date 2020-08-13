@@ -168,7 +168,16 @@ a.highLight:active {
 /* Problem - 2nd screen */
 .gridOne,
 .gridFour,
-.gridSeven,
+.gridSeven {
+  position: relative;
+  width: 70%;
+  left: 15%;
+  height: 100%;
+  display: grid;
+  grid-template-columns: 15vw 15vw 20vw 20vw;
+  grid-template-rows: 1.2fr 1.5fr 1fr;
+}
+
 .gridThirteen {
   position: relative;
   width: 70%;
