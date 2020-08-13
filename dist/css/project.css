@@ -416,6 +416,14 @@ a.highLight:active {
   align-self: center;
 }
 
+.IA_scroll {
+  grid-area: 2/1/4/4;
+  width: 100%;
+  height: 75vh;
+  overflow-y: scroll;
+  overflow-x: hidden;
+}
+
 .subheadingFive {
   grid-area: 1/1/2/4;
   text-align: center;
