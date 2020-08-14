@@ -532,7 +532,7 @@
   }
 
   .sidebar:hover {
-    transform: translateX(46vw);
+    transform: translate(46vw, -200px);
   }
 
   .index-indicator {

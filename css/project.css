@@ -702,10 +702,11 @@ a.highLight:active {
   display: grid;
   grid-template-columns: auto 2vw;
   left: -20vw;
-  top: 32vh;
+  top: 50%;
+  transform: translateY(-200px);
   z-index: 99;
   width: 22vw;
-  height: 36vh;
+  height: 400px;
   background-color: #fff;
   border-radius: 0 20px 20px 0;
   border: 4px solid #050505;
@@ -739,7 +740,7 @@ a.highLight:active {
 }
 
 .sidebar:hover {
-  transform: translateX(20vw);
+  transform: translate(20vw, -200px);
 }
 
 .index-container {
