@@ -474,7 +474,7 @@ section {
 /* Bside slide show */
 .bsidemenu-container {
   grid-area: 2/2/3/3;
-  align-self: end;
+  align-self: center;
   justify-self: center;
 }
 
@@ -489,11 +489,6 @@ section {
   box-shadow: 8px 8px #050505;
   background-color: #fff;
   transition: all 0.2s ease-out;
-}
-
-.bsidemenu-container:hover {
-  transform: translate(2px, 2px);
-  box-shadow: 6px 6px #050505;
 }
 
 .bsideslides {
