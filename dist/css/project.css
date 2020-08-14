@@ -414,6 +414,7 @@ a.highLight:active {
   width: 100%;
   justify-self: center;
   align-self: center;
+  box-shadow: 6px 6px 40px 2px #f0f0f070;
 }
 
 .IA_scroll {
