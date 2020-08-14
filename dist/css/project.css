@@ -732,11 +732,16 @@ a.highLight:active {
   top: 46%;
   left: 24%;
   transition: all 0.2s ease-in-out;
+  cursor: default;
 }
 
 .sidebar:hover .fa-angle-right,
 .fa-angle-right:hover {
   transform: rotate(180deg);
+}
+
+.sidebar:hover .fa-angle-right {
+  color: #050505;
 }
 
 .sidebar:hover {
