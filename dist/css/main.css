@@ -268,21 +268,18 @@ section {
   text-align: center;
 }
 
-.fa,
 .fab,
 .far {
   margin: 0 0.5vw;
   color: #050505;
 }
 
-.fa:hover,
 .fab:hover,
 .far:hover,
 .fa-border:hover {
   color: #348bfd;
 }
 
-.fa:active,
 .fab:active,
 .far:active,
 .fa-border:active {
@@ -444,14 +441,6 @@ section {
 
 .fa-smile-o {
   color: #ff6a21;
-}
-
-/* Icons - ins, vimeo, behance */
-.socialicons {
-  display: block;
-  margin-top: 2vw;
-  font-size: 1.2vw;
-  transform: translateX(-0.5vw);
 }
 
 /* hashtag & project name */
