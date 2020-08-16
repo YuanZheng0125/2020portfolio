@@ -22,4 +22,4 @@ jobs:
         access-key-secret: ${{ secrets.OSS_KEY_SECRET }}
 
     - name: copy files to OSS
-      run: ossutil cp -r ./dist oss://yzcanvas-china/
+      run: ossutil cp -rf ./dist oss://yzcanvas-china/
