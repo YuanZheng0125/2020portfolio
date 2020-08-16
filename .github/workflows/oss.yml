@@ -1,0 +1,25 @@
+name: deploy to aliyun oss
+
+on:
+  push:
+    branches: [ master ]
+ 
+jobs:
+  build:
+
+    runs-on: ubuntu-latest
+
+    steps:
+    # 切代码到 runner
+    - uses: actions/checkout@v2
+
+    # set OSS id/secrets and store in secrets
+    - name: setup aliyun oss
+      uses: manyuanrong/setup-ossutil@master
+      with:
+        endpoint: oss-cn-hongkong.aliyuncs.com
+        access-key-id: ${{ secrets.OSS_KEY_ID }}
+        access-key-secret: ${{ secrets.OSS_KEY_SECRET }}
+
+    - name: copy files to OSS
+      run: ossutil cp -r ./dist oss://yzcanvas-china/
