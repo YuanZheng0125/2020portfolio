@@ -313,7 +313,7 @@
 }
 
 /* Responsive */
-@media only screen and (min-aspect-ratio: 16/9) {
+/* @media only screen and (min-aspect-ratio: 16/9) {
   .index-items {
     font-size: 20px;
   }
@@ -322,7 +322,7 @@
   .index-items:hover {
     font-size: 20px;
   }
-}
+} */
 
 @media only screen and (min-width: 960px) {
   .sidebar {
@@ -354,11 +354,11 @@
   }
 
   .index-items {
-    font-size: 1.5rem;
+    font-size: 1.2rem;
   }
 
   .index-items:hover {
-    font-size: 1.5rem;
+    font-size: 1.2rem;
   }
 }
 
