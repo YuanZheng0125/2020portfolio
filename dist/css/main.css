@@ -1,3 +1,7 @@
+html {
+  font-size: 16px;
+}
+
 * {
   font-family: "Space Mono", mono space;
   color: #050505;
