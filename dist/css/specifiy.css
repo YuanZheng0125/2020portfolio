@@ -325,12 +325,40 @@
 }
 
 @media only screen and (min-width: 960px) {
+  .sidebar {
+    position: fixed;
+    display: grid;
+    grid-template-columns: auto 50px;
+    left: -400px;
+    top: 50%;
+    transform: translateY(-200px);
+    z-index: 99;
+    width: 450px;
+    height: 400px;
+  }
+
+  .fa-angle-right {
+    font-size: 40px;
+    top: 46%;
+    left: 24%;
+    transition: all 0.2s ease-in-out;
+    cursor: default;
+  }
+
+  .sidebar:hover .fa-angle-right {
+    color: #050505;
+  }
+
+  .sidebar:hover {
+    transform: translate(400px, -200px);
+  }
+
   .index-items {
-    font-size: 1rem;
+    font-size: 1.5rem;
   }
 
   .index-items:hover {
-    font-size: 1rem;
+    font-size: 1.5rem;
   }
 }
 
