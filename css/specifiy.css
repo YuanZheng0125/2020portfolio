@@ -606,15 +606,20 @@
 
   h5,
   p,
+  .iteration,
   .bodyCopySeven,
   .responsive,
   .approaches li {
-    font-size: 1.2rem;
+    font-size: 14px;
+  }
+
+  .iteration {
+    bottom: 3px;
   }
 
   h6,
   .boldText {
-    font-size: 1rem;
+    font-size: 14px;
   }
 
   .short {
@@ -630,25 +635,53 @@
     height: 360px;
   }
 
+  h3 {
+    font-size: 20px;
+  }
+
   .subheadingTwo,
   .subheadingFive,
   .subheadingFourteen,
   .subheadingSixteen {
-    font-size: 1.5em;
+    font-size: 20px;
     width: 100%;
+    padding: 10px;
   }
 
   .subheadingSeventeen,
   .subheadingEighteen {
     width: 80%;
+    padding: 10px;
+  }
+
+  .IA,
+  .sketches,
+  .visuals,
+  .slideshow,
+  .slideshowTwo,
+  .sketches-moveup {
+    width: 80vw;
+    margin: 0 10vw;
+  }
+
+  .sketches,
+  .visuals,
+  .slideshow,
+  .sketches-moveup {
+    height: 50vw;
+  }
+
+  .IA {
+    margin: 40px 10vw;
   }
 
   .sidenotes-mobile {
     line-height: 1.6;
+    font-size: 14px;
   }
 
   .mobileVideo {
-    width: 50vw;
+    width: 30vw;
     height: auto;
   }
 
@@ -658,11 +691,29 @@
   }
 
   .landscapeVideo {
-    width: 75%;
+    width: 40vw;
+  }
+
+  .sidevideo-mobile {
+    margin-top: 80px;
   }
 
   .labelText {
     transform: translate(6vw, -4vw);
+  }
+
+  .text {
+    font-size: 8px;
+    top: -8px;
+  }
+
+  .dots {
+    margin-top: 0;
+  }
+
+  .dot {
+    width: 10px;
+    height: 10px;
   }
 }
 
@@ -714,6 +765,7 @@
   .subheadingSixteen {
     font-size: 1em;
     width: 100%;
+    padding: 10px;
   }
 
   .subheadingTwo,
@@ -722,6 +774,11 @@
   .subheadingEighteen {
     font-size: 1em;
     width: 80%;
+    padding: 10px;
+  }
+
+  .subheadingFourteen {
+    height: auto;
   }
 
   h6,
@@ -761,5 +818,9 @@
   .guide-link {
     width: 300px;
     height: 270px;
+  }
+
+  .IA {
+    margin: 40px 10vw;
   }
 }

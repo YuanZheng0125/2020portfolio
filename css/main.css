@@ -1051,6 +1051,10 @@ section {
     height: 10px;
   }
 
+  .bside-dots {
+    margin-top: 0;
+  }
+
   .hashtag {
     font-size: 0.5rem;
   }
