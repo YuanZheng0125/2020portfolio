@@ -584,7 +584,7 @@
   }
 }
 
-@media only screen and (max-width: 420px) {
+@media only screen and (max-width: 560px) {
   .sidebar {
     width: 50vw;
     left: -46vw;
@@ -599,7 +599,7 @@
   }
 
   .fa-angle-right {
-    font-size: 2rem;
+    font-size: 1rem;
     margin: 0;
     left: 0;
   }
@@ -675,12 +675,12 @@
 
   .index-items,
   .explanation {
-    font-size: 0.5rem;
+    font-size: 0.8rem;
   }
 
   .index-items:hover,
   .index-items:active {
-    font-size: 0.5rem;
+    font-size: 0.8rem;
   }
 
   .iteration {
