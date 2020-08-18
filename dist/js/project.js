@@ -17,9 +17,9 @@ $(document).ready(function () {
   horizontalScroll();
 });
 
-$("#bl-close").click(() => {
-  history.back();
-});
+// $("#bl-close").click(() => {
+//   history.back();
+// });
 
 // slide show
 var slideIndex = 1;

@@ -577,9 +577,14 @@
   .mobileVideo {
     height: 50vh;
   }
+
+  .brief {
+    width: 90vw;
+    left: 5vw;
+  }
 }
 
-@media only screen and (max-width: 500px) {
+@media only screen and (max-width: 420px) {
   .sidebar {
     width: 50vw;
     left: -46vw;
