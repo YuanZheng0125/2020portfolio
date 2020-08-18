@@ -995,117 +995,6 @@ section {
   }
 }
 
-@media only screen and (max-width: 420px) {
-  h1 {
-    font-size: 2.4rem;
-  }
-
-  h2 {
-    font-size: 2rem;
-  }
-
-  .readMore {
-    font-size: 1.4rem;
-  }
-
-  .intro {
-    width: 95vw;
-    left: 2vw;
-  }
-
-  .profileName {
-    font-size: 2.4rem;
-    margin-bottom: 1em;
-  }
-
-  .button {
-    grid-area: 4/1/5/4;
-    align-self: center;
-    justify-self: center;
-    text-align: center;
-  }
-
-  .quote {
-    width: 75vw;
-  }
-
-  .bl-box {
-    width: 75vw;
-    height: 70vw;
-  }
-
-  .text {
-    font-size: 1rem;
-  }
-
-  .bside {
-    width: 95vw;
-    left: 2vw;
-  }
-
-  .bsidemenu-container {
-    width: 80vw;
-    height: 56vw;
-    padding-top: 1rem;
-  }
-
-  .hashtag {
-    font-size: 0.8rem;
-  }
-
-  .bsideText {
-    margin-left: 2rem;
-    margin-top: 0;
-  }
-
-  .bside-content {
-    width: 320px;
-    height: 180x;
-    top: 50%;
-    left: 50%;
-    transform: translate(-160px, -240px);
-  }
-
-  .bl-icon-close,
-  .btn-popup-close {
-    font-size: 0.8em;
-  }
-
-  #btn-gallery,
-  #btn-gallery:focus,
-  #btn-gallery:visited {
-    font-size: 0.8em;
-  }
-
-  .galleryend {
-    font-size: 1.5em;
-  }
-
-  .close,
-  .close-video {
-    font-size: 0.8em;
-  }
-
-  .modal-content,
-  .modal-video-content {
-    width: 100%;
-    height: auto;
-  }
-
-  .modal,
-  .modal-video {
-    padding: 20% 0;
-  }
-
-  .holder {
-    height: 36vh;
-  }
-
-  #main-footer {
-    font-size: 1em;
-  }
-}
-
 @media only screen and (max-width: 560px) {
   h1,
   .profileName,
@@ -1164,5 +1053,125 @@ section {
 
   .hashtag {
     font-size: 0.5rem;
+  }
+}
+
+@media only screen and (max-width: 420px) {
+  h1 {
+    font-size: 20px;
+  }
+
+  h2 {
+    font-size: 20px;
+  }
+
+  p {
+    font-size: 12px;
+  }
+
+  .readMore {
+    font-size: 12px;
+  }
+
+  .intro,
+  .bside {
+    width: 95vw;
+    left: 2vw;
+  }
+
+  .profileName {
+    font-size: 20px;
+    margin-bottom: 8px;
+  }
+
+  .button {
+    grid-area: 4/1/5/4;
+    align-self: center;
+    justify-self: center;
+    text-align: center;
+  }
+
+  .quote {
+    width: 75vw;
+  }
+
+  .bl-box {
+    width: 75vw;
+    height: 70vw;
+  }
+
+  .text {
+    font-size: 12px;
+  }
+
+  .bside {
+    width: 95vw;
+    left: 2vw;
+  }
+
+  .bsidemenu-container {
+    width: 80vw;
+    height: 56vw;
+    padding-top: 1rem;
+  }
+
+  .hashtag {
+    font-size: 8px;
+  }
+
+  .bsideText {
+    margin-left: 2rem;
+    margin-top: 0;
+  }
+
+  .bside-dots {
+    margin-top: 0;
+  }
+
+  .bside-content {
+    width: 320px;
+    height: 180x;
+    top: 50%;
+    left: 50%;
+    transform: translate(-160px, -240px);
+  }
+
+  .bl-icon-close,
+  .btn-popup-close {
+    font-size: 12px;
+  }
+
+  #btn-gallery,
+  #btn-gallery:focus,
+  #btn-gallery:visited {
+    font-size: 12px;
+  }
+
+  .galleryend {
+    font-size: 20px;
+  }
+
+  .close,
+  .close-video {
+    font-size: 12px;
+  }
+
+  .modal-content,
+  .modal-video-content {
+    width: 100%;
+    height: auto;
+  }
+
+  .modal,
+  .modal-video {
+    padding: 20% 0;
+  }
+
+  .holder {
+    height: 36vh;
+  }
+
+  #main-footer {
+    font-size: 1em;
   }
 }
