@@ -373,11 +373,11 @@
 
   h6,
   .boldText {
-    font-size: 1.2rem;
+    font-size: 0.8rem;
   }
 
   h3 {
-    font-size: 2rem;
+    font-size: 1.4rem;
   }
 
   h4 {
@@ -388,7 +388,7 @@
   p,
   .bodyCopySeven,
   .approaches li {
-    font-size: 1.6rem;
+    font-size: 1rem;
   }
 
   .gridOne,
@@ -427,16 +427,17 @@
   }
 
   .subheadingTwo,
-  .subheadingFourteen,
   .subheadingSeventeen,
   .subheadingEighteen {
-    font-size: 1.8em;
+    font-size: 1.4rem;
     width: 50%;
   }
 
   .subheadingSixteen,
+  .subheadingFourteen,
   .subheadingFive {
-    font-size: 1.8em;
+    font-size: 1.4rem;
+    width: 80%;
   }
 
   .gridTwo-itemOne,
@@ -549,7 +550,7 @@
   }
 
   .landscapeVideo {
-    width: 50%;
+    width: 36%;
   }
 
   .herovideo {
@@ -571,6 +572,10 @@
   .guide-link {
     width: 72vw;
     height: 60vw;
+  }
+
+  .mobileVideo {
+    height: 50vh;
   }
 }
 
