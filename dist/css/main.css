@@ -1066,11 +1066,11 @@ section {
   }
 
   p {
-    font-size: 12px;
+    font-size: 14px;
   }
 
   .readMore {
-    font-size: 12px;
+    font-size: 14px;
   }
 
   .intro,
@@ -1079,9 +1079,17 @@ section {
     left: 2vw;
   }
 
+  .intro {
+    grid-template-rows: 3fr 1fr 1fr 1fr;
+  }
+
   .profileName {
     font-size: 20px;
-    margin-bottom: 8px;
+    margin-bottom: 0;
+  }
+
+  .profile-subheader {
+    margin-top: 1em;
   }
 
   .button {
