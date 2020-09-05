@@ -13,6 +13,14 @@ body::-webkit-scrollbar {
   grid-template-rows: repeat(3 1fr);
 }
 
+.underline {
+  text-decoration: underline;
+}
+
+.underline:hover {
+  color: #348bfd;
+}
+
 /* Close button */
 .bl-close {
   display: block;
@@ -103,11 +111,11 @@ h5 {
 /* Global project first screen format */
 .projectOverview {
   grid-area: 1/1/2/4;
-  line-height: 1.4;
-  text-align: center;
+  line-height: 1.5;
+  /* text-align: center; */
   justify-self: center;
   align-self: center;
-  width: 90%;
+  width: 95%;
 }
 
 .projectType {
@@ -128,7 +136,7 @@ h5 {
 .projectTimeline {
   margin-top: 40px;
   justify-self: center;
-  width: 80%;
+  width: 95%;
 }
 
 .boldText {
@@ -419,8 +427,28 @@ a.highLight:active {
 
 .IA_scroll {
   grid-area: 2/1/4/4;
+  width: 90%;
+  height: 72vh;
+  justify-self: center;
+  align-self: center;
+  overflow-y: scroll;
+  overflow-x: hidden;
+}
+
+.singleImage {
+  grid-area: 1/1/4/4;
+  width: 100%;
+  justify-self: center;
+  align-self: center;
+  box-shadow: 6px 6px 40px 2px #f0f0f070;
+}
+
+.singleImage_scroll {
+  grid-area: 1/1/4/4;
   width: 100%;
   height: 75vh;
+  justify-self: center;
+  align-self: center;
   overflow-y: scroll;
   overflow-x: hidden;
 }
