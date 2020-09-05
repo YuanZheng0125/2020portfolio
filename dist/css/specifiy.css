@@ -285,19 +285,9 @@
 
 .herovideo {
   position: relative;
-  margin-top: 4vw;
-  transform: translateX(-500px);
-  left: 35vw;
-}
-
-.gridFive-movedown {
-  position: relative;
-  width: 70%;
-  left: 15%;
-  height: 100%;
-  display: grid;
-  grid-template-columns: repeat(3 1fr);
-  grid-template-rows: 1fr 1fr 1fr;
+  margin-top: 200px;
+  transform: translateX(-400px);
+  left: 50vw;
 }
 
 /* Unbuilt Labs */
@@ -310,6 +300,10 @@
   width: 50vw;
   height: 45vw;
   border: 2px solid #050505;
+}
+
+.guideImage {
+  width: 100%;
 }
 
 /* Responsive */

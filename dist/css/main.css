@@ -456,6 +456,10 @@ section {
 }
 
 /* Video B-side */
+#bsidePage {
+  background-color: #eee;
+}
+
 .bsideImage {
   width: 100%;
   vertical-align: middle;
