@@ -737,12 +737,12 @@
 @media only screen and (max-width: 420px) {
   .sidebar {
     width: 280px;
-    left: -260px;
-    grid-template-columns: auto 20px;
+    left: -240px;
+    grid-template-columns: auto 40px;
   }
 
   .sidebar:hover {
-    transform: translate(260px, -200px);
+    transform: translate(240px, -200px);
   }
 
   .index-indicator {
@@ -750,9 +750,9 @@
   }
 
   .fa-angle-right {
-    font-size: 14px;
+    font-size: 20px;
     margin: 0;
-    left: 6px;
+    left: 16px;
   }
 
   .index-items,
