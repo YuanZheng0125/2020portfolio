@@ -7,10 +7,10 @@ I'm a virologist turned UX & product designer. I like solving problems and creat
 
 ---
 * #### UX design works included in the portfolio:
-  * :seedling: &nbsp **[Unbuilt Labs]( http://www.yzcanvas.com/UnbuiltLabs.html)**: Design a new editorial experience for a sustainability innovation startup.
-  * :camera: &nbsp **[Petography](http://www.yzcanvas.com/Petography.html)**: Design an all-in-one pet photo organizer for snap-happy pet lovers. 
-  * :hospital: &nbsp **[HealthFusion](http://www.yzcanvas.com/HealthFusion.html)**: Visualize future electronic health data with interface and motion design.
-  * :hammer: &nbsp **[TigerKeeper](http://www.yzcanvas.com/FMS.html)**: Design a facility issue reporting system for improving communications between schools with their students.
+  * :seedling: <pre> **[Unbuilt Labs]( http://www.yzcanvas.com/UnbuiltLabs.html)**: Design a new editorial experience for a sustainability innovation startup.
+  * :camera:<pre> **[Petography](http://www.yzcanvas.com/Petography.html)**: Design an all-in-one pet photo organizer for snap-happy pet lovers. 
+  * :hospital: <pre> **[HealthFusion](http://www.yzcanvas.com/HealthFusion.html)**: Visualize future electronic health data with interface and motion design.
+  * :hammer:<pre> **[TigerKeeper](http://www.yzcanvas.com/FMS.html)**: Design a facility issue reporting system for improving communications between schools with their students.
 
 * #### Side projects (motion, graphic, code) can be found [HERE](http://www.yzcanvas.com/index.html#bsidePage)!
 
