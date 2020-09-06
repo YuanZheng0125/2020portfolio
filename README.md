@@ -7,7 +7,7 @@ I'm a virologist turned UX & product designer. I like solving problems and creat
 
 ---
 * #### UX design works included in the portfolio:
-  * :seedling: &nbsp; **[Unbuilt Labs]( http://www.yzcanvas.com/UnbuiltLabs.html)**: Design a new editorial experience for a sustainability innovation startup.
+  * :seedling: &nbsp; **[Unbuilt Labs]( http://www.yzcanvas.com/UnbuiltLabs.html)**: Design a new editorial experience for a sustainable innovation startup.
   * :camera: &nbsp; **[Petography](http://www.yzcanvas.com/Petography.html)**: Design an all-in-one pet photo organizer for snap-happy pet lovers. 
   * :hospital: &nbsp; **[HealthFusion](http://www.yzcanvas.com/HealthFusion.html)**: Visualize future electronic health data with interface and motion design.
   * :hammer: &nbsp; **[TigerKeeper](http://www.yzcanvas.com/FMS.html)**: Design a facility issue reporting system for improving communications between schools with their students.
