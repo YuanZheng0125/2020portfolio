@@ -2,6 +2,10 @@ body::-webkit-scrollbar {
   display: none;
 }
 
+section {
+  position: relative;
+}
+
 .brief {
   position: absolute;
   top: 10vh;
