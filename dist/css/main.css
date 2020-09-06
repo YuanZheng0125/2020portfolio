@@ -694,6 +694,13 @@ section {
 }
 
 /* Gallery */
+.reminder {
+  position: absolute;
+  align-self: flex-start;
+  transform: translateY(16vh);
+  left: 16vw;
+}
+
 .gallery-container {
   display: flex;
   height: 100vh;
