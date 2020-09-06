@@ -1,7 +1,7 @@
 # Yuan Zheng _ UX Design Portfolio Website
 
 
-**Hi, I'm Yuan, a virologist turned UX & product designer. Thanks for checking out my Github page!** :smiley: 
+**Hi, I'm Yuan, a virologist turned UX & product designer. I like solving problems and create meaningful things. When I'm free, I like doing motion graphics, visual design and creative coding. Thanks for checking out my Github page!** :smiley: 
 
 ---
 #### Working samples included in the portfolio:
@@ -10,9 +10,8 @@
 * :hospital: **[HealthFusion](http://www.yzcanvas.com/HealthFusion.html)**: Visualize future electronic health data with interface and motion design.
 * :hammer: **[TigerKeeper](http://www.yzcanvas.com/FMS.html)**: Design a facility issue reporting system for improving communications between school with its students.
 ---
-When I'm free, I like doing motion graphics, visual design and creative coding. 
 
-#### See examples [HERE](http://www.yzcanvas.com/index.html#bsidePage)
+#### See my side projects (motion, graphic and coding) [HERE](http://www.yzcanvas.com/index.html#bsidePage)
 
 ---
 #### Also, welcome to know more about me at  
