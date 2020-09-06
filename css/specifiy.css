@@ -854,4 +854,16 @@
   .IA {
     margin: 40px 10vw;
   }
+
+  .projectOverview,
+  .projectType,
+  .projectResult,
+  .projectTimeline {
+    width: 80%;
+  }
+
+  .IA_scroll {
+    height: 50vh;
+    margin-top: 40px;
+  }
 }
