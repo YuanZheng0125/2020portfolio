@@ -1,0 +1,129 @@
+html {
+  font-size: 16px;
+  letter-spacing: 0.2ex;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color: #000;
+  background-color: #fff;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+  overflow-x: hidden;
+}
+
+.intro {
+  text-align: center;
+  margin: 100px auto;
+}
+
+.red {
+  color: #ff3b30;
+  margin-bottom: 1em;
+}
+
+.darkGrey {
+  color: #1c1c1e;
+}
+
+.medium {
+  font-weight: 500;
+}
+
+h1 {
+  font-size: 4.2em;
+  line-height: 1;
+  margin: 0.1em 0 0.6em 0;
+}
+
+h2 {
+  font-size: 2.4em;
+  line-height: 1;
+  margin: 0.25em 0;
+}
+
+h3 {
+  font-size: 1.6em;
+  line-height: 1.2;
+  letter-spacing: 0.08ex;
+}
+
+.CTA {
+  margin-top: 80px;
+}
+
+.demoLink {
+  color: #007aff;
+  font-weight: 400;
+  font-size: 1.6em;
+  text-decoration: none;
+}
+
+.arrow {
+  border: solid #007aff;
+  border-width: 0 3px 3px 0;
+  display: inline-block;
+  height: 10px;
+  padding: 5px;
+}
+
+.demoLink:hover {
+  text-decoration: underline;
+}
+
+.right {
+  transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg);
+}
+
+.holder {
+  padding: 0;
+  width: 799px;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+.demo {
+  width: 800px;
+  margin: 5em 0;
+  border: none;
+}
+
+.feature {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: flex-start;
+  align-items: center;
+  margin: 200px auto;
+}
+
+.videoHolder {
+  flex-grow: 2;
+}
+
+.demoVideo {
+  width: 60vw;
+  min-width: 720px;
+  max-width: 1000px;
+}
+
+.description {
+  padding: 0 4vw 0 10vw;
+}
+
+footer {
+  background-color: #fff;
+  border-top: 1px solid #00000025;
+  color: #000;
+  text-align: center;
+  height: 100px;
+  width: 100vw;
+  padding: 32px 0;
+  font-size: 1em;
+  font-weight: 500;
+  line-height: 36px;
+}
