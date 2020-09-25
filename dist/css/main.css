@@ -406,9 +406,9 @@ section {
 }
 
 .bl-box:hover {
-  transform: translate(2px, 2px);
-  transition: all 0.2s ease-out;
-  box-shadow: 6px 6px #050505;
+  transform: translate(4px, 4px);
+  transition: all 0.2s ease-in;
+  box-shadow: 4px 4px #050505;
 }
 
 .project-link {
