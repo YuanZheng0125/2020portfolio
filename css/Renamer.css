@@ -1,6 +1,6 @@
 html {
   font-size: 16px;
-  letter-spacing: 0.2ex;
+  /* letter-spacing: 0.2ex; */
 }
 
 * {
@@ -8,71 +8,155 @@ html {
   padding: 0;
   box-sizing: border-box;
   color: #000;
-  background-color: #fff;
 }
 
 body {
-  font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+  /* font-family: -apple-system, BlinkMacSystemFont, sans-serif; */
+  font-family: "Work Sans", sans-serif;
   overflow-x: hidden;
+  opacity: 0;
+  transition: opacity 2s ease-in;
+}
+
+a {
+  text-decoration: none;
+  cursor: pointer;
+}
+
+a:hover,
+a:active {
+  color: #000;
+}
+
+/* Nav bar */
+
+.nav-link {
+  color: #00000070;
+  cursor: pointer;
+  /* letter-spacing: 0.08ex; */
+}
+
+.nav-link:hover {
+  color: #000;
+}
+
+.nav-link:active,
+.menu-nav li.active a {
+  font-weight: 600;
+  color: #000;
+}
+
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 80px;
+  background-color: #fff;
+  line-height: 48px;
+  z-index: 99;
+  padding: 20px 2vw;
+}
+
+.menu-nav {
+  float: right;
+}
+
+.nav-item {
+  list-style: none;
+  display: inline-block;
+  margin-right: 2vw;
+  font-size: 1.2em;
+  text-align: end;
+}
+
+.fadethisdiv {
+  opacity: 0;
+}
+
+.logo {
+  width: 48px;
+  height: 48px;
 }
 
 .intro {
   text-align: center;
-  margin: 100px auto;
+  margin: 0 auto;
+  padding-top: 160px;
+  width: 60vw;
+  min-width: 400px;
+  padding: 0 auto;
 }
 
-.red {
-  color: #ff3b30;
-  margin-bottom: 1em;
+.orange {
+  color: #ff6a21;
 }
 
+.blue {
+  color: #348bfd;
+}
 .darkGrey {
   color: #1c1c1e;
 }
 
-.medium {
-  font-weight: 500;
+.green {
+  color: #008120;
+}
+
+.yellow {
+  color: #feb006;
+}
+
+.purple {
+  color: #6f01ff;
 }
 
 h1 {
   font-size: 4.2em;
-  line-height: 1;
-  margin: 0.1em 0 0.6em 0;
+  line-height: 1.2;
+  margin-bottom: 40px;
 }
 
 h2 {
-  font-size: 2.4em;
-  line-height: 1;
-  margin: 0.25em 0;
+  font-size: 3.2em;
+  line-height: 1.2;
+  margin: 0.2em 0 1em 0;
 }
 
 h3 {
   font-size: 1.6em;
   line-height: 1.4;
-  letter-spacing: 0.05ex;
+  /* letter-spacing: 0.05ex; */
+}
+
+p {
+  font-size: 1.2em;
+  line-height: 1.4;
+  font-weight: 400;
+  /* letter-spacing: 0.08ex; */
+}
+
+.tagline {
+  width: 52%;
+  margin: 0 24%;
 }
 
 .CTA {
-  margin-top: 80px;
+  margin-top: 40px;
 }
 
 .demoLink {
-  color: #007aff;
-  font-weight: 400;
-  font-size: 1.6em;
+  font-weight: 700;
+  font-size: 1.2em;
   text-decoration: none;
 }
 
 .arrow {
-  border: solid #007aff;
-  border-width: 0 3px 3px 0;
+  border: solid #000;
+  border-width: 0 4px 4px 0;
   display: inline-block;
-  height: 10px;
-  padding: 5px;
-}
-
-.demoLink:hover {
-  text-decoration: underline;
+  height: 8px;
+  padding: 4px;
 }
 
 .right {
@@ -82,14 +166,16 @@ h3 {
 
 .holder {
   padding: 0;
-  width: 799px;
+  width: 60vw;
+  max-width: 1000px;
+  min-width: 400px;
   margin: 0 auto;
   overflow: hidden;
 }
 
 .demo {
-  width: 800px;
-  margin-top: 5em;
+  width: 100.5%;
+  margin-top: 6em;
   border: none;
 }
 
@@ -98,21 +184,61 @@ h3 {
   flex-wrap: nowrap;
   justify-content: flex-start;
   align-items: center;
-  margin: 300px auto;
-}
-
-.videoHolder {
-  flex-grow: 2;
-}
-
-.demoVideo {
-  width: 60vw;
-  min-width: 720px;
-  max-width: 1000px;
+  width: 100vw;
+  margin: 100px 0;
+  padding: 160px 12vw;
+  background-color: #ffffff;
 }
 
 .description {
-  padding: 0 6vw 0 6vw;
+  padding: 0 4vw 0 0;
+  width: 38vw;
+}
+
+.videoHolder {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  width: 42vw;
+  height: 540px;
+  align-content: space-around;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.demoVideoOne {
+  width: 34vw;
+  border: 2px solid #000;
+  border-radius: 4px;
+}
+
+.demoImageTwo {
+  width: 22vw;
+  height: 7vw;
+  border: 2px solid #ff6a21;
+  border-radius: 0;
+  object-fit: cover;
+}
+
+.demoVideoThree {
+  width: 26vw;
+  border: 2px solid #000;
+  border-radius: 4px;
+  height: 20vw;
+  object-fit: cover;
+}
+
+.demoImageFour {
+  width: 28vw;
+  height: 10vw;
+  padding: 2vw;
+  border: 2px solid #348bfd;
+  border-radius: 0;
+  object-fit: contain;
+}
+
+.demoVideo {
+  width: 50vw;
 }
 
 footer {
@@ -124,7 +250,7 @@ footer {
   width: 100vw;
   padding: 32px 0;
   font-size: 1em;
-  letter-spacing: 0.05ex;
+  /* letter-spacing: 0.05ex; */
   font-weight: 500;
   line-height: 36px;
 }
