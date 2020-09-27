@@ -23,6 +23,9 @@
           <a href="#feature" class="nav-link">Features</a>
         </li>
         <li class="nav-item">
+          <a href="#workflow" class="nav-link">Workflow</a>
+        </li>
+        <li class="nav-item">
           <a href="#demo" class="nav-link">Demo </a>
         </li>
       </ul>
@@ -38,10 +41,14 @@
         </p>
       </div>
       <div class="CTA">
-        <a
-          href="https://www.figma.com/proto/lkkSBqT3e0fGfDxBvsL4t0/Multiple-files-rename?node-id=108%3A491&scaling=scale-down"
-          class="demoLink"
-        >
+        <button class="demoLink">
+          <a
+            href="https://www.figma.com/proto/lkkSBqT3e0fGfDxBvsL4t0/Multiple-files-rename?node-id=108%3A491&scaling=scale-down"
+          >
+            <span class="button">Try it in Figma</span></a
+          >
+        </button>
+        <a href="#demo" class="demoLink">
           See how it works <span class="arrow right"></span
         ></a>
       </div>
@@ -77,20 +84,21 @@
           class="demoOne"
         ></video>
         <img
-          src="./Assets_Renamer/Toggle.png"
+          src="./Assets_Renamer/Toggle.jpg"
           alt="toggle selection"
           class="demoTwo"
         />
       </div>
     </div>
-    <div class="design fadethisdiv" id="colorBG">
+    <div class="design fadethisdiv" id="workflow">
       <div class="description">
-        <p class="label purple">Design</p>
-        <h2 class="white">Workflow</h2>
-        <p class="lightGrey">
-          Quickly create index with the desired sequencing order and incremental
-          and organize your file with ease. Easily formatting all your text with
-          capitalizing or lowercasing the desired letters.
+        <p class="label purple">Workflow</p>
+        <h2 class="white">Streamline the renaming flow</h2>
+        <p class="white">
+          We divide the rename panel vertically into four sections based on
+          their functionality, you can view your selections, type in your new
+          name or add one or multiple components to format your names. Each
+          section can be folded or unfolded to match your needs.
         </p>
       </div>
       <div class="designHolder">
@@ -99,13 +107,13 @@
           autoplay
           muted
           loop
-          src="./Assets_Renamer/Smart Index.mp4"
-          class="demoFive"
+          src="./Assets_Renamer/Workflow01.mp4"
+          class="demoThree"
         ></video>
         <img
-          src="./Assets_Renamer/Case convert.jpg"
+          src="./Assets_Renamer/Work section.jpg"
           alt="case convert"
-          class="demoSix"
+          class="demoFour"
         />
       </div>
       <div class="designHolder">
@@ -118,86 +126,108 @@
           class="demoFive"
         ></video>
         <img
-          src="./Assets_Renamer/Case convert.jpg"
-          alt="case convert"
+          src="./Assets_Renamer/Format option.jpg"
+          alt="formatting"
           class="demoSix"
         />
       </div>
       <div class="description">
-        <p class="label purple">Design</p>
-        <h2 class="white">Smart formatting</h2>
-        <p class="lightGrey">
-          We improve name formatting process with designing a new way to
+        <p class="label blue">Add-ons</p>
+        <h2 class="white">Customization with ease</h2>
+        <p class="white">
+          We improve the formatting process with designing a new way to
           visualize the conventions. You can easily create your desired
           sequencing order and incremental. Also we add case convert function
           and date presenting options to speed up your workflow.
         </p>
       </div>
     </div>
-
-    <!-- <img
-        src="./Assets_Renamer/Final_white.jpg"
-        alt="rename final design"
-        class="demo"
-      /> -->
-    <!-- <div class="feature">
-      <div class="videoHolder">
-        <video
-          playsinline
-          autoplay
-          muted
-          loop
-          src="./Assets_Renamer/Smart Index_full.mp4"
-          class="demoVideo"
-        ></video>
+    <div class="tutorial fadethisdiv" id="demo">
+      <div class="slideshow">
+        <div class="dots">
+          <p class="label purple">Demo</p>
+          <h2>See how it works</h2>
+          <span class="dot stepOne" onclick="currentSlide(1)">01. Landing</span>
+          <br />
+          <span class="dot stepTwo" onclick="currentSlide(2)"
+            >02. View selections</span
+          ><br />
+          <span class="dot stepThree" onclick="currentSlide(3)"
+            >03. Add & format</span
+          ><br />
+          <span class="dot stepFour" onclick="currentSlide(4)"
+            >04. Case convert
+          </span>
+        </div>
+        <br />
+        <div class="slideshow-container">
+          <div class="mySlides fade">
+            <video
+              playsinline
+              autoplay
+              muted
+              loop
+              src="./Assets_Renamer/step01.mp4"
+              class="slideVideo slideOne"
+            ></video>
+          </div>
+          <div class="mySlides fade">
+            <video
+              playsinline
+              autoplay
+              muted
+              loop
+              src="./Assets_Renamer/step02.mp4"
+              class="slideVideo slideTwo"
+            ></video>
+          </div>
+          <div class="mySlides fade">
+            <video
+              playsinline
+              autoplay
+              muted
+              loop
+              src="./Assets_Renamer/step03.mp4"
+              class="slideVideo slideThree"
+            ></video>
+          </div>
+          <div class="mySlides fade">
+            <video
+              playsinline
+              autoplay
+              muted
+              loop
+              src="./Assets_Renamer/step04.mp4"
+              class="slideVideo slideFour"
+            ></video>
+          </div>
+          <!-- <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+          <a class="next" onclick="plusSlides(1)">&#10095;</a> -->
+        </div>
       </div>
-      <div class="description">
-        <h2>Smart Index</h2>
-        <p class="darkGrey">
-          Quickly create index with the desired sequencing order and incremental
-          and organize your file with ease
+    </div>
+    <div class="advanced fadethisdiv">
+      <div class="advanceText">
+        <h2 class="white">Advance your experience with expressions</h2>
+        <p class="lightGrey tagline">
+          Expressions is convenient when change the components order in a name.
+          We pick the most frequently used and keep it simple and ease to start.
+        </p>
+      </div>
+      <div class="advanceTable">
+        <img
+          src="./Assets_Renamer/expression.png"
+          alt="Expression"
+          class="expressionImage"
+        />
+        <p class="lightGrey caption">
+          Full regular expressions documentation can be found here
+          <a href="https://regexr.com/" class="expressionLink yellow"
+            >https://regexr.com/</a
+          >
         </p>
       </div>
     </div>
-    <div class="feature">
-      <div class="description">
-        <h2>Safe Editing</h2>
-        <p class="darkGrey">
-          View all your selected file names with a toggle button during editing
-          process
-        </p>
-      </div>
-      <div class="videoHolder">
-        <video
-          playsinline
-          autoplay
-          muted
-          loop
-          src="./Assets_Renamer/Safe Editing.mp4"
-          class="demoVideo"
-        ></video>
-      </div>
-    </div>
-    <div class="feature">
-      <div class="videoHolder">
-        <video
-          playsinline
-          autoplay
-          muted
-          loop
-          src="./Assets_Renamer/Case Convert.mp4"
-          class="demoVideo"
-        ></video>
-      </div>
-      <div class="description">
-        <h2>Convert Case</h2>
-        <p class="darkGrey">
-          Easily formatting all your text with capitalizing or lowercasing the
-          desired letters
-        </p>
-      </div>
-    </div> -->
-    <div id="demo"></div>
     <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
     <script src="./js/scroll.js"></script>
     <script src="./js/rename.js"></script>

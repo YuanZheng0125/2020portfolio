@@ -52,7 +52,7 @@ a:active {
   left: 0;
   width: 100vw;
   height: 80px;
-  background-color: #fff;
+  /* background-color: #fff; */
   line-height: 56px;
   z-index: 99;
   padding: 20px 4vw;
@@ -105,7 +105,7 @@ a:active {
 }
 
 .lightGrey {
-  color: #ffffff;
+  color: #b1b1b1;
 }
 
 .green {
@@ -118,10 +118,6 @@ a:active {
 
 .purple {
   color: #6f01ff;
-}
-
-#colorBG {
-  background-color: #ffbb2a;
 }
 
 h1 {
@@ -158,10 +154,31 @@ p {
   margin-top: 40px;
 }
 
+button {
+  border: none;
+  border-radius: 5px;
+  padding: 8px 20px;
+  background-color: #080808;
+  cursor: pointer;
+}
+
+button:focus,
+button:active,
+button:visited {
+  border: none;
+}
+
+.button {
+  font-weight: 500;
+  color: #fff;
+  font-family: "Work Sans", sans-serif;
+}
+
 .demoLink {
-  font-weight: 700;
+  font-weight: 600;
   font-size: 1.2em;
   text-decoration: none;
+  margin: 0 10px;
 }
 
 .arrow {
@@ -204,7 +221,7 @@ p {
   align-items: center;
   width: 100vw;
   margin: 100px 0;
-  padding: 160px 12vw;
+  padding: 120px 12vw;
   background-color: #ffffff;
 }
 
@@ -216,9 +233,13 @@ p {
   align-content: stretch;
   align-items: center;
   width: 100vw;
-  margin: 100px 0;
-  padding: 160px 12vw;
+  margin-top: 100px;
+  padding: 120px 12vw;
   background-color: #ffffff;
+}
+
+#workflow {
+  background-color: #ffbb2a;
 }
 
 .description {
@@ -244,6 +265,7 @@ p {
   flex-wrap: nowrap;
   flex-direction: column;
   width: 32vw;
+  margin: 0 2vw;
   /* height: 540px; */
   height: 40vw;
   min-height: 540px;
@@ -253,38 +275,194 @@ p {
 }
 
 .demoOne {
-  width: 35vw;
+  width: 33vw;
   border: 2px solid #000;
   border-radius: 4px;
 }
 
 .demoTwo {
-  width: 28vw;
-  height: 10vw;
-  padding: 2vw;
+  width: 25vw;
+  height: 11vw;
+  /* padding: 2vw; */
   border: 2px solid #348bfd;
+  border-radius: 0;
+  object-fit: cover;
+}
+
+.demoThree {
+  width: 32vw;
+  border: 2px solid #000;
+  border-radius: 4px;
+}
+
+.demoFour {
+  width: 18vw;
+  border: 2px solid #008120;
   border-radius: 0;
   object-fit: contain;
 }
 
 .demoSix {
-  width: 22vw;
-  height: 7vw;
+  width: 32vw;
   border: 2px solid #ff6a21;
   border-radius: 0;
   object-fit: cover;
 }
 
 .demoFive {
-  width: 26vw;
+  width: 30vw;
   border: 2px solid #000;
   border-radius: 4px;
-  height: 20vw;
-  object-fit: cover;
 }
 
-.demoVideo {
+.tutorial {
+  text-align: center;
+}
+
+.slideVideo {
+  width: 48vw;
+  object-fit: contain;
+  border-radius: 4px;
+}
+
+.slideshow {
+  width: 100vw;
+  padding: 200px 10vw;
+  /* background-color: #000; */
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+}
+
+.mySlides {
+  display: none;
+}
+
+.slideshow-container {
+  flex-grow: 2;
+  text-align: center;
+  /* border: 2px solid #080808; */
+}
+
+/* The dots/bullets/indicators */
+.dots {
+  text-align: start;
+  margin: 0 1vw 0 3vw;
+}
+
+.stepOne {
+  color: #ff6a21;
+}
+
+.stepTwo {
+  color: #ffba26;
+}
+
+.stepThree {
+  color: #348bfd;
+}
+
+.stepFour {
+  color: #008120;
+}
+
+.slideOne {
+  border: 2px solid #ff6a21;
+}
+
+.slideTwo {
+  border: 2px solid #ffba26;
+}
+
+.slideThree {
+  border: 2px solid #348bfd;
+}
+
+.slideFour {
+  border: 2px solid #008120;
+}
+
+.dot {
+  cursor: pointer;
+  font-size: 1.4em;
+  font-weight: 600;
+  line-height: 2;
+  display: inline-block;
+  transition: all 0.6s ease;
+}
+
+.dot.active,
+.dot:hover {
+  text-decoration: underline;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1s;
+  animation-name: fade;
+  animation-duration: 1s;
+}
+
+@-webkit-keyframes fade {
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fade {
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.advanced {
+  color: #fff;
+  text-align: center;
+  background-color: #080808;
+  padding: 120px 0;
+}
+
+.advanceText {
+  width: 60vw;
+  margin: 40px 20vw;
+}
+
+.advanceTable {
+  margin-top: 80px;
+}
+
+.table {
+  list-style: disc;
+  color: #fff;
+}
+
+.tableItem {
+  color: #fff;
+  line-height: 2;
+}
+
+.expressionImage {
   width: 50vw;
+  border: 2px dotted #ffba26;
+  padding: 40px;
+  border-radius: 5px;
+}
+
+.expressionLink:hover {
+  color: #ffba26;
+}
+
+.caption {
+  font-size: 1em;
+  margin-top: 20px;
+  font-weight: 400;
 }
 
 footer {
