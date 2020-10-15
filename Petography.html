@@ -28,10 +28,10 @@
     <script src="./js/modernizr.custom.js"></script>
   </head>
   <body id="projectBody">
-    <section class="herobox">
+    <div class="herobox">
       <img src="./Assets/Petography.jpg" alt="Petography" class="heroImage" />
-    </section>
-    <section id="overview">
+    </div>
+    <div id="overview">
       <div class="brief">
         <div class="projectOverview">
           <h1>
@@ -53,10 +53,10 @@
           2020-03-24 - 2020-05-05
         </h6>
       </div>
-    </section>
+    </div>
     <div class="gap"></div>
     
-    <section id="research">
+    <div id="research">
       <div class="gridOne fadethisdiv">
         <h3 class="subheadingOne">
           A problem from pet photo-heavy users.
@@ -72,8 +72,130 @@
           It'll be painful when they want to <span class="strong">search, edit or share</span> any photo if they don't clean up regularly.
         </p>
       </div>
-    </section>
-    <section>
+    </div>
+
+    <div id="demo">
+      <div class="subHeading-title">
+        <div class="subheadingFive">
+          <div class="subHeading">Solution (interaction demo)</div>
+        </div>
+     </div>
+      <div class="gridFifteen fadethisdiv">
+        <div class="sidevideo-mobile">
+          <video autoplay loop muted class="mobileVideo">
+            <source src="./Assets/demo-camera.mp4" type="video/mp4" />
+          </video>
+        </div>
+        <div class="sidenotes-mobile">
+          <h3>
+            <span class="yellow strong">01. </span> <br />
+            Camera Mode
+          </h3>
+          <br />
+          <br />
+          <span class="strong">Highlight</span>: Use numbers on the thumbnail to reveal how many photos
+          user has taken.
+        </div>
+      </div>
+    
+    
+      <div class="gridFifteen fadethisdiv">
+        <div class="sidevideo-mobile">
+          <video autoplay loop muted class="mobileVideo">
+            <source src="./Assets/demo-compare.mp4" type="video/mp4" />
+          </video>
+        </div>
+        <div class="sidenotes-mobile">
+          <h3>
+            <span class="yellow strong">02. </span> <br />
+            Inspect Mode
+          </h3>
+          <br />
+          <br />
+          <span class="strong">Highlight</span>: Click "zoom-in" button on the top right side of each group,
+          all photos in the same group will be automatically display in
+          full-screen, user can swipe left or right to compare the details.
+        </div>
+      </div>
+   
+      <div class="gridFifteen fadethisdiv">
+        <div class="sidevideo-mobile">
+          <video autoplay loop muted class="mobileVideo">
+            <source src="./Assets/demo-save.mp4" type="video/mp4" />
+          </video>
+        </div>
+        <div class="sidenotes-mobile">
+          <h3>
+            <span class="yellow strong">03. </span> <br />
+            Clean-up Mode
+          </h3>
+          <br />
+          <br />
+          <span class="strong">Highlight</span>: Choose one or multiple photos to save or delete. A pop-up
+          window prevents user from mistakenly deleting photos.
+          <br />
+          <br />
+        </div>
+      </div>
+    
+      <div class="gridFifteen fadethisdiv">
+        <div class="sidevideo-mobile">
+          <video autoplay loop muted class="mobileVideo">
+            <source src="./Assets/Demo-time-indicator.mp4" type="video/mp4" />
+          </video>
+        </div>
+        <div class="sidenotes-mobile">
+          <h3>
+            <span class="yellow strong">04. </span> <br />
+            Gallery Mode
+          </h3>
+          <br />
+          <br />
+          <span class="strong">Highlight</span>: A repsonsive age indicator on the top bar. Translate
+          date-taken to the age of pet to evoke emotional connections between
+          users with their pets.<br />
+        </div>
+      </div>
+    
+      <div class="gridFifteen fadethisdiv">
+        <div class="sidevideo-mobile">
+          <video autoplay loop muted class="mobileVideo">
+            <source src="./Assets/demo-toggle.mp4" type="video/mp4" />
+          </video>
+        </div>
+        <div class="sidenotes-mobile">
+          <h3>
+            <span class="yellow strong">05. </span> <br />
+            Toggle Action
+          </h3>
+          <br />
+          <br />
+          <span class="strong">Highlight</span>: Click icon on the left top of the screen to switch between
+          "show all", "show favorite" and "theatre mode" as a loop.
+        </div>
+      </div>
+   
+      <div class="gridFifteen fadethisdiv">
+        <div class="sidevideo-mobile">
+          <video autoplay loop muted class="mobileVideo">
+            <source src="./Assets/demo-theatre.mp4" type="video/mp4" />
+          </video>
+        </div>
+        <div class="sidenotes-mobile">
+          <h3>
+            <span class="yellow strong">06. </span> <br />
+            Theatre Mode
+          </h3>
+          <br />
+          <br />
+          <span class="strong">Highlight</span>: Display all user's pet photos chronologically, full screen
+          can provide an immersive experience for user to enjoy revisiting their
+          photos & memories.
+        </div>
+      </div>
+    </div>
+
+    <div id="user">
       <div class="gridTwo fadethisdiv">
         <div class="subheadingTwo">
           User groups
@@ -95,7 +217,7 @@
         />
         <h6 class="bodyCopyTwo gridTwo-itemTwo">
           <span class="quotes yellow">"</span>
-          As a  <span class="strong">photograph enthusiast</span>, I want to easily compare and save only my
+          As a <span class="strong">photograph enthusiast</span>, I want to easily compare and save only my
           best pet photos so that I can make my pet album look more
           professional.
         </h6>
@@ -110,53 +232,39 @@
           posted and be able to schedule the date so that I can save more time.
         </h6>
       </div>
-    </section>
-    <section  class="short">
-      <div class="slideshow fadethisdiv">
-        <div class="slideshow-container">
-          <div class="mySlides fade">
-            <img src="./Assets/Petography_CA01.jpg" class="slideImage" />
-            <div class="text tag">
-              #1 Competitive app: Google Photos
-            </div>
-          </div>
-          <div class="mySlides fade">
-            <img src="./Assets/Petography_CA02.jpg" class="slideImage" />
-            <div class="text tag">
-              #2 Competitive app: Slidebox
-            </div>
-          </div>
-          <div class="mySlides fade">
-            <img src="./Assets/Petography_CA03.jpg" class="slideImage" />
-            <div class="text tag">
-              #3 Competitive app: Hash Photos
-            </div>
-          </div>
-          <div class="mySlides fade">
-            <img src="./Assets/Petography_CA04.jpg" class="slideImage" />
-            <div class="text tag">
-              #4 Competitive app: Lifecake
-            </div>
-          </div>
-          <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-          <a class="next" onclick="plusSlides(1)">&#10095;</a>
+    </div>
+
+    <div id="research">
+      <div class="gridFive fadethisdiv">
+        <div class="subheadingFive">
+          <div class="subHeading">Competitive Analysis</div>
         </div>
-        <br />
-        <div class="dots">
-          <span class="dot" onclick="currentSlide(1)"></span>
-          <span class="dot" onclick="currentSlide(2)"></span>
-          <span class="dot" onclick="currentSlide(3)"></span>
-          <span class="dot" onclick="currentSlide(4)"></span>
+        <img src="./Assets/Petography_CA01.jpg" class="singleImage" />
+        <div class="text tag">
+          #1 Competitive app: Google Photos
+        </div>
+        <img src="./Assets/Petography_CA02.jpg" class="singleImage" />
+        <div class="text tag">
+          #2 Competitive app: Slidebox
+        </div>
+        <img src="./Assets/Petography_CA03.jpg" class="singleImage" />
+        <div class="text tag">
+          #3 Competitive app: Hash Photos
+        </div>
+        <img src="./Assets/Petography_CA04.jpg" class="singleImage" />
+        <div class="text tag">
+          #4 Competitive app: Lifecake
         </div>
       </div>
-    </section>
-    <section id="approach">
-      <div class="gridFour fadethisdiv">
-        <h3 class="subheadingFour">
+    </div>
+
+    <div id="approach">
+      <div class="gridOne fadethisdiv">
+        <h3 class="subheadingOne">
           Approaches to speed up photo clean-up process
         </h3>
-        <div class="bodyCopyFour">
-          <ul class="approaches sideText">
+        <div class="bodyCopyOne">
+          <ul class="approaches">
             <li>
               <span class="strong yellow">Built-in camera</span>: save photo
               uploading or transferring time.
@@ -176,36 +284,39 @@
           </ul>
         </div>
       </div>
-    </section>
-    <section  class="short">
+    </div>
+
+    <div id="decision">
       <div class="gridFive fadethisdiv">
         <div class="subheadingFive">
-          Solution Mapping
+          <div class="subHeading">Solution Mapping</div>
         </div>
         <img
           src="./Assets/Solution Mapping.jpg"
           alt="solution mapping"
-          class="IA"
+          class="singleImage"
         />
       </div>
-    </section>
-    <section  class="short">
-      <div class="sketches fadethisdiv">
+    </div>
+
+    <div id="sketch">
+      <div class="gridFive fadethisdiv">
         <img
           src="./Assets/Sktech_Petography.jpg"
           alt="Sketches"
-          class="sketchImage"
+          class="singleImage"
         />
-        <div class="iteration strong">Initial Sketch: exploring a possible app workflow</div>
+        <div class="text tag">Initial Sketch: exploring a possible app workflow</div>
       </div>
-    </section>
-    <section id="workflow">
-      <div class="gridSeven fadethisdiv">
-        <h3 class="subheadingSeven">
+    </div>
+
+    <div id="workflow">
+      <div class="gridOne fadethisdiv">
+        <h3 class="subheadingOne">
           Iterations on screen structure & app workflow
         </h3>
-        <div class="bodyCopySeven">
-          <ul class="approaches sideText">
+        <div class="bodyCopyOne">
+          <ul class="approaches">
             <li>
               <span class="strong yellow">Add playfulness</span>: show "date taken"
               which is responsive to current swiped photo.
@@ -225,33 +336,38 @@
           </ul>
         </div>
       </div>
-    </section>
-    <section id="information"   class="short">
+    </div>
+
+    <div id="information">
       <div class="gridFive fadethisdiv">
         <div class="subheadingFive">
-          Information Architecture
+          <div class="subHeading">Information Architecture</div>
         </div>
         <img
           src="./Assets/IA_petography.jpg"
           alt="solution mapping"
-          class="IA"
+          class="singleImage"
         />
       </div>
-    </section>
-    <section id="wireframe"   class="short">
-        <div class="sketches fadethisdiv">
+    </div>
+
+    <div id="wireframe">
+        <div class="gridFive fadethisdiv">
+          <div class="subheadingFive">
+            <div class="subHeading">Initial Wireframe</div>
+          </div>
           <img
             src="./Assets/Wireframe_Petography.jpg"
             alt="wireframe"
-            class="sketchImage"
+            class="singleImage"
           />
-          <div class="iteration strong">Initial Wireframe</div>
         </div>
-    </section>
-    <section id="visuals">
+    </div>
+
+    <div id="visuals">
       <div class="gridFourteen fadethisdiv">
         <div class="subheadingFourteen">
-          Visual Directions
+          <div class="subHeading">Visual Directions</div> 
         </div>
         <div class="styleOne">
           <h4>Neo-classic</h4>
@@ -277,50 +393,58 @@
           </p>
         </div>
       </div>
-    </section>
-    <section   class="short">
-      <div class="visuals fadethisdiv">
+    </div>
+
+    <div id="styleTile">
+      <div class="gridFive fadethisdiv">
         <img
           src="./Assets/neo-classic.jpg"
           alt="neo-classic"
-          class="styleImage"
+          class="singleImage"
         />
+        <div class="text tag">
+          #1 MoodBoard - Neo-classic
+        </div>
       </div>
-    </section>
-    <section   class="short">
-      <div class="visuals fadethisdiv">
-        <img
-          src="./Assets/modern-retro.jpg"
-          alt="modern-retro"
-          class="styleImage"
-        />
-      </div>
-    </section>
-    <section   class="short">
-      <div class="visuals fadethisdiv">
+      <div class="gridFive fadethisdiv">
         <img
           src="./Assets/Styletiles01.jpg"
           alt="neo-classic style tiles"
-          class="styleImage"
+          class="singleImage"
         />
+        <div class="text tag">
+          #1 StyleTile - Neo-classic
+        </div>
       </div>
-    </section>
-    <section   class="short">
-      <div class="visuals fadethisdiv">
+      <div class="gridFive fadethisdiv">
+        <img
+          src="./Assets/modern-retro.jpg"
+          alt="modern-retro"
+          class="singleImage"
+        />
+        <div class="text tag">
+          #1 MoodBoard - Modern-retro
+        </div>
+      </div> 
+      <div class="gridFive fadethisdiv">
         <img
           src="./Assets/Styletiles02.jpg"
           alt="modern-retro style tiles"
-          class="styleImage"
+          class="singleImage"
         />
+        <div class="text tag">
+          #1 StyleTile - Modern-retro
+        </div>
       </div>
-    </section>
-    <section >
+    </div>
+
+    <div id="decision">
       <div class="gridSeven fadethisdiv">
         <h3 class="subheadingSeven">
           Visual decisions
         </h3>
         <div class="bodyCopySeven">
-          <p class="sideText">
+          <p>
             Design goal is to create a <span class="strong">smart and playful</span> digital pet photo
             album for pet owners. <br />
             <span class="strong yellow">Modern-retro</span> style bring an unique
@@ -329,167 +453,45 @@
           </p>
         </div>
       </div>
-    </section>
+    </div>
 
-    <section id="prototype">
-      <div class="gridNine fadethisdiv">
-        <div class="explanation tag">
-          Iterations on layout & interaction
+    <div id="iteration">
+      <div class="gridFive fadethisdiv">
+        <div class="subheadingFive">
+          <div class="subHeading">Iterations on interaction</div> 
         </div>
-        <div class="comps">
           <img
             src="./Assets/Iteration-petography.jpg"
             alt="Final design"
-            class="iterationImage"
+            class="singleImage"
           />
-        </div>
       </div>
-    </section>
-    <section>
-      <div class="gridNine fadethisdiv">
-        <div class="explanation tag">
-          Iterations on visual language <br />
-          to improve readability
+    </div>
+
+    <div id="prototype">
+      <div class="gridFive fadethisdiv">
+        <div class="subheadingFive">
+          <div class="subHeading">Prototype with Assets</div> 
         </div>
-        <div class="comps">
-          <img
-            src="./Assets/Visualfinal-petography.jpg"
-            alt="Final design"
-            class="iterationImage"
-          />
-        </div>
+        <img
+              src="./Assets/Visualfinal-petography.jpg"
+              alt="Final design"
+              class="singleImage"
+        />
       </div>
-    </section>
-    <section id="demo">
-      <div class="gridFifteen fadethisdiv">
-        <div class="sidevideo-mobile">
-          <video autoplay loop muted class="mobileVideo">
-            <source src="./Assets/demo-camera.mp4" type="video/mp4" />
-          </video>
-        </div>
-        <div class="sidenotes-mobile">
-          <h3>
-            <span class="yellow strong">01. </span> <br />
-            Camera Mode
-          </h3>
-          <br />
-          <br />
-          <span class="strong">Highlight</span>: Use numbers on the thumbnail to reveal how many photos
-          user has taken.
-        </div>
-      </div>
-    </section>
-    <section>
-      <div class="gridFifteen fadethisdiv">
-        <div class="sidevideo-mobile">
-          <video autoplay loop muted class="mobileVideo">
-            <source src="./Assets/demo-compare.mp4" type="video/mp4" />
-          </video>
-        </div>
-        <div class="sidenotes-mobile">
-          <h3>
-            <span class="yellow strong">02. </span> <br />
-            Inspect Mode
-          </h3>
-          <br />
-          <br />
-          <span class="strong">Highlight</span>: Click "zoom-in" button on the top right side of each group,
-          all photos in the same group will be automatically display in
-          full-screen, user can swipe left or right to compare the details.
-        </div>
-      </div>
-    </section>
-    <section>
-      <div class="gridFifteen fadethisdiv">
-        <div class="sidevideo-mobile">
-          <video autoplay loop muted class="mobileVideo">
-            <source src="./Assets/demo-save.mp4" type="video/mp4" />
-          </video>
-        </div>
-        <div class="sidenotes-mobile">
-          <h3>
-            <span class="yellow strong">03. </span> <br />
-            Clean-up Mode
-          </h3>
-          <br />
-          <br />
-          <span class="strong">Highlight</span>: Choose one or multiple photos to save or delete. A pop-up
-          window prevents user from mistakenly deleting photos.
-          <br />
-          <br />
-        </div>
-      </div>
-    </section>
-    <section>
-      <div class="gridFifteen fadethisdiv">
-        <div class="sidevideo-mobile">
-          <video autoplay loop muted class="mobileVideo">
-            <source src="./Assets/Demo-time-indicator.mp4" type="video/mp4" />
-          </video>
-        </div>
-        <div class="sidenotes-mobile">
-          <h3>
-            <span class="yellow strong">04. </span> <br />
-            Gallery Mode
-          </h3>
-          <br />
-          <br />
-          <span class="strong">Highlight</span>: A repsonsive age indicator on the top bar. Translate
-          date-taken to the age of pet to evoke emotional connections between
-          users with their pets.<br />
-        </div>
-      </div>
-    </section>
-    <section>
-      <div class="gridFifteen fadethisdiv">
-        <div class="sidevideo-mobile">
-          <video autoplay loop muted class="mobileVideo">
-            <source src="./Assets/demo-toggle.mp4" type="video/mp4" />
-          </video>
-        </div>
-        <div class="sidenotes-mobile">
-          <h3>
-            <span class="yellow strong">05. </span> <br />
-            Toggle Action
-          </h3>
-          <br />
-          <br />
-          <span class="strong">Highlight</span>: Click icon on the left top of the screen to switch between
-          "show all", "show favorite" and "theatre mode" as a loop.
-        </div>
-      </div>
-    </section>
-    <section>
-      <div class="gridFifteen fadethisdiv">
-        <div class="sidevideo-mobile">
-          <video autoplay loop muted class="mobileVideo">
-            <source src="./Assets/demo-theatre.mp4" type="video/mp4" />
-          </video>
-        </div>
-        <div class="sidenotes-mobile">
-          <h3>
-            <span class="yellow strong">06. </span> <br />
-            Theatre Mode
-          </h3>
-          <br />
-          <br />
-          <span class="strong">Highlight</span>: Display all user's pet photos chronologically, full screen
-          can provide an immersive experience for user to enjoy revisiting their
-          photos & memories.
-        </div>
-      </div>
-    </section>
-    <section id="TV">
-      <div class="gridSeven fadethisdiv">
-        <h3 class="subheadingSeven">
+    </div>
+  
+    <div id="TV">
+      <div class="gridOne fadethisdiv">
+        <h3 class="subheadingOne">
           Design for TV platform
         </h3>
-        <div class="bodyCopySeven">
-          <p class="sideText">
+        <div class="bodyCopyOne">
+          <p>
             Considering a scenario users want to share pet photos with their
             families or friends on big screen. Some considerations include:<br /><br />
           </p>
-          <ul class="approaches sideText">
+          <ul class="approaches">
             <li>
               <span class="yellow strong">Viewing environments</span>: most likely
               in a living room, viewer can vary from teenager to senior.
@@ -509,58 +511,53 @@
           </ul>
         </div>
       </div>
-    </section>
-    <section   class="short">
+    </div>
+
+    <div id="diagram">
       <div class="gridFive fadethisdiv">
         <div class="subheadingFive">
-          Interaction Diagram
+          <div class="subHeading">Interaction Diagram</div> 
         </div>
-        <img src="./Assets/TV_ID.jpg" alt="Iteraction Diagram" class="IA" />
+        <img src="./Assets/TV_ID.jpg" alt="Iteraction Diagram" class="singleImage" />
       </div>
-    </section>
-    <section   class="short">
-      <div class="slideshowTwo fadethisdiv">
-        <div class="slideshow-container">
-          <div class="mySlidesTwo fade">
-            <img src="./Assets/gallery screen.jpg" class="tvImage" />
-            <div class="text tag">
-              #1 Prototype - Gallery screen
-            </div>
-          </div>
-          <div class="mySlidesTwo fade">
-            <img src="./Assets/photo screen.jpg" class="tvImage" />
-            <div class="text tag">
-              #2 Prototype - Photo screen
-            </div>
-          </div>
-          <div class="mySlidesTwo fade">
-            <img src="./Assets/photo detail screen.jpg" class="tvImage" />
-            <div class="text tag">
-              #3 Prototype - Photo detail screen
-            </div>
-          </div>
-          <div class="mySlidesTwo fade">
-            <img src="./Assets/theatre mode screen.jpg" class="tvImage" />
-            <div class="text tag">
-              #4 Prototype - Theatre mode screen
-            </div>
-          </div>
-          <a class="prev" onclick="plusSlidesTwo(-1)">&#10094;</a>
-          <a class="next" onclick="plusSlidesTwo(1)">&#10095;</a>
+    </div>
+
+    <div id="tvPrototype">
+      <div class="gridFive fadethisdiv">
+        <div class="subheadingFive">
+          <div class="subHeading">Prototype - TV</div>
         </div>
-        <br />
-        <div class="dots">
-          <span class="dotTwo" onclick="currentSlideTwo(1)"></span>
-          <span class="dotTwo" onclick="currentSlideTwo(2)"></span>
-          <span class="dotTwo" onclick="currentSlideTwo(3)"></span>
-          <span class="dotTwo" onclick="currentSlideTwo(4)"></span>
+        <div>
+          <img src="./Assets/gallery screen.jpg" class="singleImage" />
+          <div class="text tag">
+            #1 Prototype - Gallery screen
+          </div>
+        </div>
+        <div>
+          <img src="./Assets/photo screen.jpg" class="singleImage" />
+          <div class="text tag">
+            #2 Prototype - Photo screen
+          </div>
+        </div>
+        <div>
+          <img src="./Assets/photo detail screen.jpg" class="singleImage" />
+          <div class="text tag">
+            #3 Prototype - Photo detail screen
+          </div>
+        </div>
+        <div>
+          <img src="./Assets/theatre mode screen.jpg" class="singleImage" />
+          <div class="text tag">
+            #4 Prototype - Theatre mode screen
+          </div>
         </div>
       </div>
-    </section>
-    <section>
-      <div class="gridSixteen fadethisdiv">
-        <div class="subheadingSixteen">
-          TV Interaction Walkthrough
+    </div>
+
+    <div id="tvDemo">
+      <div class="gridFive fadethisdiv">
+        <div class="subheadingFive">
+          <div class="subHeading">TV Interaction Walkthrough</div>
         </div>
         <div class="sidevideo">
           <video autoplay loop muted class="tvVideo">
@@ -568,15 +565,15 @@
           </video>
         </div>
       </div>
-    </section>
-    <section id="end">
-      <div class="gridThirteen fadethisdiv">
-        <h3 class="subheadingThirteen">
+    </div>
+
+    <div id="end">
+      <div class="gridOne fadethisdiv">
+        <h3 class="subheadingOne">
           Wrap-up
         </h3>
-        <div class="bodyCopyThirteen">
-          <div class="conclusion">
-            <p class="sideText">
+        <div class="bodyCopyOne">
+            <p>
               Technologies like pet facial recognition, image similarity
               calculation and image quality assessment have already been there
               for a while. However, no app has been seen to
@@ -602,7 +599,7 @@
           </div>
         </div>
       </div>
-    </section>
+    
 
      <!-- Close Button  -->
      <div class="bl-close" id="bl-close"> 
@@ -614,29 +611,33 @@
       <div class="index-container">
         <ul class="index-menu">
           <li><a href="#overview" class="index-items">Overview </a></li>
-          
           <li>
-            <a href="#research" class="index-items">Research</a>
+            <a href="#research" class="index-items">The problem</a>
           </li>
-          <li><a href="#approach" class="index-items"> Approaches </a></li>
+          <li>
+            <a href="#demo" class="index-items">
+              <span class="yellow strong">Interaction Demo</span> 
+            </a>
+          </li>
+          <li>
+            <a href="#user" class="index-items">
+              Research 
+            </a>
+          </li>
+          <li><a href="#approach" class="index-items">
+            Approaches
+          </a></li>
           <li>
             <a href="#wireframe" class="index-items"> Wireframes</a>
           </li>
           <li>
             <a href="#visuals" class="index-items"> Visual Design</a>
           </li>
-          
           <li>
             <a href="#prototype" class="index-items">
-              Prototypes (mobile)
+              Prototypes
             </a>
           </li>
-          <li>
-            <a href="#demo" class="index-items">
-              Interaction Demos
-            </a>
-          </li>
-
           <li>
             <a href="#TV" class="index-items">
               TV Platform

@@ -28,14 +28,14 @@
     <script src="./js/modernizr.custom.js"></script>
   </head>
   <body id="projectBody">
-    <section class="herobox">
+    <div class="herobox">
       <img
         src="./Assets/Health-Fusion.jpg"
         alt="Health-Fusion"
         class="heroImage"
       />
-    </section>
-    <section id="overview">
+    </div>
+    <div id="overview">
       <div class="brief">
         <div class="projectOverview">
           <h1>
@@ -63,9 +63,10 @@
           2019-10-07 - 2019-10-20
         </h6>
       </div>
-    </section>
+    </div>
     <div class="gap"></div>
-    <section id="demos">
+
+    <div id="demos">
       <div class="fadethisdiv">
         <iframe
           src="https://player.vimeo.com/video/382839563?color=ffffff&title=0&byline=0&portrait=0"
@@ -77,8 +78,9 @@
           allowfullscreen
         ></iframe>
       </div>
-    </section>
-    <section id="problemstatement">
+    </div>
+
+    <div id="problemstatement">
       <div class="gridOne fadethisdiv">
         <h3 class="subheadingOne">
           What is the next generation of EHR
@@ -104,8 +106,9 @@
           </ol>
         </div>
       </div>
-    </section>
-    <section id="research">
+    </div>
+
+    <div id="research">
       <div class="gridEighteen fadethisdiv">
         <div class="subheadingEighteen">
           Background Research
@@ -139,61 +142,47 @@
           </h6>
         </div>
       </div>
-    </section>
-    <section id="competitive" class="short">
-      <div class="slideshow fadethisdiv">
-        <div class="slideshow-container">
-          <div class="mySlides fade">
-            <div class="takeaway">
-              <span class="strong">Take-away:</span> <span class="strong purple">Vocice control</span> can free
-              clinicians' hands during their work.
-            </div>
-            <img src="./Assets/voice-control.jpg" class="slideImage" />
-            <div class="text tag">
-              #1 Inspiration
-            </div>
-          </div>
-          <div class="mySlides fade">
-            <div class="takeaway">
-               <span class="strong">Take-away:</span> 
-              <span class="strong purple">HoloTable</span> can present 3D data in
-              360 degree view.
-            </div>
-            <img src="./Assets/holotable.jpg" class="slideImage" />
-            <div class="text tag">
-              #2 Inspiration
-            </div>
-          </div>
-          <div class="mySlides fade">
-            <div class="takeaway">
-              <span class="strong">Take-away:</span> 
-              <span class="strong purple">HoloGlass</span> makes sure only
-              clinicians can see safety or privacy sensitive information.
-            </div>
-            <img src="./Assets/hologlass.jpg" class="slideImage" />
-            <div class="text tag">
-              #3 Inspiration
-            </div>
-          </div>
-          <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-          <a class="next" onclick="plusSlides(1)">&#10095;</a>
+    </div>
+
+    <div id="competitive" >
+      <div class="gridFive fadethisdiv">
+        <div class="subheadingFive">
+          <div class="subHeading">Competitive Analysis</div>
         </div>
-        <br />
-        <div class="dots">
-          <span class="dot" onclick="currentSlide(1)"></span>
-          <span class="dot" onclick="currentSlide(2)"></span>
-          <span class="dot" onclick="currentSlide(3)"></span>
+        <div class="brandLinks">
+          <p class="takeaway">
+            <span class="strong">Take-away:</span><br>
+            <span class="strong purple">Vocice control</span> can free
+            clinicians' hands during their work. <br>
+            <span class="strong purple">HoloTable</span> can present 3D data in
+             360 degree view. <br>
+             <span class="strong purple">HoloGlass</span> makes sure only
+             clinicians can see safety or privacy sensitive information.
+          </p>
+        </div>
+        <img src="./Assets/voice-control.jpg" class="singleImage" />
+        <div class="text tag">
+          #1 Inspiration
+         </div>
+        <img src="./Assets/holotable.jpg" class="singleImage" />
+        <div class="text tag">
+          #2 Inspiration
+        </div>
+        <img src="./Assets/hologlass.jpg" class="singleImage" />
+        <div class="text tag">
+          #3 Inspiration
         </div>
       </div>
-    </section>
-    <section id="approach">
+    </div>
+
+    <div id="approach">
       <div class="gridOne fadethisdiv">
         <h3 class="subheadingOne">
           Conceptualize future <br />
           EHR system
         </h3>
         <div class="bodyCopyOne">
-          <p class="sideText">
+          <p>
             A scenario I sketched out is
             <span class="strong"
               >how a clinician pulls a patient's health data from EHR
@@ -202,7 +191,7 @@
             The steps should include:
           </p>
           <br />
-          <ul class="approaches sideText">
+          <ul class="approaches">
             <li>
               Identify patient's identity;
             </li>
@@ -218,30 +207,43 @@
           </ul>
         </div>
       </div>
-    </section>
-    <section id="sketch"  class="short">
-      <div class="sketches-moveup fadethisdiv">
+    </div>
+
+    <div id="sketch">
+      <div class="gridFive fadethisdiv">
+        <div class="subheadingFive">
+          <div class="subHeading">Initial Sketches
+        </div> 
+        </div>
         <img
           src="./Assets/healthfusion_sketches.jpg"
           alt="Sketches"
-          class="sketchImage"
-        />
-        <div class="iteration strong">Initial Sketches</div>
+          class="singleImage"
+        />  
       </div>
-    </section>
-    <section id="visual" class="short">
+    </div>
+
+    <div id="visuals">
       <div class="gridFive fadethisdiv">
         <div class="subheadingFive">
+          <div class="subHeading">
           Visual Direction
+        </div>
         </div>
         <img
           src="./Assets/healthfusion_visual.jpg"
           alt="moodboard"
-          class="IA"
+          class="singleImage"
         />
       </div>
-    </section>
-    <section id="prototype">
+    </div>
+
+    <div id="prototype">
+      <div class="subHeading-title">
+        <div class="subheadingFive">
+          <div class="subHeading">Solutions (highlights)</div>
+        </div>
+     </div>
       <div class="gridFifteen fadethisdiv">
         <div class="sidevideo-mobile">
           <video autoplay loop muted class="landscapeVideo">
@@ -265,8 +267,8 @@
           patient's health records.
         </div>
       </div>
-    </section>
-    <section>
+    
+    <div>
       <div class="gridFifteen fadethisdiv">
         <div class="sidevideo-mobile">
           <video autoplay loop muted class="landscapeVideo">
@@ -293,8 +295,8 @@
           hologlasses.
         </div>
       </div>
-    </section>
-    <section>
+    </div>
+    <div>
       <div class="gridFifteen fadethisdiv">
         <div class="sidevideo-mobile">
           <video autoplay loop muted class="landscapeVideo">
@@ -319,8 +321,8 @@
           structure (bottom).
         </div>
       </div>
-    </section>
-    <section>
+    </div>
+    <div>
       <div class="gridFifteen fadethisdiv">
         <div class="sidevideo-mobile">
           <video autoplay loop muted class="landscapeVideo">
@@ -346,8 +348,8 @@
           Examples here are thermal map (top) and nervous map (bottom).
         </div>
       </div>
-    </section>
-    <section>
+    </div>
+    <div>
       <div class="gridFifteen fadethisdiv">
         <div class="sidevideo-mobile">
           <video autoplay loop muted class="landscapeVideo">
@@ -374,37 +376,36 @@
           category; Bottom shows how each dataset looks like.
         </div>
       </div>
-    </section>
-    
-    <section id="end">
-      <div class="gridThirteen fadethisdiv">
-        <h3 class="subheadingThirteen">
+    </div>
+  </div>
+
+  <div id="end">
+    <div class="gridOne fadethisdiv">
+      <h3 class="subheadingOne">
          Wrap-up
-        </h3>
-        <div class="bodyCopyThirteen">
-          <div class="conclusion">
-            <p class="sideText">
-                Digitization promised to make medical care easier and more
-                effcient. However, current EHR system seems to become the screen
-                between doctors and patients.
-              <br />
-              In this project, I brainstormed <span class="purple strong">how technologies can revolutionize
-              EHR system</span> in terms of achieving high efficiency of using,
-              displaying as well as securing tremendous health data records.
-            </p>
-          </div>
-        </div>
-        <div class="recommendation">
-          <div class="preProject">
-              <a href="./Petography.html"><h4 class="strong"> Previous</h4>  <p class="strong yellow"> Petography</p> </a>
-          </div>
-          <div class="nexProject">
-              <a href="./FMS.html"><h4 class="strong"> Next</h4> <p class="strong red">TigerKeeper</p></a>
-            </h4>
-          </div>
-        </div>
+      </h3>
+      <div class="bodyCopyOne">
+        <p>
+          Digitization promised to make medical care easier and more
+          effcient. However, current EHR system seems to become the screen
+          between doctors and patients.
+        <br />
+          In this project, I brainstormed <span class="purple strong">how technologies can revolutionize
+          EHR system</span> in terms of achieving high efficiency of using,
+          displaying as well as securing tremendous health data records.
+        </p>
       </div>
-    </section>
+    </div>
+    <div class="recommendation">
+        <div class="preProject">
+            <a href="./Petography.html"><h4 class="strong"> Previous</h4>  <p class="strong yellow"> Petography</p> </a>
+        </div>
+        <div class="nexProject">
+          <a href="./FMS.html"><h4 class="strong"> Next</h4> <p class="strong red">TigerKeeper</p></a>
+          </h4>
+        </div>
+    </div>
+  </div>
 
      <!-- Close Button  -->
      <div class="bl-close" id="bl-close">
@@ -417,7 +418,7 @@
           <li>
             <a href="#overview" class="index-items">Overview </a>
           </li>
-          <li><a href="#demos" class="index-items"> Video Demo </a></li>
+          <li><a href="#demos" class="index-items"> <span class="purple strong">Video Demo</span></a></li>
           <li>
             <a href="#problemstatement" class="index-items">Research</a>
           </li>
@@ -426,7 +427,7 @@
             <a href="#sketch" class="index-items"> Sketches</a>
           </li>
           <li>
-            <a href="#visual" class="index-items"> Visual Direction</a>
+            <a href="#visuals" class="index-items"> Visual Direction</a>
           </li>
           <li>
             <a href="#prototype" class="index-items">
