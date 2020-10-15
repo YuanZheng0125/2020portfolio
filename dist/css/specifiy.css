@@ -20,14 +20,6 @@
   border: 12px solid #fff;
 }
 
-.visuals {
-  position: relative;
-  width: 70vw;
-  left: 16%;
-  height: 39vw;
-  background-color: #fcfcfc;
-}
-
 .tvImage {
   width: 100%;
   box-shadow: 6px 6px 40px 2px #f0f0f070;
@@ -48,7 +40,6 @@
   left: 15%;
   display: grid;
   grid-template-columns: 1.5fr 1fr 1fr;
-  grid-template-rows: 0.5fr 200px 1fr;
 }
 
 .subheadingSeventeen {
@@ -118,10 +109,8 @@
   position: relative;
   width: 70%;
   left: 15%;
-  /* height: 100%; */
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: 0.5fr 0.5fr 1fr;
   margin-top: 160px;
 }
 
@@ -360,12 +349,8 @@
 
   .gridOne,
   .gridTwo,
-  .gridFour,
   .gridFive,
-  .gridFive-movedown,
   .gridSeven,
-  .gridTwelve,
-  .gridThirteen,
   .gridFifteen {
     display: flex;
     flex-direction: column;
@@ -373,13 +358,7 @@
     align-items: center;
   }
 
-  .gridFive-movedown {
-    padding-top: 12em;
-  }
-
-  .subheadingFour,
-  .subheadingSeven,
-  .subheadingThirteen {
+  .subheadingSeven {
     margin: 2em 0;
     text-align: center;
   }
@@ -400,7 +379,6 @@
     width: 50%;
   }
 
-  .subheadingSixteen,
   .subheadingFourteen,
   .subheadingFive {
     font-size: 1.4rem;
@@ -424,39 +402,6 @@
     font-size: 0.6rem;
   }
 
-  .sideText {
-    margin-left: 0;
-  }
-
-  .slideshow,
-  .slideshowTwo {
-    width: 90vw;
-    left: 5vw;
-    height: 60vw;
-    top: 50%;
-    transform: translateY(-30vw);
-  }
-
-  .prev,
-  .next {
-    font-size: 8px;
-  }
-
-  .IA {
-    margin-top: 2em;
-    width: 100vw;
-    left: 0;
-  }
-
-  .sketches,
-  .ideation,
-  .visuals,
-  .sketches-moveup {
-    width: 95vw;
-    height: 56vw;
-    left: 2vw;
-  }
-
   .gridEight,
   .gridNine,
   .gridFifteen,
@@ -476,12 +421,6 @@
 
   .btn-project-close {
     font-size: 1rem;
-  }
-
-  .comps {
-    height: 50vh;
-    width: 95vw;
-    left: 2vw;
   }
 
   .sidevideo-mobile {
@@ -596,25 +535,15 @@
 
   h5,
   p,
-  .iteration,
   .bodyCopySeven,
-  .responsive,
   .approaches li {
     font-size: 14px;
-  }
-
-  .iteration {
-    bottom: 3px;
   }
 
   h6,
   .boldText {
     font-size: 14px;
   }
-
-  /* .short {
-    height: 50vh;
-  } */
 
   .gap {
     height: 0;
@@ -631,8 +560,7 @@
 
   .subheadingTwo,
   .subheadingFive,
-  .subheadingFourteen,
-  .subheadingSixteen {
+  .subheadingFourteen {
     font-size: 20px;
     width: 100%;
     padding: 10px;
@@ -642,27 +570,6 @@
   .subheadingEighteen {
     width: 80%;
     padding: 10px;
-  }
-
-  .IA,
-  .sketches,
-  .visuals,
-  .slideshow,
-  .slideshowTwo,
-  .sketches-moveup {
-    width: 80vw;
-    margin: 0 10vw;
-  }
-
-  .sketches,
-  .visuals,
-  .slideshow,
-  .sketches-moveup {
-    height: 50vw;
-  }
-
-  .IA {
-    margin: 40px 10vw;
   }
 
   .sidenotes-mobile {
@@ -694,20 +601,42 @@
 
   .text {
     font-size: 8px;
-    top: -8px;
-  }
-
-  .dots {
-    margin-top: 0;
-  }
-
-  .dot {
-    width: 10px;
-    height: 10px;
   }
 }
 
 @media only screen and (max-width: 420px) {
+  #context,
+  #style,
+  #prototype,
+  #research,
+  #approach,
+  #wireframe,
+  #survey,
+  #decision,
+  #evaluation,
+  #user,
+  #sketch,
+  #workflow,
+  #information,
+  #styleTile,
+  #iteration,
+  #TV,
+  #demo,
+  #demos,
+  #problemstatement,
+  #competitive,
+  #visuals,
+  #diagram,
+  #tvPrototype,
+  #tvDemo,
+  #discover,
+  #interaction,
+  #lowFi,
+  #hiFi,
+  #end {
+    padding: 8vw 0;
+  }
+
   .sidebar {
     width: 280px;
     left: -240px;
@@ -738,11 +667,6 @@
     font-size: 0.8rem;
   }
 
-  .iteration {
-    font-size: 0.5rem;
-    bottom: 0.2rem;
-  }
-
   .gridFifteen {
     width: 95vw;
     left: 2vw;
@@ -764,16 +688,32 @@
     font-size: 1em;
   }
 
+  .gridFive {
+    min-height: 200px;
+  }
+
   .subheadingFive,
-  .subheadingFourteen,
-  .subheadingSixteen {
+  .subheadingFourteen {
     font-size: 1em;
     width: 100%;
     padding: 10px;
   }
 
+  .subHeading {
+    width: 60vw;
+    margin: 0 2vw;
+  }
+
+  .subheadingSeventeen,
+  .subheadingEighteen {
+    margin-bottom: 40px;
+  }
+
+  .singleImage {
+    margin-top: 20px;
+  }
+
   .subheadingTwo,
-  .subheadingSixteen,
   .subheadingSeventeen,
   .subheadingEighteen {
     font-size: 1em;
@@ -794,23 +734,8 @@
   h5,
   p,
   .bodyCopySeven,
-  .responsive,
   .approaches li {
     font-size: 0.9em;
-  }
-
-  .text {
-    top: -0.5rem;
-  }
-
-  .dots {
-    margin-top: 0;
-  }
-
-  .dot,
-  .dotTwo {
-    width: 10px;
-    height: 10px;
   }
 
   .sidenotes-mobile {
@@ -824,19 +749,10 @@
     height: 270px;
   }
 
-  .IA {
-    margin: 40px 10vw;
-  }
-
   .projectOverview,
   .projectType,
   .projectResult,
   .projectTimeline {
     width: 80%;
-  }
-
-  .IA_scroll {
-    height: 50vh;
-    margin-top: 40px;
   }
 }
