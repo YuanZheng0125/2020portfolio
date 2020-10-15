@@ -27,6 +27,7 @@
 }
 
 .tvVideo {
+  width: 75vw;
   margin-top: 80px;
   object-fit: cover;
   position: relative;
