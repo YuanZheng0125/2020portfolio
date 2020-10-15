@@ -28,22 +28,6 @@
   background-color: #fcfcfc;
 }
 
-.styleImage {
-  width: 100%;
-  object-fit: cover;
-  vertical-align: middle;
-  border: 2px solid #050505;
-  box-shadow: 8px 8px #050505;
-}
-
-.sideText {
-  margin-left: 0vw;
-}
-
-.iterationImage {
-  width: 100%;
-}
-
 .tvImage {
   width: 100%;
   box-shadow: 6px 6px 40px 2px #f0f0f070;
@@ -51,7 +35,6 @@
 }
 
 .tvVideo {
-  /* height: 45vh; */
   margin-top: 80px;
   object-fit: cover;
   position: relative;
@@ -63,7 +46,6 @@
   position: relative;
   width: 70%;
   left: 15%;
-  /* height: 100%; */
   display: grid;
   grid-template-columns: 1.5fr 1fr 1fr;
   grid-template-rows: 0.5fr 200px 1fr;
@@ -308,18 +290,6 @@
 .guideImage {
   width: 100%;
 }
-
-/* Responsive */
-/* @media only screen and (min-aspect-ratio: 16/9) {
-  .index-items {
-    font-size: 20px;
-  }
-
-  .index-items:visited,
-  .index-items:hover {
-    font-size: 20px;
-  }
-} */
 
 @media only screen and (min-width: 960px) {
   .sidebar {
