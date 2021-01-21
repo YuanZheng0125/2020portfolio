@@ -203,10 +203,11 @@ a:active {
 section {
   height: 100vh;
   background-color: #fcfcfc;
+  position: relative;
 }
 
 .intro {
-  position: absolute;
+  /* position: absolute; */
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: 0.6fr 1fr 1fr 1fr;
@@ -365,7 +366,7 @@ section {
 /* Grid Work */
 
 .workSection {
-  position: absolute;
+  /* position: absolute; */
   display: grid;
   grid-template-columns: 2fr 3fr;
   grid-template-rows: auto 64vh auto;
@@ -424,7 +425,7 @@ section {
 
 /* Bside grid */
 .bside {
-  position: absolute;
+  /* position: absolute; */
   display: grid;
   grid-template-columns: 2fr 3fr;
   grid-template-rows: 0.5fr 2fr 1.2fr;
@@ -861,6 +862,7 @@ section {
   display: none;
 }
 
+
 @media only screen and (max-width: 960px) and (min-height: 540px) {
   .menu-nav {
     position: fixed;
@@ -945,6 +947,7 @@ section {
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: space-evenly;
   }
 
   .bl-box,
@@ -974,6 +977,10 @@ section {
   .hashtag {
     font-size: 0.5rem;
     top: -0.5rem;
+  }
+
+  .tag {
+    font-size: 0.5rem;
   }
 
   .bside-content {
@@ -1069,7 +1076,7 @@ section {
     margin-top: 0;
   }
 
-  .hashtag {
+  .hashtag, .tag {
     font-size: 0.5rem;
   }
 }
@@ -1141,7 +1148,7 @@ section {
     padding-top: 1rem;
   }
 
-  .hashtag {
+  .hashtag, .tag {
     font-size: 8px;
   }
 
@@ -1199,5 +1206,23 @@ section {
 
   #main-footer {
     font-size: 1em;
+  }
+}
+
+@media only screen and (max-height:900px) {
+  section {
+    height: 900px;
+  }
+
+  .intro {
+    height: 900px;
+  }
+
+  .bside {
+    height: 900px;
+  }
+
+  .gallery-container {
+    height: 900px;
   }
 }
