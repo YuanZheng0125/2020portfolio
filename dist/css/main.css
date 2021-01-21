@@ -4,7 +4,7 @@ html {
 
 * {
   font-family: "Space Mono", mono space;
-  color: #050505;
+  color: #0f0f0f;
   font-weight: 400;
   box-sizing: border-box;
   padding: 0;
@@ -111,7 +111,7 @@ p {
 
 /* Track */
 ::-webkit-scrollbar-track {
-  background: #050505;
+  background: #0f0f0f;
 }
 
 /* Handle */
@@ -150,29 +150,29 @@ a {
 }
 
 a:hover {
-  color: #050505;
+  color: #0f0f0f;
 }
 
 a:active {
-  color: #050505;
+  color: #0f0f0f;
 }
 
 /* Nav bar */
 
 .nav-link {
-  color: #05050570;
+  color: #0f0f0f70;
   cursor: pointer;
 }
 
 .nav-link:hover {
-  color: #050505;
+  color: #0f0f0f;
   font-weight: 700;
 }
 
 .nav-link:active,
 .menu-nav li.active a {
   font-weight: 700;
-  color: #050505;
+  color: #0f0f0f;
 }
 
 .menu-nav {
@@ -196,7 +196,7 @@ a:active {
   width: 100%;
   padding: 20px 0;
   color: #fcfcfc;
-  background-color: #050505;
+  background-color: #0f0f0f;
 }
 
 /* Home page */
@@ -210,7 +210,7 @@ section {
   /* position: absolute; */
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: 0.6fr 1fr 1fr 1fr;
+  grid-template-rows: .6fr 1fr .6fr;
   justify-items: start;
   align-items: center;
   width: 72%;
@@ -220,13 +220,13 @@ section {
 }
 
 .profileImage {
-  grid-area: 2/3/4/4;
+  grid-area: 1/3/3/4;
   align-self: center;
   position: relative;
   width: 18vw;
   height: 22vw;
-  border: 2px solid #050505;
-  box-shadow: 8px 8px #050505;
+  border: 2px solid #0f0f0f;
+  box-shadow: 8px 8px #0f0f0f;
   margin-left: 2vw;
   text-align: center;
   background-color: #fff;
@@ -245,7 +245,7 @@ section {
 }
 
 .profileText {
-  grid-row: 2/4;
+  grid-row: 1/3;
   grid-column: 1/3;
   align-self: center;
   width: 85%;
@@ -277,7 +277,7 @@ section {
 .fab,
 .far {
   margin: 0 0.5vw;
-  color: #050505;
+  color: #0f0f0f;
 }
 
 .fa:hover,
@@ -291,13 +291,13 @@ section {
 .fab:active,
 .far:active,
 .fa-border:active {
-  color: #050505;
+  color: #0f0f0f;
   transform: translate(2px, 2px);
 }
 
 .button {
-  grid-area: 4/2/5/3;
-  align-self: center;
+  grid-area: 3/2/4/3;
+  align-self: start;
   justify-self: center;
   text-align: center;
 }
@@ -307,9 +307,9 @@ section {
 #btn-seeMore:visited {
   outline: none;
   display: block;
-  color: #050505;
+  color: #0f0f0f;
   background-color: #fcfcfc;
-  border: 4px solid #050505;
+  border: 4px solid #0f0f0f;
   font-size: 1.2vw;
   font-family: "Work Sans", sans-serif;
   border-radius: 12px;
@@ -322,7 +322,7 @@ section {
 
 #btn-seeMore:active {
   background-color: #fcfcfc;
-  color: #050505;
+  color: #0f0f0f;
   transform: translate(2px, 2px);
 }
 
@@ -336,8 +336,8 @@ section {
   display: block;
   width: 1em;
   height: 1em;
-  border-bottom: 0.2em solid #050505;
-  border-right: 0.2em solid #050505;
+  border-bottom: 0.2em solid #0f0f0f;
+  border-right: 0.2em solid #0f0f0f;
   transform: rotate(45deg);
   margin-bottom: -0.8em;
   animation: animate 2s infinite;
@@ -403,8 +403,8 @@ section {
   height: 36vw;
   cursor: pointer;
   position: relative;
-  border: 2px solid #050505;
-  box-shadow: 8px 8px #050505;
+  border: 2px solid #0f0f0f;
+  box-shadow: 8px 8px #0f0f0f;
   padding: 3vh 2vw 6vh 2vw;
   overflow: hidden;
 }
@@ -412,7 +412,7 @@ section {
 .bl-box:hover {
   transform: translate(4px, 4px);
   transition: all 0.2s ease-in;
-  box-shadow: 4px 4px #050505;
+  box-shadow: 4px 4px #0f0f0f;
 }
 
 .project-link {
@@ -456,7 +456,7 @@ section {
   position: absolute;
   top: -1.2vw;
   right: 0;
-  color: #050505;
+  color: #0f0f0f;
 }
 
 /* Video B-side */
@@ -486,8 +486,8 @@ section {
   height: 26vw;
   top: 0;
   padding: 1.6vw 1.5vw 0 1.5vw;
-  border: 2px solid #050505;
-  box-shadow: 8px 8px #050505;
+  border: 2px solid #0f0f0f;
+  box-shadow: 8px 8px #0f0f0f;
   background-color: #fff;
   transition: all 0.2s ease-out;
 }
@@ -514,7 +514,7 @@ section {
   font-size: 16px;
   transition: 0.2s ease;
   user-select: none;
-  background-color: #050505;
+  background-color: #0f0f0f;
 }
 
 .prev {
@@ -528,7 +528,7 @@ section {
 /* On hover, add a black background color with a little bit see-through */
 .prev:hover,
 .next:hover {
-  color: #050505;
+  color: #0f0f0f;
   background-color: #348bfd;
 }
 
@@ -543,14 +543,14 @@ section {
   height: 16px;
   width: 16px;
   margin: 0 8px;
-  border: 2px solid #050505;
+  border: 2px solid #0f0f0f;
   border-radius: 50%;
   display: inline-block;
   transition: background-color 0.6s ease;
 }
 
 .dot-active {
-  background-color: #050505;
+  background-color: #0f0f0f;
 }
 
 .bside-dot:hover {
@@ -650,7 +650,7 @@ section {
   font-weight: 700;
   padding: 2px 8px;
   background-color: #fcfcfc;
-  border: 2px solid #050505;
+  border: 2px solid #0f0f0f;
 }
 
 .btn-popup-close:hover {
@@ -677,9 +677,9 @@ section {
 #btn-gallery:visited {
   outline: none;
   display: block;
-  color: #050505;
+  color: #0f0f0f;
   background-color: #fcfcfc;
-  border: 4px solid #050505;
+  border: 4px solid #0f0f0f;
   font-size: 1.2vw;
   font-family: "Work Sans", sans-serif;
   border-radius: 12px;
@@ -692,8 +692,8 @@ section {
 
 #btn-gallery:active {
   background-color: #fcfcfc;
-  color: #050505;
-  border: 4px solid #050505;
+  color: #0f0f0f;
+  border: 4px solid #0f0f0f;
   transform: translate(2px, 2px);
 }
 
@@ -723,8 +723,8 @@ section {
   display: block;
   position: relative;
   padding: 0.5vw 0.5vw 4vw 0.5vw;
-  border: 2px solid #050505;
-  box-shadow: 8px 8px #050505;
+  border: 2px solid #0f0f0f;
+  box-shadow: 8px 8px #0f0f0f;
   background-color: #fff;
   width: auto;
   height: 50vh;
@@ -744,7 +744,7 @@ section {
 
 .holder:hover {
   transform: translate(6.2vw, 2px);
-  box-shadow: 6px 6px #050505;
+  box-shadow: 6px 6px #0f0f0f;
 }
 
 /* Modal image */
@@ -814,7 +814,7 @@ section {
   font-size: 1vw;
   padding: 2px 8px;
   background-color: #fcfcfc;
-  border: 2px solid #050505;
+  border: 2px solid #0f0f0f;
 }
 
 .close:hover,
@@ -849,7 +849,7 @@ section {
 }
 
 .galleryend {
-  color: #050505;
+  color: #0f0f0f;
   width: 100vw;
   font-size: 4vw;
   font-weight: 700;
@@ -910,7 +910,7 @@ section {
   }
 
   .profileText {
-    grid-area: 1/1/4/4;
+    grid-area: 1/1/3/4;
     justify-self: center;
     align-self: center;
   }
@@ -925,7 +925,7 @@ section {
   }
 
   .button {
-    grid-area: 4/1/5/4;
+    grid-area: 3/1/4/4;
     align-self: start;
     justify-self: center;
     text-align: center;
