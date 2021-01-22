@@ -955,14 +955,15 @@ section {
     margin: 0;
   }
 
-  /* .bsideText {
-    margin-top: 6vw;
-  } */
+  #btn-gallery,
+  #btn-gallery:focus,
+  #btn-gallery:visited {
+    font-size: 12px;
+  }
 
   .bsidemenu-container {
     width: 72vw;
     height: 48vw;
-    /* margin: 2vw 6vw; */
   }
 
   .socialicons {
@@ -1065,6 +1066,12 @@ section {
 
   .bsideText {
     margin: 8vh 0 4vh 0;
+  }
+  
+  #btn-gallery,
+  #btn-gallery:focus,
+  #btn-gallery:visited {
+    font-size: 12px;
   }
 
   #main-footer {
