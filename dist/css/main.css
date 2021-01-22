@@ -406,11 +406,12 @@ section {
   box-shadow: 8px 8px #0f0f0f;
   padding: 3vh 2vw 6vh 2vw;
   overflow: hidden;
+  transition: all .6s ease;
 }
 
 .bl-box:hover {
   transform: translate(-6px, -6px);
-  transition: all 0.5s ease-in-out;
+  transition: all 0.4s ease;
   box-shadow: 14px 14px #0f0f0f;
 }
 
@@ -702,7 +703,7 @@ section {
   position: relative;
   width: 100%;
   background-color: #eee;
-  padding-top: 100px;
+  padding: 100px 0;
 }
 
 .galleryImage-container {
@@ -733,10 +734,6 @@ section {
   transition: all 0.3s ease-in-out;
 }
 
-/* .holder:hover {
-  transform: translate(34px, -6px);
-  box-shadow: 14px 14px #0f0f0f;
-} */
 
 /* Modal image */
 .modal,
