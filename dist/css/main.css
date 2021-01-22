@@ -4,7 +4,7 @@ html {
 
 * {
   font-family: "Space Mono", mono space;
-  color: #0f0f0f;
+  color: #252525;
   font-weight: 400;
   box-sizing: border-box;
   padding: 0;
@@ -39,8 +39,9 @@ h2 {
 }
 
 p {
-  font-size: 1.5vw;
-  line-height: 1.9;
+  color:#252525;
+  font-size: 1.4vw;
+  line-height: 2;
   font-family: "Work Sans", sans-serif;
 }
 
@@ -59,12 +60,11 @@ p {
 
 .strong {
   font-family: "Work Sans", sans-serif;
-  font-weight: 600;
+  font-weight: 500;
 }
 
 .tag {
-  font-size: 0.8vw;
-  font-weight: 500;
+  font-size: 1.2vw;
   font-family: "Work Sans", sans-serif;
 }
 
@@ -111,7 +111,7 @@ p {
 
 /* Track */
 ::-webkit-scrollbar-track {
-  background: #0f0f0f;
+  background: #252525;
 }
 
 /* Handle */
@@ -150,29 +150,30 @@ a {
 }
 
 a:hover {
-  color: #0f0f0f;
+  color: #252525;
 }
 
 a:active {
-  color: #0f0f0f;
+  color: #252525;
 }
 
 /* Nav bar */
 
 .nav-link {
-  color: #0f0f0f70;
+  color: #25252570;
   cursor: pointer;
+  font-family: "Work Sans", sans-serif;
 }
 
 .nav-link:hover {
-  color: #0f0f0f;
-  font-weight: 700;
+  color: #348bfd;
+  font-weight: 600;
 }
 
 .nav-link:active,
 .menu-nav li.active a {
-  font-weight: 700;
-  color: #0f0f0f;
+  font-weight: 600;
+  color: #252525;
 }
 
 .menu-nav {
@@ -196,7 +197,7 @@ a:active {
   width: 100%;
   padding: 20px 0;
   color: #fcfcfc;
-  background-color: #0f0f0f;
+  background-color: #252525;
 }
 
 /* Home page */
@@ -225,11 +226,17 @@ section {
   position: relative;
   width: 18vw;
   height: 22vw;
-  border: 2px solid #0f0f0f;
-  box-shadow: 8px 8px #0f0f0f;
-  margin-left: 2vw;
+  border: 2px solid #252525;
+  transition: all 0.5s ease-in;
   text-align: center;
   background-color: #fff;
+  cursor: pointer;
+}
+
+.profileImage:hover {
+ transform: translate(-8px, -8px);
+ box-shadow: 8px 8px #252525;
+ transition: all 0.5s ease-out;
 }
 
 .offsetImage {
@@ -241,7 +248,7 @@ section {
 }
 
 .profileName {
-  margin-bottom: 2vw;
+  margin-bottom: 3vw;
 }
 
 .profileText {
@@ -269,7 +276,7 @@ section {
   display: block;
   position: relative;
   top: 0;
-  font-size: 1.2vw;
+  font-size: 1.4vw;
   text-align: center;
 }
 
@@ -277,7 +284,7 @@ section {
 .fab,
 .far {
   margin: 0 0.5vw;
-  color: #0f0f0f;
+  color: #252525;
 }
 
 .fa:hover,
@@ -291,39 +298,36 @@ section {
 .fab:active,
 .far:active,
 .fa-border:active {
-  color: #0f0f0f;
+  color: #252525;
   transform: translate(2px, 2px);
 }
 
 .button {
   grid-area: 3/2/4/3;
-  align-self: start;
+  align-self: center;
   justify-self: center;
   text-align: center;
 }
 
 #btn-seeMore,
 #btn-seeMore:focus,
-#btn-seeMore:visited {
+#btn-seeMore:visited, #btn-seeMore:active {
   outline: none;
   display: block;
-  color: #0f0f0f;
-  background-color: #fcfcfc;
-  border: 4px solid #0f0f0f;
+  color: #ffffff;
+  background-color: #348bfd;
+  border: 2px solid #348bfd;
   font-size: 1.2vw;
   font-family: "Work Sans", sans-serif;
-  border-radius: 12px;
-  padding: 0.4em 0.8em;
+  border-radius: 20em;
+  padding: 0.6em 1.2em;
 }
 
-#btn-seeMore:hover {
-  background-color: #348bfd;
-}
-
-#btn-seeMore:active {
-  background-color: #fcfcfc;
-  color: #0f0f0f;
-  transform: translate(2px, 2px);
+#btn-seeMore:hover{
+  background-color: #fff;
+  color: #348bfd;
+  border: 2px solid #348bfd;
+  
 }
 
 .arrow {
@@ -336,10 +340,10 @@ section {
   display: block;
   width: 1em;
   height: 1em;
-  border-bottom: 0.2em solid #0f0f0f;
-  border-right: 0.2em solid #0f0f0f;
+  border-bottom: 0.2em solid #252525;
+  border-right: 0.2em solid #252525;
   transform: rotate(45deg);
-  margin-bottom: -0.8em;
+  margin-bottom: -.9em;
   animation: animate 2s infinite;
 }
 
@@ -402,8 +406,8 @@ section {
   height: 32vw;
   cursor: pointer;
   position: relative;
-  border: 2px solid #0f0f0f;
-  padding: 3vh 2vw 6vh 2vw;
+  border: 2px solid #252525;
+  padding: 2vw 2vw 6vh 2vw;
   overflow: hidden;
   transition: all .6s ease-in;
 }
@@ -411,7 +415,7 @@ section {
 .bl-box:hover {
   transform: translate(-8px, -8px);
   transition: all 0.6s ease-out;
-  box-shadow: 8px 8px #0f0f0f;
+  box-shadow: 8px 8px #252525;
 }
 
 .project-link {
@@ -424,7 +428,6 @@ section {
 
 /* Bside grid */
 .bside {
-  /* position: absolute; */
   display: grid;
   grid-template-columns: 2fr 3fr;
   grid-template-rows: 0.5fr 2fr 1.2fr;
@@ -452,10 +455,9 @@ section {
 
 /* hashtag & project name */
 .hashtag {
-  position: absolute;
-  top: -1.2vw;
-  right: 0;
-  color: #0f0f0f;
+  color: #252525;
+  text-align: center;
+  padding-bottom: 40px;
 }
 
 /* Video B-side */
@@ -481,21 +483,21 @@ section {
 .bsidemenu-container {
   position: relative;
   width: 35vw;
-  left: 0%;
-  height: 26vw;
-  top: 0;
-  padding: 1.6vw 1.5vw 0 1.5vw;
-  border: 2px solid #0f0f0f;
-  /* box-shadow: 8px 8px #0f0f0f; */
+  display: flex;
+  flex-flow: column nowrap;
+  align-content: space-evenly;
+  height: 27.8vw;
+  padding: 1.5vw;
+  border: 2px solid #252525;
   background-color: #fff;
-  transition: all 0.5s ease-in;
+  /* transition: all 0.5s ease-in; */
 }
 
-.bsidemenu-container:hover {
-  box-shadow: 8px 8px #0f0f0f;
+/* .bsidemenu-container:hover {
+  box-shadow: 8px 8px #252525;
   transform:translate(-8px, -8px);
   transition: all 0.5s ease-out;
-}
+} */
 
 .bsideslides {
   display: none;
@@ -519,7 +521,7 @@ section {
   font-size: 16px;
   transition: 0.2s ease;
   user-select: none;
-  background-color: #0f0f0f;
+  background-color: #252525;
 }
 
 .prev {
@@ -533,14 +535,13 @@ section {
 /* On hover, add a black background color with a little bit see-through */
 .prev:hover,
 .next:hover {
-  color: #0f0f0f;
+  color: #252525;
   background-color: #348bfd;
 }
 
 /* The dots/bullets/indicators */
 .bside-dots {
-  margin-top: 2vw;
-  text-align: center;
+   text-align: center;
 }
 
 .bside-dot {
@@ -548,14 +549,14 @@ section {
   height: 16px;
   width: 16px;
   margin: 0 8px;
-  border: 2px solid #0f0f0f;
+  border: 2px solid #252525;
   border-radius: 50%;
   display: inline-block;
   transition: background-color 0.6s ease;
 }
 
 .dot-active {
-  background-color: #0f0f0f;
+  background-color: #252525;
 }
 
 .bside-dot:hover {
@@ -655,7 +656,7 @@ section {
   font-weight: 700;
   padding: 2px 8px;
   background-color: #fcfcfc;
-  border: 2px solid #0f0f0f;
+  border: 2px solid #252525;
 }
 
 .btn-popup-close:hover {
@@ -679,29 +680,24 @@ section {
 
 #btn-gallery,
 #btn-gallery:focus,
-#btn-gallery:visited {
+#btn-gallery:visited, #btn-gallery:active {
   outline: none;
   display: block;
-  color: #0f0f0f;
-  background-color: #fcfcfc;
-  border: 4px solid #0f0f0f;
+  color: #ffffff;
+  background-color: #348bfd;
+  border: 2px solid #348bfd;
   font-size: 1.2vw;
   font-family: "Work Sans", sans-serif;
-  border-radius: 12px;
-  padding: 0.4em 0.8em;
+  border-radius: 20em;
+  padding: 0.6em 1.2em;
 }
 
-#btn-gallery:hover {
-  background-color: #348bfd;
+#btn-gallery:hover{
+  background-color: #fff;
+  color: #348bfd;
+  border: 2px solid #348bfd;
+  
 }
-
-#btn-gallery:active {
-  background-color: #fcfcfc;
-  color: #0f0f0f;
-  border: 4px solid #0f0f0f;
-  transform: translate(2px, 2px);
-}
-
 /* Gallery */
 
 .gallery-container {
@@ -729,7 +725,7 @@ section {
 .galleryVideo:hover {
   transform: translate(-8px, -8px);
   transition: all 0.6s ease-out;
-  box-shadow: 8px 8px #0f0f0f;
+  box-shadow: 8px 8px #252525;
 }
 
 .galleryImage,
@@ -743,7 +739,7 @@ section {
   cursor: pointer;
   transition: all 0.6s ease-in;
   margin-bottom: 20px;
-  background-color: #0f0f0f;
+  background-color: #252525;
 }
 
 
@@ -814,7 +810,7 @@ section {
   font-size: 1vw;
   padding: 2px 8px;
   background-color: #fcfcfc;
-  border: 2px solid #0f0f0f;
+  border: 2px solid #252525;
 }
 
 .close:hover,
@@ -849,7 +845,7 @@ section {
 }
 
 .galleryend {
-  color: #0f0f0f;
+  color: #252525;
   width: 100vw;
   font-size: 4vw;
   font-weight: 700;
@@ -875,7 +871,7 @@ section {
     font-size: 1em;
   }
 
-  p {
+  p, .tag {
     font-size: 1rem;
   }
 
@@ -977,20 +973,11 @@ section {
 
   .bsidemenu-container {
     width: 72vw;
-    height: 48vw;
+    height: 57vw;
   }
 
   .socialicons {
     font-size: 1.4rem;
-  }
-
-  .hashtag {
-    font-size: 0.5rem;
-    top: -0.5rem;
-  }
-
-  .tag {
-    font-size: 0.5rem;
   }
 
   .bside-content {
@@ -1036,7 +1023,7 @@ section {
   .profileName,
   .bside-title {
     font-size: 2rem;
-    margin-bottom: 2rem;
+    line-height: 2;
   }
 
   h2 {
@@ -1093,18 +1080,23 @@ section {
     font-size: 0.5em;
   }
 
+  .bsidemenu-container {
+    width: 85vw;
+    height: 67.7vw;
+  }
+
   .bside-dot {
     width: 10px;
     height: 10px;
   }
 
+  .hashtag {
+    padding-bottom: 25px;
+  }
+/* 
   .bside-dots {
     margin-top: 0;
-  }
-
-  .hashtag {
-    font-size: 0.5rem;
-  }
+  } */
 }
 
 @media only screen and (max-width: 420px) {
@@ -1117,10 +1109,10 @@ section {
   }
 
   .quote-title, .bside-title {
-    margin-bottom: 24px;
+    line-height:2;
   }
 
-  p {
+  p, .tag  {
     font-size: 16px;
   }
 
@@ -1174,7 +1166,7 @@ section {
     height: 82vw;
   }
 
-  .text, .tag {
+  .text{
     font-size: 12px;
   }
 
@@ -1184,23 +1176,12 @@ section {
 
   .bsidemenu-container {
     width: 85vw;
-    height: 60vw;
-    padding-top: 1rem;
-    margin:0;
-  }
-
-   .hashtag {
-    font-size: 8px;
-    top: -0.8rem;
+    height: 67.7vw;
   }
 
   .bsideText {
     margin: 0;
     width:90%;
-  }
-
-  .bside-dots {
-    margin-top: 0;
   }
 
   .bside-content {
