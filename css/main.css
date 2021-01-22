@@ -905,6 +905,7 @@ section {
 
   .profileName {
     font-size: 2rem;
+    margin-bottom: 2rem;
   }
 
   .icons {
@@ -1022,6 +1023,7 @@ section {
   .profileName,
   .bside-title {
     font-size: 2rem;
+    margin-bottom: 2rem;
   }
 
   h2 {
@@ -1067,7 +1069,7 @@ section {
   .bsideText {
     margin: 8vh 0 4vh 0;
   }
-  
+
   #btn-gallery,
   #btn-gallery:focus,
   #btn-gallery:visited {
