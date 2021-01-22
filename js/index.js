@@ -53,9 +53,9 @@ $(document).ready(function () {
 
   showbsideSlides(bsideslideIndex);
 
-  //-------------------Configuration for horizontal scrolling of B-side pics-----------------
-  // call mousewheel horizontal scrolling
-  horizontalScroll();
+  // //-------------------Configuration for horizontal scrolling of B-side pics-----------------
+  // // call mousewheel horizontal scrolling
+  // horizontalScroll();
 
   //---------------------Configuration for Modal-----------------------------------------
   // Model Popup
@@ -83,11 +83,14 @@ $(document).ready(function () {
   // Modal Video
   var modalvideocontainer = document.getElementById("myModal-video");
   // Show model when click video
-  var videos = document.getElementById("video01");
+  var videos = document.querySelectorAll(".galleryVideo");
   var modalvideo = document.getElementById("modalVideo");
-  videos.onclick = function () {
-    modalvideocontainer.style.display = "block";
-  };
+  for (let j = 0; j < videos.length; j++) {
+    videos[j].onclick = function () {
+      modalvideocontainer.style.display = "block";
+      $(modalvideo).attr('src', $(this).find('Source:first').attr('src'));
+    };
+  }
 
   // Get the <span> element that closes the modalvideo
   var videoclose = document.getElementsByClassName("close-video")[0];
