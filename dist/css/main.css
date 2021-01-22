@@ -708,8 +708,7 @@ section {
 
 .galleryImage-container {
   position: relative;
-  width: 76%;
-  left:12%;
+  padding: 0 14vw;
   column-count: 2;
   column-gap: 20px;
 }
@@ -1216,6 +1215,10 @@ section {
     height: auto;
   }
 
+  .galleryImage-container {
+    padding: 0 5vw;
+  }
+
   .modal,
   .modal-video {
     padding: 20% 0;
@@ -1238,8 +1241,4 @@ section {
   .bside {
     height: 900px;
   }
-
-  /* .gallery-container {
-    height: 900px;
-  } */
 }
