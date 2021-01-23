@@ -732,7 +732,7 @@ justify-content: center;
 .galleryImage,
 .galleryVideo {
   min-width: 100px;
-  max-width: 100%;
+  width: 100%;
   min-height: 100px;
   max-height: 100%;
   object-fit: cover;
