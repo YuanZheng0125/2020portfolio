@@ -1229,7 +1229,7 @@ justify-content: center;
   }
 }
 
-@media only screen and (max-height:900px) and (min-width: 420px) {
+@media only screen and (max-height:900px) and (min-width: 420px) and (max-width: 960px){
   section {
     height: 900px;
   }
