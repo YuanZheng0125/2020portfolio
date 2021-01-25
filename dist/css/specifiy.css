@@ -357,7 +357,7 @@
     flex-direction: column;
     width: 100vw;
     align-self: center;
-    padding: 0 6vw;
+    padding: 6vw;
     left: 0;
   }
 
@@ -367,7 +367,8 @@
   }
 
   .subheadingOne {
-    margin: 6em 0 2em 0;
+    /* margin: 6em 0 2em 0; */
+    margin: 0 0 40px 0;
     text-align: center;
   }
 
@@ -624,10 +625,18 @@
     width: 84vw;
     padding-bottom: 6vw;
   }
+
+  .gridOne,
+  .gridTwo,
+  .gridFive,
+  .gridSeven,
+  .gridFifteen {
+    padding-bottom: 30vw;
+  }
 }
 
 @media only screen and (max-width: 420px) {
-  #context,
+  /* #context,
   #style,
   #prototype,
   #research,
@@ -657,7 +666,7 @@
   #hiFi,
   #end {
     padding: 8vw 0;
-  }
+  } */
 
   .sidebar {
     width: 280px;
@@ -722,8 +731,13 @@
   }
 
   .subHeading {
-    width: 60vw;
+    /* width: 60vw; */
     margin: 0 2vw;
+    padding: 10px;
+  }
+
+  .brandLinks {
+    margin-top: 40px;
   }
 
   .subheadingSeventeen,
@@ -731,8 +745,8 @@
     margin-bottom: 40px;
   }
 
-  .singleImage {
-    margin-top: 20px;
+  .singleImage, .singleVideo {
+    margin-top: 40px;
   }
 
   .subheadingTwo,
