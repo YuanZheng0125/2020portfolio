@@ -35,7 +35,7 @@ body::-webkit-scrollbar {
   background-color: #fcfcfc;
 }
 
-
+/* 
 #context,
 #style,
 #prototype,
@@ -66,7 +66,7 @@ body::-webkit-scrollbar {
 #hiFi,
 #end {
   padding: 4vw 0;
-}
+} */
 
 .brief {
     padding: 0 14vw;
@@ -160,7 +160,7 @@ h5 {
   left: 15%;
   display: grid;
   grid-template-columns: repeat(4 1fr);
-  margin-bottom: 80px;
+  padding-bottom: 80px;
 }
 
 .preProject {
@@ -231,8 +231,8 @@ a.highLight:active {
   position: relative;
   width: 70%;
   left: 15%;
-  min-height: 600px;
-  max-height: 100vh;
+  /* min-height: 600px;
+  max-height: 100vh; */
   display: grid;
   grid-template-columns: 20vw 50vw;
 }
@@ -338,7 +338,7 @@ a.highLight:active {
   position: relative;
   width: 70%;
   left: 15%;
-  min-height: 600px;
+  /* min-height: 600px; */
 }
 
 .subHeading-title {
@@ -353,7 +353,7 @@ a.highLight:active {
   box-shadow: 8px 8px #050505;
   padding: 20px;
   margin: 0 16vw;
-  width: 36vw;
+  /* width: 36vw; */
 }
 
 .singleImage,
@@ -377,7 +377,8 @@ a.highLight:active {
   text-align: center;
   position: relative;
   font-size: 1.8vw;
-  margin: 20px;
+  margin: 0 auto;
+  /* margin: 20px; */
 }
 
 /* Seventh screen - wireflow */
@@ -584,3 +585,12 @@ a.highLight:active {
   border: 2px solid #050505;
   box-shadow: 8px 8px #050505;
 }
+
+
+  .gridOne,
+  .gridTwo,
+  .gridFive,
+  .gridSeven,
+  .gridFifteen {
+    padding: 8vw 0;
+  }
