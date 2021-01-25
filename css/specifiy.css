@@ -484,11 +484,6 @@
   .mobileVideo {
     height: 50vh;
   }
-
-  .brief {
-    width: 90vw;
-    left: 5vw;
-  }
 }
 
 @media only screen and (max-width: 960px) {
@@ -514,6 +509,10 @@
 }
 
 @media only screen and (max-width: 560px) {
+  h1 {
+    font-size: 5vw;
+  }
+
   .sidebar {
     width: 380px;
     left: -360px;
@@ -546,6 +545,9 @@
     font-size: 14px;
   }
 
+ .boldText {
+  line-height: 2;
+ }
   .gap {
     height: 0;
   }
@@ -602,6 +604,23 @@
 
   .text {
     font-size: 8px;
+  }
+
+  .brief {
+    flex-flow: column nowrap;
+    justify-content: center;
+    padding: 0 8vw;
+  }
+
+  .projectType,
+  .projectResult,
+  .projectTimeline {
+    padding: 6vw 0 0 0;
+  }
+
+  .projectOverview {
+    width: 84vw;
+    padding-bottom: 6vw;
   }
 }
 
@@ -728,7 +747,7 @@
 
   h6,
   .boldText {
-    font-size: 0.7em;
+    font-size: 3vw;
   }
 
   /* project bodycopy */
@@ -750,10 +769,7 @@
     height: 270px;
   }
 
-  .projectOverview,
-  .projectType,
-  .projectResult,
-  .projectTimeline {
-    width: 80%;
+  .brief {
+    padding: 0 0 0 10vw;
   }
 }
