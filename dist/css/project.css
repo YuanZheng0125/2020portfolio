@@ -591,6 +591,8 @@ a.highLight:active {
   .gridTwo,
   .gridFive,
   .gridSeven,
-  .gridFifteen {
+  .gridFifteen,
+  .gridSeventeen,
+  .gridEighteen {
     padding: 8vw 0;
   }
