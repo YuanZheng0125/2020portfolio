@@ -491,7 +491,7 @@ a.highLight:active {
   font-size: 1.2vw;
   font-family: "Work Sans", sans-serif;
   line-height: 2;
-  transform: translate(10%, -20%);
+  /* transform: translate(10%, -20%); */
 }
 
 /* Index */
