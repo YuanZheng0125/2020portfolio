@@ -1039,14 +1039,14 @@ justify-content: center;
   }
 
   .workSection {
-    height: 80vh;
     margin: 0;
+    padding: 0 5vw;
   }
 
   .bl-box,
   .project-link {
-    width: 66vw;
-    height: 52.5vw;
+    width: 90vw;
+    height: 72vw;
   }
 
   .projectImage {
@@ -1137,10 +1137,6 @@ justify-content: center;
     text-align: center;
   }
 
-  .quote {
-    width: 85vw;
-  }
-
   .project {
     margin-left: 0;
   }
@@ -1150,8 +1146,8 @@ justify-content: center;
   }
 
   .bl-box, .project-link {
-    width: 85vw;
-    height: 82vw;
+    width: 90vw;
+    height: 72vw;
   }
 
   .text{
