@@ -355,8 +355,10 @@
   .gridFifteen {
     display: flex;
     flex-direction: column;
-    width: 75vw;
-    align-items: center;
+    width: 100vw;
+    align-self: center;
+    padding: 0 6vw;
+    left: 0;
   }
 
   .subheadingSeven {
