@@ -595,4 +595,12 @@ a.highLight:active {
   .gridSeventeen,
   .gridEighteen {
     padding: 8vw 0;
+}
+
+footer {
+    background-color: #252525;
   }
+
+#main-footer {
+  color: #fcfcfc;
+}
