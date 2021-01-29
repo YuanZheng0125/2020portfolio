@@ -305,6 +305,10 @@ section {
   color: #fff;
 }
 
+.resume:active {
+  color: #252525;
+}
+
 /* social media icons */
 
 .icons {
