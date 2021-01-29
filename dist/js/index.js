@@ -11,6 +11,8 @@ var projectLinks = [
 $(document).ready(function () {
   fadeInLoad();
   document.body.style.opacity = "1";
+
+
   var navActivator = navActivatorBuilder("menu-nav", "active");
   $(window).scroll(function () {
     fadeInLoad();
@@ -18,6 +20,59 @@ $(document).ready(function () {
   });
 
   smoothScroll();
+
+  
+  // Customize cursor
+  const cursor = document.querySelector('.cursor')
+  // const links = document.querySelectorAll("imageLinks")
+
+   document.addEventListener("mouseout", e => {
+    if ($(window).height() < e.pageY || e.pageY < 10 || e.pageX < 10 || $(window).width() < e.pageX) {
+      cursor.setAttribute("style", " display: none;")
+      console.log("mouseout")
+    } 
+
+    document.addEventListener("mousemove", e => {
+    console.log(e);
+    cursor.setAttribute("style", " top: "+(e.pageY-40)+"px; left: "+(e.pageX-40)+"px;")
+  })
+
+  document.addEventListener("click", () => {
+    cursor.classList.add("click");
+
+    setTimeout(() => {
+      cursor.classList.remove("click");
+    }, 500)
+  })
+  });
+
+
+  // $(document).mouseleave(function () {
+  //   console.log('out');
+  //   cursor.setAttribute("style", " display: none;")
+  // });
+  
+  // $(document).mouseenter(function () {
+  //   console.log('in');
+  //   cursor.removeAttribute("style", " display: none;")
+
+  //   document.addEventListener("mousemove", e => {
+  //   console.log(e);
+  //   cursor.setAttribute("style", " top: "+(e.pageY-40)+"px; left: "+(e.pageX-40)+"px;")
+  // })
+
+  // document.addEventListener("click", () => {
+  //   cursor.classList.add("click");
+
+  //   setTimeout(() => {
+  //     cursor.classList.remove("click");
+  //   }, 500)
+  // })
+
+  // });
+  
+
+  
   // Get all links with class="nav-link" inside the container
   var navItems = document.getElementsByClassName("nav-item");
   var itemLinks = document.getElementsByClassName("nav-link");
@@ -144,21 +199,6 @@ function showbsideSlides(n) {
 }
 
 
-  // Customize cursor
-  const cursor = document.querySelector('.cursor')
-  // const links = document.querySelectorAll("imageLinks")
-
-  document.addEventListener("mousemove", e => {
-    cursor.setAttribute("style", " top: "+(e.pageY-40)+"px; left: "+(e.pageX-40)+"px;")
-  })
-
-  document.addEventListener("click", () => {
-    cursor.classList.add("click");
-
-    setTimeout(() => {
-      cursor.classList.remove("click");
-    }, 500)
-  })
 
   // links.forEach (link => {
   //   link.addEventListener ("mousrover", () => {
