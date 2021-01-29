@@ -29,11 +29,9 @@ $(document).ready(function () {
    document.addEventListener("mouseout", e => {
     if ($(window).height() < e.pageY || e.pageY < 10 || e.pageX < 10 || $(window).width() < e.pageX) {
       cursor.setAttribute("style", " display: none;")
-      console.log("mouseout")
     } 
 
     document.addEventListener("mousemove", e => {
-    console.log(e);
     cursor.setAttribute("style", " top: "+(e.pageY-40)+"px; left: "+(e.pageX-40)+"px;")
   })
 
