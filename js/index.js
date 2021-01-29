@@ -110,6 +110,7 @@ $(document).ready(function () {
       $("body").removeClass("noScrollbar");
     });
   });
+
 });
 
 //---------------------helper functions for slide show------------------------
@@ -141,3 +142,27 @@ function showbsideSlides(n) {
   bsideslides[bsideslideIndex - 1].style.display = "block";
   bsidedots[bsideslideIndex - 1].className += " dot-active";
 }
+
+
+  // Customize cursor
+  const cursor = document.querySelector('.cursor')
+  // const links = document.querySelectorAll("imageLinks")
+
+  document.addEventListener("mousemove", e => {
+    cursor.setAttribute("style", " top: "+(e.pageY-40)+"px; left: "+(e.pageX-40)+"px;")
+  })
+
+  document.addEventListener("click", () => {
+    cursor.classList.add("click");
+
+    setTimeout(() => {
+      cursor.classList.remove("click");
+    }, 500)
+  })
+
+  // links.forEach (link => {
+  //   link.addEventListener ("mousrover", () => {
+  //     cursor.classList.add(".cursor");
+  //   })
+  // })
+  
