@@ -24,7 +24,6 @@ $(document).ready(function () {
   
   // Customize cursor
   const cursor = document.querySelector('.cursor')
-  // const links = document.querySelectorAll("imageLinks")
 
    document.addEventListener("mouseout", e => {
     if ($(window).height() < e.pageY || e.pageY < 10 || e.pageX < 10 || $(window).width() < e.pageX) {
@@ -41,6 +40,19 @@ $(document).ready(function () {
     setTimeout(() => {
       cursor.classList.remove("click");
     }, 500)
+  })
+
+
+   var links = document.querySelectorAll(".hoverLinks")
+
+   links.forEach (link => {
+     link.addEventListener ("mouseleave", () => {
+      cursor.classList.remove("cursorHover");
+    })
+
+    link.addEventListener ("mouseover", () => {
+      cursor.classList.add("cursorHover");
+    })
   })
   });
 
@@ -195,12 +207,4 @@ function showbsideSlides(n) {
   bsideslides[bsideslideIndex - 1].style.display = "block";
   bsidedots[bsideslideIndex - 1].className += " dot-active";
 }
-
-
-
-  // links.forEach (link => {
-  //   link.addEventListener ("mousrover", () => {
-  //     cursor.classList.add(".cursor");
-  //   })
-  // })
   
