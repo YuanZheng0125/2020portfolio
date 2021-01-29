@@ -264,6 +264,7 @@ section {
   align-self: center;
   justify-self: end;
   position: relative;
+  z-index: -2;
   width: 18vw;
   height: 22vw;
   /* border: 2px solid #252525; */
@@ -271,7 +272,6 @@ section {
   transition: all 0.5s ease-in;
   text-align: center;
   background-color: #fff;
-  cursor: not-allowed;
 }
 
 /* .profileImage:hover {
