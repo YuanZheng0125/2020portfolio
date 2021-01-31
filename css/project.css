@@ -2,73 +2,13 @@ body::-webkit-scrollbar {
   display: none;
 }
 
-#overview,
-#context,
-#style,
-#prototype,
-#research,
-#approach,
-#wireframe,
-#survey,
-#decision,
-#evaluation,
-#user,
-#sketch,
-#workflow,
-#information,
-#styleTile,
-#iteration,
-#TV,
-#demo,
-#demos,
-#problemstatement,
-#competitive,
-#visuals,
-#diagram,
-#tvPrototype,
-#tvDemo,
-#discover,
-#interaction,
-#lowFi,
-#hiFi,
-#end {
-  background-color: #fcfcfc;
+.cursor {
+  z-index:unset;
 }
 
-/* 
-#context,
-#style,
-#prototype,
-#research,
-#approach,
-#wireframe,
-#survey,
-#decision,
-#evaluation,
-#user,
-#sketch,
-#workflow,
-#information,
-#styleTile,
-#iteration,
-#TV,
-#demo,
-#demos,
-#problemstatement,
-#competitive,
-#visuals,
-#diagram,
-#tvPrototype,
-#tvDemo,
-#discover,
-#interaction,
-#lowFi,
-#hiFi,
-#end {
-  padding: 4vw 0;
-} */
-
 .brief {
+    position: relative;
+    z-index: 0;
     padding: 0 14vw;
     width: 100vw;
     height: 100vh;
@@ -99,22 +39,19 @@ body::-webkit-scrollbar {
   right: 20px;
   font-size: 1vw;
   padding: 2px 8px;
-  background-color: #fcfcfc;
-  border: 2px solid #050505;
+  border:2px solid #3b3b3b;
 }
 
 .btn-project-close {
-  font-weight: 700;
+  font-weight: 600;
 }
 
 .bl-close:hover {
-  background-color: #348bfd;
-  text-decoration: none;
+  border:2px solid #348bfd;
 }
 
-.bl-close:active {
-  background-color: #fcfcfc;
-  transform: translate(1px, 1px);
+.bl-close:hover .btn-project-close{
+  color: #348bfd;
 }
 
 h1 {
@@ -152,6 +89,7 @@ h5 {
   font-size: 4vw;
   padding: 0;
   margin: 0;
+  height:auto;
 }
 
 .recommendation {
@@ -177,14 +115,15 @@ h5 {
   align-self: center;
 }
 
-.preProject:hover,
-.nexProject:hover {
-  opacity: 75%;
+.preProject:hover h4,
+.preProject:hover .pre-Text,
+.nexProject:hover h4,
+.nexProject:hover .nex-Text {
+  color:#348bfd !important;
 }
 
 /* Global project first screen format */
 .projectOverview {
-  /* grid-area: 1/1/2/4; */
   line-height: 1.5;
   width:72vw;
 }
@@ -199,21 +138,22 @@ h5 {
 
 /* image */
 .herobox {
-  position: fixed;
-  top: 0;
-  z-index: -2;
-  background-color: #fcfcfc;
+  position: absolute;
+  top: 100vh;
+  z-index: -1;
+  background-color: #ffffff;
 }
 
 .heroImage {
   width: 100vw;
-  height: auto;
+  height: 60vh;
   position: relative;
+  object-fit: cover;
 }
 
 .gap {
   height: 40vw;
-  background-color: #fcfcfc00 !important;
+  background-color: #ffffff00 !important;
 }
 
 .fadethisdiv {
@@ -231,8 +171,6 @@ a.highLight:active {
   position: relative;
   width: 70%;
   left: 15%;
-  /* min-height: 600px;
-  max-height: 100vh; */
   display: grid;
   grid-template-columns: 20vw 50vw;
 }
@@ -276,7 +214,6 @@ a.highLight:active {
   width: 30vw;
   font-size: 1.8vw;
   padding: 20px;
-  background-color: #fcfcfc;
   border: 2px solid #050505;
   box-shadow: 8px 8px #050505;
   margin-bottom: 80px;
@@ -338,7 +275,6 @@ a.highLight:active {
   position: relative;
   width: 70%;
   left: 15%;
-  /* min-height: 600px; */
 }
 
 .subHeading-title {
@@ -348,12 +284,10 @@ a.highLight:active {
 }
 
 .subHeading {
-  background-color: #fcfcfc;
   border: 2px solid #050505;
   box-shadow: 8px 8px #050505;
   padding: 20px;
   margin: 0 16vw;
-  /* width: 36vw; */
 }
 
 .singleImage,
@@ -361,6 +295,8 @@ a.highLight:active {
   width: 100%;
   box-shadow: 6px 6px 40px 2px #f0f0f070;
   margin-top: 80px;
+  position: relative;
+  z-index: -2;
 }
 
 .singleImage_scroll {
@@ -378,7 +314,6 @@ a.highLight:active {
   position: relative;
   font-size: 1.8vw;
   margin: 0 auto;
-  /* margin: 20px; */
 }
 
 /* Seventh screen - wireflow */
@@ -461,7 +396,6 @@ a.highLight:active {
   position: relative;
   width: 70%;
   left: 15%;
-  /* height: 100%; */
   display: grid;
   grid-template-rows: 0.2fr 1fr;
   grid-template-columns: repeat(3 1fr);
@@ -478,6 +412,7 @@ a.highLight:active {
   height: 70vh;
   object-fit: cover;
   position: relative;
+  z-index: -2;
   left: 50%;
   transform: translateX(-50%);
   box-shadow: 0 0 0 1px #050505, 8px 12px #050505;
@@ -491,7 +426,6 @@ a.highLight:active {
   font-size: 1.2vw;
   font-family: "Work Sans", sans-serif;
   line-height: 2;
-  /* transform: translate(10%, -20%); */
 }
 
 /* Index */
@@ -580,6 +514,7 @@ a.highLight:active {
   height: auto;
   object-fit: cover;
   position: relative;
+  z-index:-2;
   left: 50%;
   transform: translateX(-50%);
   border: 2px solid #050505;
@@ -598,9 +533,9 @@ a.highLight:active {
 }
 
 footer {
-    background-color: #252525;
+    background-color: #3b3b3b;
   }
 
 #main-footer {
-  color: #fcfcfc;
+  color: #fff;
 }

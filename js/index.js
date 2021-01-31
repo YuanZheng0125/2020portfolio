@@ -53,36 +53,23 @@ $(document).ready(function () {
     link.addEventListener ("mouseover", () => {
       cursor.classList.add("cursorHover");
     })
+    })
+
+     var images = document.querySelectorAll(".hoverImg")
+
+   images.forEach (image => {
+     image.addEventListener ("mouseleave", () => {
+      cursor.classList.remove("imageHover");
+    })
+
+    image.addEventListener ("mouseover", () => {
+      cursor.classList.add("imageHover");
+    })
   })
+
   });
 
-
-  // $(document).mouseleave(function () {
-  //   console.log('out');
-  //   cursor.setAttribute("style", " display: none;")
-  // });
-  
-  // $(document).mouseenter(function () {
-  //   console.log('in');
-  //   cursor.removeAttribute("style", " display: none;")
-
-  //   document.addEventListener("mousemove", e => {
-  //   console.log(e);
-  //   cursor.setAttribute("style", " top: "+(e.pageY-40)+"px; left: "+(e.pageX-40)+"px;")
-  // })
-
-  // document.addEventListener("click", () => {
-  //   cursor.classList.add("click");
-
-  //   setTimeout(() => {
-  //     cursor.classList.remove("click");
-  //   }, 500)
-  // })
-
-  // });
-  
-
-  
+    
   // Get all links with class="nav-link" inside the container
   var navItems = document.getElementsByClassName("nav-item");
   var itemLinks = document.getElementsByClassName("nav-link");
